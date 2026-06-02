@@ -1,0 +1,33 @@
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage{amsmath}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[english,brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+% UTF-8 encoding is recommended by ShareLaTex
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pdflscape}
+\usepackage{bibentry}
+\usepackage{booktabs}
+\usepackage{acronym}
+\nobibliography*
+\renewcommand{\lstlistingname}{Código}
+\DeclareUnicodeCharacter{00A0}{~}
+\usepackage{float}
+\usepackage{hyperref}
+% Define o Quadro como um novo tipo de objeto com contador próprio
+\newfloat{quadro}{H}{loq}
+\floatname{quadro}{Quadro}
+\restylefloat{quadro}
+% \raggedbottom
+% Ambiente quadro no padrão SBC — padrão [H] para não flutuar
+\newenvironment{quadro}[1][H]
+{\begin{figure}[#1]\renewcommand{\figurename}{Quadro}}
+{\end{figure}}
+
+\setlength{\LTcapwidth}{\linewidth}
