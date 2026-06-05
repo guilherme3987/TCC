@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  1 JUN 2026 07:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  5 JUN 2026 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/guilh/Documents/TCC/Anteprojeto.tex
-(c:/Users/guilh/Documents/TCC/Anteprojeto.tex
+**c:/Users/guilh/Documents/TCC/Anteprojeto/Anteprojeto.tex
+(c:/Users/guilh/Documents/TCC/Anteprojeto/Anteprojeto.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (abnt.cls (cvs-id.def)
@@ -422,25 +422,25 @@ Package babel Info: 'brazilian' activates 'portuges' shorthands.
 )
 \openout1 = `Anteprojeto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-Package hyperref Info: Link coloring OFF on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+Package hyperref Info: Link coloring OFF on input line 51.
  (Anteprojeto.out) (Anteprojeto.out)
 \@outlinefile=\write3
 \openout3 = `Anteprojeto.out'.
@@ -473,28 +473,28 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 55.
+(Font)              <12> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 55.
+(Font)              <8> on input line 52.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 55.
+(Font)              <6> on input line 52.
  [0
 
 {C:/Users/guilh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \folhaderosto
+l.53 \folhaderosto
                    [1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 61.
+(Font)              <14.4> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 61.
+(Font)              <7> on input line 58.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 \end{folhadeaprovacao}
+l.74 \end{folhadeaprovacao}
                             [2
 
 ] (Anteprojeto.toc)
@@ -505,7 +505,7 @@ l.71 \end{folhadeaprovacao}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \sumario
+l.80 \sumario
               [3
 
 
@@ -530,29 +530,29 @@ Cap\'{\i }tulo 4.
 <Fluxo_Geral_DBR.png, id=184, 1445.4pt x 813.0375pt>
 File: Fluxo_Geral_DBR.png Graphic file (type png)
 <use Fluxo_Geral_DBR.png>
-Package pdftex.def Info: Fluxo_Geral_DBR.png  used on input line 155.
+Package pdftex.def Info: Fluxo_Geral_DBR.png  used on input line 287.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
  [10 <./Fluxo_Geral_DBR.png (PNG copy)>] [11] [12] [13] [14] [15]
 <Diagrma_de_Caso_De_Uso.png, id=253, 1386.17876pt x 895.345pt>
 File: Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use Diagrma_de_Caso_De_Uso.png>
-Package pdftex.def Info: Diagrma_de_Caso_De_Uso.png  used on input line 279.
+Package pdftex.def Info: Diagrma_de_Caso_De_Uso.png  used on input line 507.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
 <diagrama_arquitetura.png, id=256, 999.735pt x 1149.29375pt>
 File: diagrama_arquitetura.png Graphic file (type png)
 <use diagrama_arquitetura.png>
-Package pdftex.def Info: diagrama_arquitetura.png  used on input line 290.
+Package pdftex.def Info: diagrama_arquitetura.png  used on input line 522.
 (pdftex.def)             Requested size: 432.48051pt x 497.18547pt.
  [16 <./Diagrma_de_Caso_De_Uso.png (PNG copy)>] [17 <./diagrama_arquitetura.png>]
 <Fluxo de navegabilidade Final.png, id=276, 5595.40437pt x 3762.055pt>
 File: Fluxo de navegabilidade Final.png Graphic file (type png)
 <use Fluxo de navegabilidade Final.png>
-Package pdftex.def Info: Fluxo de navegabilidade Final.png  used on input line 311.
+Package pdftex.def Info: Fluxo de navegabilidade Final.png  used on input line 582.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
  [18] [19 <./Fluxo de navegabilidade Final.png>] [20]
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 1102) in paragraph at lines 352--353
+Underfull \hbox (badness 1102) in paragraph at lines 633--633
 []|\T1/cmr/m/n/12 Diagrama ER, banco de da-dos e
  []
 
@@ -575,12 +575,12 @@ Package rerunfilecheck Info: File `Anteprojeto.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  13221 strings out of 467871
- 217669 string characters out of 5418376
+ 217825 string characters out of 5418376
  641930 words of memory out of 5000000
  41833 multiletter control sequences out of 15000+600000
  642893 words of font info for 68 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 75i,10n,79p,1002b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,402b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi2488.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi2074.pk> <C:\Users\guilh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on Anteprojeto.pdf (25 pages, 11697200 bytes).
 PDF statistics:
