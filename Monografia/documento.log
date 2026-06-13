@@ -815,4 +815,460 @@ Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count397
 \l__lipsum_a_int=\count398
-\l__lipsum_b_int=\count
+\l__lipsum_b_int=\count399
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2026/04/21 v5.1 (NLCT)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks40
+\XKV@tempa@toks=\toks41
+)
+\XKV@depth=\count400
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2025/04/03 v2.09 (NLCT)
+\@glsmfirst=\toks42
+\@glsmrest=\toks43
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2026/05/18 v1.6.7 (NLCT) Track Languages
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.tex)
+Package tracklang Info: Tracking dialect `english' (language `english') on input line 52.
+Package tracklang Info: Tracking dialect `spanish' (language `spanish') on input line 52.
+Package tracklang Info: Tracking dialect `brazil' (language `portuges') on input line 52.
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-english\glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-spanish\glossaries-spanish.ldf
+File: glossaries-spanish.ldf 2014/11/23 v1.0
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-spanish\glossaries-spanish-utf8.ldf)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-portuges\glossaries-pt-BR.ldf
+File: glossaries-pt-BR.ldf 2014/11/23 v1.0
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-portuges\glossaries-portuges-utf8.ldf)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
+\l__datatool_tmpa_int=\count401
+\l__datatool_tmpb_int=\count402
+\l__datatool_tmpc_int=\count403
+\l__datatool_tmpd_int=\count404
+\l__datatool_count_int=\count405
+\l__datatool_tmp_datatype_int=\count406
+\l__datatool_tmpa_dim=\dimen280
+\l__datatool_tmpb_dim=\dimen281
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-l3fp.def
+File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
+)
+\@dtl@toks=\toks44
+\@dtl@tmpcount=\count407
+\dtl@tmplength=\skip285
+\l__datatool_measure_box=\box74
+\dtl@sortresult=\count408
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-utf8.ldf
+File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
+)
+\@dtl@datatype=\count409
+\c_datatool_unknown_int=\count410
+\l__datatool_year_int=\count411
+\l__datatool_month_int=\count412
+\l__datatool_day_int=\count413
+\l__datatool_hour_int=\count414
+\l__datatool_minute_int=\count415
+\l__datatool_second_int=\count416
+\l__datatool_tzhour_int=\count417
+\l__datatool_tzminute_int=\count418
+\l__datatool_julian_int=\count419
+\l__datatool_local_julian_int=\count420
+\l__datatool_prefix_int=\count421
+\l__datatool_suffix_int=\count422
+\@dtl@foreach@level=\count423
+
+
+Package tracklang Warning: No `datatool' support for dialect `english'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `spanish'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `brazil'  on input line 9924.
+
+
+Package tracklang Warning: No `datatool' support for dialect `brazil'  on input line 9924.
+
+\dtl@codeA=\count424
+\dtl@codeB=\count425
+)
+\gls@level=\count426
+\@gls@tmpb=\toks45
+\gls@tmplen=\skip286
+
+
+Package glossaries Warning: Overriding \printglossary on input line 6565.
+
+\l__glossaries_tmpa_dim=\dimen282
+\l__glossaries_tmpb_dim=\dimen283
+
+Package glossaries Warning: Overriding `theglossary' environment on input line 7773.
+
+\glskeylisttok=\toks46
+\glslabeltok=\toks47
+\glsshorttok=\toks48
+\glslongtok=\toks49
+(C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2026/04/21 v5.1 (NLCT)
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2026/04/21 v5.1 (NLCT)
+\glslistdottedwidth=\skip287
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2026/04/21 v5.1 (NLCT)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip288
+\LTright=\skip289
+\LTpre=\skip290
+\LTpost=\skip291
+\LTchunksize=\count427
+\LTcapwidth=\dimen284
+\LT@head=\box75
+\LT@firsthead=\box76
+\LT@foot=\box77
+\LT@lastfoot=\box78
+\LT@gbox=\box79
+\LT@cols=\count428
+\LT@rows=\count429
+\c@LT@tables=\count430
+\c@LT@chunks=\count431
+\LT@p@ftn=\toks50
+)
+\glsdescwidth=\skip292
+\glspagelistwidth=\skip293
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2026/04/21 v5.1 (NLCT)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2025/06/26 v4.2d the supertabular environment
+\c@tracingst=\count432
+\ST@wd=\dimen285
+\ST@rightskip=\skip294
+\ST@leftskip=\skip295
+\ST@parfillskip=\skip296
+\ST@pageleft=\dimen286
+\ST@headht=\dimen287
+\ST@tailht=\dimen288
+\ST@pagesofar=\dimen289
+\ST@pboxht=\dimen290
+\ST@rowht=\dimen291
+\ST@prevht=\dimen292
+\ST@toadd=\dimen293
+\ST@dimen=\dimen294
+\ST@pbox=\box80
+)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2026/04/21 v5.1 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count433
+\l__glossaries_tree_offset_dim=\dimen295
+\l__glossaries_tree_namewidth_dim=\dimen296
+\l__glossaries_tree_symbolwidth_dim=\dimen297
+\l__glossaries_tree_prenamesym_width_dim=\dimen298
+\l__glossaries_tree_presubnamesym_width_dim=\dimen299
+\l__glossaries_tree_namewidth_padding_dim=\dimen300
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen301
+\l__glossaries_tree_namesymbolwidth_dim=\dimen302
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen303
+\l__glossaries_tree_level_int=\count434
+\glstreeindent=\skip297
+)) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen304
+\captionmargin=\dimen305
+\caption@leftmargin=\dimen306
+\caption@rightmargin=\dimen307
+\caption@width=\dimen308
+\caption@indent=\dimen309
+\caption@parindent=\dimen310
+\caption@hangindent=\dimen311
+Package caption Info: memoir document class detected.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-memoir.sto
+File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
+))
+\c@caption@flags=\count435
+\c@continuedfloat=\count436
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen312
+\caption@adjustwidth@linewidth=\dimen313
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2cite.sty
+Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/abntex2\abntex2abrev.sty)
+\minimumbiblabelwidth=\skip298
+\ABCIauxlen=\skip299
+\c@ABCIaux=\count437
+\c@ABCImax=\count438
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\biblabelsep=\skip300
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 862.
+\ABCItoken=\toks51
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/paracol\paracol.sty
+Package: paracol 2025/07/14 1.37 typeset columns in parallel
+\pcol@currcol=\count439
+\pcol@nextcol=\count440
+\pcol@ncol=\count441
+\pcol@ncolleft=\count442
+\pcol@page=\count443
+\pcol@basepage=\count444
+\pcol@toppage=\count445
+\pcol@footnotebase=\count446
+\pcol@nfootnotes=\count447
+\pcol@mcid=\count448
+\pcol@prevdepth=\dimen314
+\pcol@colht=\dimen315
+\pcol@textfloatsep=\dimen316
+\pcol@lrmargin=\dimen317
+\pagerim=\dimen318
+\pcol@topskip=\skip301
+\belowfootnoteskip=\skip302
+\pcol@topfnotes=\box81
+\pcol@prespan=\box82
+\pcol@rightpage=\box83
+\pcol@colorstack@saved=\box84
+\pcol@tempboxa=\box85
+\pcol@tempboxb=\box86
+\pcol@colorins=\insert247
+\pcol@everyvbox=\toks52
+) (lib/uecetex2.sty (elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex) (elementos-pos-textuais/glossario.tex)
+\enitdp@alineascomponto=\count449
+\c@subalineascompontoi=\count450
+\enitdp@subalineascomponto=\count451
+\c@alineascomnumeroi=\count452
+\c@alineascomnumeroii=\count453
+\enitdp@alineascomnumero=\count454
+\c@subalineascomnumeroi=\count455
+\enitdp@subalineascomnumero=\count456
+\c@afirmacao=\count457
+\c@argumento=\count458
+\c@teo=\count459
+\c@lema=\count460
+\c@cor=\count461
+\c@conjec=\count462
+\c@premissa=\count463
+\c@procedimento=\count464
+\c@heuristica=\count465
+\c@axioma=\count466
+\c@exem=\count467
+\c@xdefinicao=\count468
+\c@cdefinicao=\count469
+\c@propriedade=\count470
+\c@quest=\count471
+\c@loqdepth=\count472
+\c@quadro=\count473
+\cftbeforequadroskip=\skip303
+\cftquadroindent=\skip304
+\cftquadronumwidth=\skip305
+\mylen=\skip306
+\cftbeforelstlistingskip=\skip307
+\cftlstlistingindent=\skip308
+\cftlstlistingnumwidth=\skip309
+\myAlgoLen=\skip310
+\cftbeforealgocfskip=\skip311
+\cftalgocfindent=\skip312
+\cftalgocfnumwidth=\skip313
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen319
+\ESO@tempdimb=\dimen320
+)
+\AM@pagewidth=\dimen321
+\AM@pageheight=\dimen322
+\AM@fboxrule=\dimen323
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count474
+\AM@pagebox=\box87
+\AM@global@opts=\toks53
+\AM@pagecnt=\count475
+\AM@toc@title=\toks54
+\AM@lof@heading=\toks55
+\c@AM@survey=\count476
+\AM@templatesizebox=\box88
+))
+\documento@idxfile=\write4
+\openout4 = `documento.idx'.
+
+
+Writing index file documento.idx 
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 181.
+(C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) (documento.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 22.
+)
+\openout1 = `documento.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
+LaTeX Font Info:    ... okay on input line 181.
+Package hyperref Info: Link coloring OFF on input line 181.
+\myptabbox=\box89
+\myptabboxwidth=\skip314
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count477
+\scratchdimen=\dimen324
+\scratchbox=\box90
+\nofMPsegments=\count478
+\nofMParguments=\count479
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count480
+\MPscratchDim=\dimen325
+\MPnumerator=\count481
+\makeMPintoPDFobject=\count482
+\everyMPtoPDFconversion=\toks57
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count483
+LaTeX Info: Redefining \microtypecontext on input line 181.
+Package microtype Info: Applying patch `item' on input line 181.
+Package microtype Info: Applying patch `toc' on input line 181.
+Package microtype Info: Applying patch `eqnum' on input line 181.
+Package microtype Info: Applying patch `footnote' on input line 181.
+Package microtype Info: Applying patch `verbatim' on input line 181.
+LaTeX Info: Redefining \microtypesetup on input line 181.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-english\glossaries-dictionary-English.dict
+Dictionary: glossaries-dictionary, Language: English 
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-spanish\glossaries-dictionary-Spanish.dict
+Dictionary: glossaries-dictionary, Language: Spanish 
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-portuges\glossaries-dictionary-Brazilian.dict
+Dictionary: glossaries-dictionary, Language: Brazilian 
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<lib/logo_uneb.png, id=3, 273.27094pt x 320.69812pt>
+File: lib/logo_uneb.png Graphic file (type png)
+<use lib/logo_uneb.png>
+Package pdftex.def Info: lib/logo_uneb.png  used on input line 184.
+(pdftex.def)             Requested size: 95.64624pt x 112.24602pt.
+ [1
+
+{C:/Users/guilh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./lib/logo_uneb.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 185.
+(C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 185.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 185.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 185.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+) (C:\Users\guilh\AppData\Local
