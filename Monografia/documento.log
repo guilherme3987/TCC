@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  13 JUN 2026 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  13 JUN 2026 22:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1335,7 +1335,7 @@ Cap\'{\i }tulo 4.
 [21
 
 ]
-<figuras/Fluxo_Geral_DBR.png, id=224, 1445.4pt x 813.0375pt>
+<figuras/Fluxo_Geral_DBR.png, id=228, 1445.4pt x 813.0375pt>
 File: figuras/Fluxo_Geral_DBR.png Graphic file (type png)
 <use figuras/Fluxo_Geral_DBR.png>
 Package pdftex.def Info: figuras/Fluxo_Geral_DBR.png  used on input line 65.
@@ -1345,18 +1345,18 @@ Cap\'{\i }tulo 5.
 [28
 
 ]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=275, 1386.17876pt x 895.345pt>
+<figuras/Diagrma_de_Caso_De_Uso.png, id=279, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
 Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 42.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
-<figuras/diagrama_arquitetura.png, id=277, 999.735pt x 1149.29375pt>
+<figuras/diagrama_arquitetura.png, id=281, 999.735pt x 1149.29375pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
 Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 57.
 (pdftex.def)             Requested size: 432.48051pt x 497.18547pt.
  [29 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [30 <./figuras/diagrama_arquitetura.png>] [31]
-<figuras/Fluxo de navegabilidade Final.png, id=298, 5595.40437pt x 3762.055pt>
+<figuras/Fluxo de navegabilidade Final.png, id=302, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
 Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 117.
@@ -1422,17 +1422,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34346 strings out of 467871
- 625283 string characters out of 5418376
- 1246317 words of memory out of 5000000
- 62309 multiletter control sequences out of 15000+600000
- 669188 words of font info for 256 fonts, out of 8000000 for 9000
+ 34355 strings out of 467871
+ 625420 string characters out of 5418376
+ 1246475 words of memory out of 5000000
+ 62313 multiletter control sequences out of 15000+600000
+ 669315 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,120p,2630b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (42 pages, 11862780 bytes).
+Output written on documento.pdf (42 pages, 11864395 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  40682 words of extra memory for PDF output out of 42996 (max. 10000000)
 
