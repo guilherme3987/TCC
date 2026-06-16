@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  14 JUN 2026 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  15 JUN 2026 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1323,55 +1323,55 @@ Cap\'{\i }tulo 1.
 
 
 ] [13]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 106.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 116.
  (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [14]) (elementos-textuais/fundamentacao.tex [15]
 Cap\'{\i }tulo 2.
 [16
 
-]) (elementos-textuais/correlatos.tex [17] [18]
+] [17] [18]) (elementos-textuais/correlatos.tex [19]
 Cap\'{\i }tulo 3.
-[19
+[20
 
-]) (elementos-textuais/metodologia.tex [20]
+]) (elementos-textuais/metodologia.tex [21]
 Cap\'{\i }tulo 4.
-[21
+[22
 
 ]
-<figuras/Fluxo_Geral_DBR.png, id=229, 1445.4pt x 813.0375pt>
+<figuras/Fluxo_Geral_DBR.png, id=243, 1445.4pt x 813.0375pt>
 File: figuras/Fluxo_Geral_DBR.png Graphic file (type png)
 <use figuras/Fluxo_Geral_DBR.png>
 Package pdftex.def Info: figuras/Fluxo_Geral_DBR.png  used on input line 65.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
- [22 <./figuras/Fluxo_Geral_DBR.png (PNG copy)>] [23] [24] [25] [26]) (elementos-textuais/projeto.tex [27]
+ [23 <./figuras/Fluxo_Geral_DBR.png (PNG copy)>] [24] [25] [26] [27]) (elementos-textuais/projeto.tex [28]
 Cap\'{\i }tulo 5.
-[28
+[29
 
 ]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=280, 1386.17876pt x 895.345pt>
+<figuras/Diagrma_de_Caso_De_Uso.png, id=294, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
 Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 42.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
-<figuras/diagrama_arquitetura.png, id=282, 999.735pt x 1149.29375pt>
+<figuras/diagrama_arquitetura.png, id=296, 999.735pt x 1149.29375pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
 Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 57.
 (pdftex.def)             Requested size: 432.48051pt x 497.18547pt.
- [29 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [30 <./figuras/diagrama_arquitetura.png>] [31]
-<figuras/Fluxo de navegabilidade Final.png, id=303, 5595.40437pt x 3762.055pt>
+ [30 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [31 <./figuras/diagrama_arquitetura.png>] [32]
+<figuras/Fluxo de navegabilidade Final.png, id=317, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
 Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 117.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
-) (elementos-textuais/resultados.tex [32 <./figuras/Fluxo de navegabilidade Final.png>]
+) (elementos-textuais/resultados.tex [33 <./figuras/Fluxo de navegabilidade Final.png>]
 Cap\'{\i }tulo 6.
-) (elementos-textuais/conclusao.tex [33
+) (elementos-textuais/conclusao.tex [34
 
 ]
 Cap\'{\i }tulo 7.
-) (documento.bbl [34
+) (documento.bbl [35
 
 ]
 bibitemlist
@@ -1395,18 +1395,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--18
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
  []
 
-[35
+[36
 
-] [36]) [37] [38] (elementos-pos-textuais/apendices/lorem-ipsum.tex
+] [37]) [38] [39] (elementos-pos-textuais/apendices/lorem-ipsum.tex
 \normalfont AP\^ENDICE A.
-) [39
+) [40
 
 
-] [40] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
+] [41] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
 \normalfont ANEXO A.
 )
 No file documento.ind.
-[41
+[42
 
 
 ]
@@ -1426,17 +1426,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34388 strings out of 467871
- 625937 string characters out of 5418376
- 1246475 words of memory out of 5000000
- 62337 multiletter control sequences out of 15000+600000
- 669751 words of font info for 262 fonts, out of 8000000 for 9000
+ 34399 strings out of 467871
+ 626138 string characters out of 5418376
+ 1246678 words of memory out of 5000000
+ 62342 multiletter control sequences out of 15000+600000
+ 669878 words of font info for 264 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,120p,2630b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (42 pages, 11865739 bytes).
+Output written on documento.pdf (43 pages, 11871685 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
  42730 words of extra memory for PDF output out of 42996 (max. 10000000)
 
