@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  21 JUN 2026 22:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  22 JUN 2026 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1300,73 +1300,64 @@ l.185 	\imprimirfolhaderosto{}
 
 ] [2
 
-] (elementos-pre-textuais/dedicatoria.tex) [3] (elementos-pre-textuais/agradecimentos.tex) [4
+] (elementos-pre-textuais/resumo.tex) [3] (elementos-pre-textuais/abstract.tex) [4
 
-] (elementos-pre-textuais/epigrafe.tex)
-Overfull \hbox (4.56003pt too wide) in paragraph at lines 192--193
-[]|  |  $[]$
- []
+] (documento.lof) [5
 
-[5
-
-] (elementos-pre-textuais/resumo.tex) [6] (elementos-pre-textuais/abstract.tex) [7
-
-] (documento.lof) [8
-
-] (documento.lot) [9]
+] (documento.lot) [6]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acronym}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 200.
 
-[10] (documento.toc) [11] (elementos-textuais/introducao.tex
+[7] (documento.toc) [8] (elementos-textuais/introducao.tex
 Cap\'{\i }tulo 1.
-[12
+[9
 
 
-] [13]) (elementos-textuais/fundamentacao.tex [14]
+] [10]) (elementos-textuais/fundamentacao.tex [11]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
 (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [15
+) [12
 
-] [16] [17] [18] [19] [20] [21]) (elementos-textuais/correlatos.tex [22] [23]
+] [13] [14] [15] [16] [17] [18]) (elementos-textuais/correlatos.tex [19] [20]
 Cap\'{\i }tulo 3.
-[24
+[21
 
-]) (elementos-textuais/metodologia.tex [25]
+]) (elementos-textuais/metodologia.tex [22]
 Cap\'{\i }tulo 4.
-<figuras/Fluxo_Geral_DBR3.png, id=331, 1445.4pt x 813.0375pt>
+<figuras/Fluxo_Geral_DBR3.png, id=314, 1445.4pt x 813.0375pt>
 File: figuras/Fluxo_Geral_DBR3.png Graphic file (type png)
 <use figuras/Fluxo_Geral_DBR3.png>
 Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 47.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
-[26
+[23
 
-] [27 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [28] [29]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=363, 1386.17876pt x 895.345pt>
+] [24 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [25] [26]
+<figuras/Diagrma_de_Caso_De_Uso.png, id=347, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
 Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 204.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
- [30]
-<figuras/diagrama_arquitetura.png, id=371, 1051.93pt x 1407.2575pt>
+ [27]
+<figuras/diagrama_arquitetura.png, id=354, 1051.93pt x 1407.2575pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
 Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 234.
 (pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
- [31 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [32 <./figuras/diagrama_arquitetura.png>] [33] [34] [35]
-<figuras/Fluxo de navegabilidade Final.png, id=414, 5595.40437pt x 3762.055pt>
+ [28 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
+<figuras/Fluxo de navegabilidade Final.png, id=398, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
 Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 419.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [36 <./figuras/Fluxo de navegabilidade Final.png>] [37] [38]) (elementos-textuais/resultados.tex [39]
+ [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35]) (elementos-textuais/resultados.tex [36]
 Cap\'{\i }tulo 5.
-) (elementos-textuais/conclusao.tex [40
+) (elementos-textuais/conclusao.tex [37
 
 ]
 Cap\'{\i }tulo 6.
-) (documento.bbl [41
+) (documento.bbl [38
 
 ]
 bibitemlist
@@ -1390,18 +1381,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--104
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
  []
 
-[42
+[39
 
-] [43]) [44] [45] (elementos-pos-textuais/apendices/lorem-ipsum.tex
+] [40]) [41] [42] (elementos-pos-textuais/apendices/lorem-ipsum.tex
 \normalfont AP\^ENDICE A.
-) [46
+) [43
 
 
-] [47] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
+] [44] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
 \normalfont ANEXO A.
 )
 No file documento.ind.
-[48
+[45
 
 
 ]
@@ -1421,17 +1412,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34419 strings out of 467871
- 626454 string characters out of 5418376
- 1249939 words of memory out of 5000000
- 62363 multiletter control sequences out of 15000+600000
+ 34046 strings out of 467871
+ 618404 string characters out of 5418376
+ 1249935 words of memory out of 5000000
+ 62003 multiletter control sequences out of 15000+600000
  672873 words of font info for 273 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,120p,2630b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,120p,2630b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (49 pages, 11916675 bytes).
+Output written on documento.pdf (46 pages, 11913457 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 42778 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 42770 words of extra memory for PDF output out of 42996 (max. 10000000)
 
