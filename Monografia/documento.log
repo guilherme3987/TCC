@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  21 JUN 2026 06:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  21 JUN 2026 22:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,10 +1152,6 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (documento.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 22.
-
-
-LaTeX Warning: Label `quadro:dbr' multiply defined.
-
 )
 \openout1 = `documento.aux'.
 
@@ -1333,75 +1329,44 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [15
 
-] [16] [17] [18] [19] [20] [21]) (elementos-textuais/correlatos.tex [22]
+] [16] [17] [18] [19] [20] [21]) (elementos-textuais/correlatos.tex [22] [23]
 Cap\'{\i }tulo 3.
-[23
+[24
 
-]) (elementos-textuais/metodologia.tex [24]
+]) (elementos-textuais/metodologia.tex [25]
 Cap\'{\i }tulo 4.
-<figuras/Fluxo_Geral_DBR.png, id=316, 1445.4pt x 813.0375pt>
-File: figuras/Fluxo_Geral_DBR.png Graphic file (type png)
-<use figuras/Fluxo_Geral_DBR.png>
-Package pdftex.def Info: figuras/Fluxo_Geral_DBR.png  used on input line 47.
+<figuras/Fluxo_Geral_DBR3.png, id=331, 1445.4pt x 813.0375pt>
+File: figuras/Fluxo_Geral_DBR3.png Graphic file (type png)
+<use figuras/Fluxo_Geral_DBR3.png>
+Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 47.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
-[25
+[26
 
-]
-elementos-textuais/metodologia.tex:88: ignored error: Infinite glue shrinkage found in box being split [26 <./figuras/Fluxo_Geral_DBR.png (PNG copy)>] [27]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=335, 1386.17876pt x 895.345pt>
+] [27 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [28] [29]
+<figuras/Diagrma_de_Caso_De_Uso.png, id=363, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
-Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 139.
+Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 204.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
- [28 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
-<figuras/diagrama_arquitetura.png, id=342, 1051.93pt x 1407.2575pt>
+ [30]
+<figuras/diagrama_arquitetura.png, id=371, 1051.93pt x 1407.2575pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
-Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 172.
+Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 234.
 (pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
- [29]
-elementos-textuais/metodologia.tex:176: Undefined control sequence.
-l.176 \susubsection
-                   {Módulo ETL}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[30 <./figuras/diagrama_arquitetura.png>]
-elementos-textuais/metodologia.tex:215: Undefined control sequence.
-l.215 \susubsection
-                   {Sistema Gamificado}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[31]
-elementos-textuais/metodologia.tex:295: Undefined control sequence.
-l.295 \susubsection
-                   {Design}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[32]
-<figuras/Fluxo de navegabilidade Final.png, id=378, 5595.40437pt x 3762.055pt>
+ [31 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>] [32 <./figuras/diagrama_arquitetura.png>] [33] [34] [35]
+<figuras/Fluxo de navegabilidade Final.png, id=414, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
-Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 331.
+Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 419.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35] [36] [37]) (elementos-textuais/resultados.tex [38]
+ [36 <./figuras/Fluxo de navegabilidade Final.png>] [37] [38]) (elementos-textuais/resultados.tex [39]
 Cap\'{\i }tulo 5.
-) (elementos-textuais/conclusao.tex [39
+) (elementos-textuais/conclusao.tex [40
 
 ]
 Cap\'{\i }tulo 6.
-) (documento.bbl [40
+) (documento.bbl [41
 
 ]
 bibitemlist
@@ -1425,18 +1390,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--104
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
  []
 
-[41
+[42
 
-] [42]) [43] [44] (elementos-pos-textuais/apendices/lorem-ipsum.tex
+] [43]) [44] [45] (elementos-pos-textuais/apendices/lorem-ipsum.tex
 \normalfont AP\^ENDICE A.
-) [45
+) [46
 
 
-] [46] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
+] [47] (elementos-pos-textuais/anexos/exemplo-de-anexo.tex
 \normalfont ANEXO A.
 )
 No file documento.ind.
-[47
+[48
 
 
 ]
@@ -1454,23 +1419,19 @@ No file documento.ind.
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 34367 strings out of 467871
- 625732 string characters out of 5418376
- 1249404 words of memory out of 5000000
- 62346 multiletter control sequences out of 15000+600000
- 670754 words of font info for 253 fonts, out of 8000000 for 9000
+ 34419 strings out of 467871
+ 626454 string characters out of 5418376
+ 1249939 words of memory out of 5000000
+ 62363 multiletter control sequences out of 15000+600000
+ 672873 words of font info for 273 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,120p,2630b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,120p,2630b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (48 pages, 11921624 bytes).
+Output written on documento.pdf (49 pages, 11916675 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 42754 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
+ 42778 words of extra memory for PDF output out of 42996 (max. 10000000)
 
