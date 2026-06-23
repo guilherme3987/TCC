@@ -2,12 +2,10 @@
 \label{ch:conc}
 
 A implementação do fluxo automatizado de integração entre o Módulo ETL e o
-Sistema Gamificado por meio da sincronização via API interna consta no escopo
-deste projeto como uma proposta para Trabalhos Futuros. 
-
-A transferência de dados ocorre por meio de scripts externos de carga. O
-desenvolvimento futuro desse endpoint protegido no contêiner da API Gateway
-(FastAPI) permitirá que o contêiner de Carga envie os lotes de questões tratadas
+Sistema Gamificado por meio da sincronização via API interna está prevista no
+escopo deste projeto e é apresentada como proposta para Trabalhos Futuros. O
+desenvolvimento futuro desse endpoint protegido no contêiner da \textit{API
+Gateway} permitirá que o contêiner de Carga envie os lotes de questões tratadas
 em formato JSON imediatamente após a consolidação no PostgreSQL. Essa evolução
 arquitetural eliminará a necessidade de intervenção humana no pipeline e
 garantirá a atualização contínua do acervo de questões disponível para os
@@ -15,4 +13,8 @@ estudantes na plataforma.
 
 Outro aspecto relevante para investigações futuras é avaliar o impacto direto do
 sistema no desempenho acadêmico e na melhoria da aprendizagem em matemática dos
-estudantes.
+estudantes, utilizando o monitoramento dos dados armazenados no banco de dados
+para análise baseadas em mineração de dados educacionais. Ao cruzar os
+históricos de cliques, os tempos de resposta em cada pilar lúdico e a curva de
+consumo de pistas com o desempenho acadêmico real, será possível rastrear a
+evolução do aluno.

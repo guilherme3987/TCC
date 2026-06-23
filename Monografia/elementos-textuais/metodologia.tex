@@ -5,15 +5,15 @@
 \chapter{Metodologia}
 \label{ch:metodologia}
 A metodologia adotada para a condução deste estudo é a Design Based Research
-(DBR), por conta da intenção de gerar uma solução prática para o problema
+(DBR), devido à intenção de gerar uma solução prática para o problema
 educacional, por meio da construção de um artefato pedagógico e a geração de
 conhecimento científico. É uma metodologia de pesquisa em soluções educacionais,
 envolvendo a colaboração entre pesquisadores e profissionais da educação para
 desenvolver intervenções eficazes e relevantes.\cite{obrien2018practical}.
 
-O DBR é amplamente utilizada na criação de práticas educacionais, pois permite
+O DBR é amplamente utilizado na criação de práticas educacionais, pois permite
 estruturar e elaborar artefatos pedagógicos dirigidos à intervenção e solução de
-problemas no âmbito educacional. Essa abordagem DBR tem caráter iterativo, já
+problemas no âmbito educacional. A metodologia tem caráter iterativo, já
 que seu desenvolvimento não ocorre de forma linear, mas por meio de sucessivos
 ciclos para análise, planejamento, desenvolvimento, avaliação e revisão dos
 protótipos, possibilitando que os resultados obtidos em cada etapa sejam
@@ -32,6 +32,12 @@ diretamente na realidade escolar, por meio de experimentos pragmáticos focando
 sempre na utilidade real. Por fim, trata-se de uma abordagem essencialmente
 pragmática, orientada para a elaboração e o teste de soluções educacionais
 \cite{obrien2018practical}.
+
+A reflexão sistemática, descrita por \cite{obrien2018practical}, aliada à
+documentação explícita de todas as decisões, confere o rigor científico à
+metodologia e permite gerar conclusões que são convertidas em novo arcabouço
+teórico e prático, que retroalimentam a solução em questão e promovem o
+progresso no campo de estudo, gerando referência para trabalhos futuros.
 
 O fluxo \ref{fig:fluxo-geral-dbr} descreve as etapas empregadas para o
 desenvolvimento do artefato, evidenciando a aplicação da metodologia DBR, desde
@@ -109,7 +115,7 @@ A etapa inicial da metodologia DBR é a investigação preliminar, descrita por
 sobre o problema educacional, compreendendo a situação-problema e as
 possibilidades de inovação. 
 
-A análise de contexto e de necessidades consiste em  mapear o ambiente do
+A análise de contexto e de necessidades consiste em mapear o ambiente do
 problema, identificar as demandas dos envolvidos e avaliar o escopo viável para
 a inovação, considerando as habilidades e os recursos disponíveis, como tempo,
 finanças e pessoal. Para isso, ocorre a exploração do conhecimento
@@ -122,6 +128,7 @@ competências matemáticas e os pilares essenciais para a resolução de problem
 complexos.
 
 \section{Construção do artefato}
+\label{sec:construcao_artefato}
 A construção do artefato baseia-se na análise realizada na etapa de
 identificação do problema, na qual ficou evidente a necessidade de estratégias
 pedagógicas inovadoras que fortaleçam o ensino de matemática. Essa demanda
@@ -152,10 +159,12 @@ O aluno interage com a interface web, cujas requisições trafegam via protocolo
 para um \textit{API Gateway}. Este \textit{gateway} direciona o fluxo para o
 Motor Pedagógico e de Gamificação, encarregado de processar as validações,
 persistindo as interações em um banco de dados relacional. Paralelamente, o
-conteúdo das questões é feito no Módulo ETL, que consome os dados estruturados
+conteúdo das questões é processado no Módulo ETL, que consome os dados estruturados
 de uma API (Application Programming Interface) \textit{self-hosted} do ENEM por
 meio de requisições em lote. Os dados brutos são extraídos, tratados e
 normalizados, sendo então salvos em um banco de dados do ETL. 
+
+\newpage{}
 
 \subsection{Diagrama de Caso de Uso}
 \label{sec:diagrama_caso_de_uso}
@@ -165,7 +174,16 @@ partir da perspectiva de Engenharia de Requisitos defendida por
 \cite{sommerville2011software}, a qual preconiza que os modelos de casos de uso
 devem ser utilizados para descrever as interações entre o sistema computacional
 e seus agentes externos. Essa técnica é fundamental para delimitar a fronteira
-da aplicação (\textit{system boundary}) e mapear o escopo funcional. 
+da aplicação (\textit{system boundary}) e mapear o escopo funcional. A figura
+\ref{fig:diagrama-caso-uso} retrata o Diagrama de caso de uso.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de Caso de Uso}
+    \label{fig:diagrama-caso-uso}
+    \includegraphics[width=\textwidth]{figuras/Diagrma_de_Caso_De_Uso.png}
+    \fonte{Elaborado pelo autor (2026).}
+\end{figure}
 
 No contexto do desenvolvimento deste artefato, cada caso de uso mapeia uma
 tarefa que envolve uma sequência de interações inteligíveis. Com base nessa
@@ -195,15 +213,8 @@ custo estratégico à tomada de decisão do aluno. Essa mecânica estimula a
 persistência e obriga o estudante a analisar criticamente as etapas lógicas do
 enunciado antes de recorrer à assistência automatizada da plataforma.
 
-O Diagrama de caso \ref{fig:diagrama-caso-uso} retrata o comportamento funcional descrito.
 
-\begin{figure}[H]
-    \centering
-    \caption{Diagrama de Caso de Uso}
-    \label{fig:diagrama-caso-uso}
-    \includegraphics[width=\textwidth]{figuras/Diagrma_de_Caso_De_Uso.png}
-    \fonte{Elaborado pelo autor (2026).}
-\end{figure}
+
 
 
 \subsection{Arquitetura do Sistema}
@@ -245,13 +256,11 @@ qualidade e consistência, englobando a remoção de erros, a correção de dado
 faltantes e a disponibilização de métricas documentadas que atestam a
 confiabilidade dessas informações.
 
-O módulo ETL inicia o fluxo de dados pelo contêiner de Extração com
-rotinas em \textit{Python} usando as bibliotecas \textit{requests} e
-\textit{httpx} para coletas em lote com \textit{self-hosted} da
+O módulo ETL inicia o fluxo de dados pelo contêiner de Extração com rotinas em
+\textit{Python} usando as bibliotecas \textit{requests} e \textit{httpx} para
+coletas em lote a partir da instância \textit{self-hosted} da
 \href{https://enem.dev/}{API ENEM DEV}, evitando limitações impostas por
-terceiros. 
-
-A biblioteca \textit{requests} executa chamadas síncronas para
+terceiros. A biblioteca \textit{requests} executa chamadas síncronas para
 consultas estruturais pontuais na instância \textit{self-hosted} da API. A
 biblioteca \textit{httpx} implementa o processamento assíncrono para a coleta
 massiva de dados. Esse mecanismo permite requisições de questões simultaneamente
@@ -261,16 +270,13 @@ Os dados brutos são encaminhados para o container de Transformação, no qual
 scripts em \textit{Python} usando bibliotecas como \textit{Pandas} e
 \textit{Pydantic} realizam a normalização, validação e o enriquecimento das
 informações. Essas bibliotecas, respectivamente, permitem organizar as
-informações em uma estrutura de tabela, limpar textos com erros de formatação,
-tratar caracteres corrompidos e erros de formatação das questões e outras atividades 
-de tratamento e normalização de dados.
+informações em uma estrutura de tabela, limpar textos com erros de formatação e
+tratar caracteres corrompidos. Por fim, o enriquecimento consiste em mapear e estruturar
+cada questão do ENEM de acordo com os pilares do PC, associando o
+enunciado, a resolução da questão e os conceitos de decomposição, reconhecimento
+de padrões, abstração e algoritmos.
 
-O enriquecimento consiste em mapear e estruturar cada questão do ENEM de acordo
-com os pilares do PC. O processo associa o enunciado e a resolução da questão
-aos conceitos de decomposição, reconhecimento de padrões, abstração e
-algoritmos.
-
-Os dados são armazenados no \textit{PostgreSQL} que atua como área de staging,
+Os dados são armazenados no \textit{PostgreSQL} que atua como área de \textit{staging},
 pois, de acordo com \cite{kimball2004data}, a gravação dos dados em disco em
 formatos permanentes ou semipermanentes ao longo das diversas etapas do fluxo
 garante a integridade e o rastreamento do processo.
@@ -391,23 +397,23 @@ preocupação central em desenvolver produtos interativos que sejam utilizáveis
 sendo fáceis de aprender, eficazes no uso. É proporcionar uma experiência
 agradável.
 
-A interface da aplicação é desenvolvida com foco na simplicidade e na clareza,
-utilizando uma estrutura de navegação intuitiva. Os elementos visuais são
-organizados de maneira a guiar o usuário através das diferentes etapas do
-processo de resolução de problemas, destacando as mecânicas de gamificação para
-incentivar o engajamento. Esse processo busca atender as metas de usabilidade. É
-descrito por \cite{preece2013design}, para ser eficaz, eficiente, segura no uso,
+Segundo \cite{preece2013design}, a interface da aplicação é desenvolvida com
+foco na simplicidade e na clareza, utilizando uma estrutura de navegação
+intuitiva. Os elementos visuais são organizados de maneira a guiar o usuário
+através das diferentes etapas do processo de resolução de problemas, destacando
+as mecânicas de gamificação para incentivar o engajamento. Esse processo busca
+atender as metas de usabilidade, visando ser eficaz, eficiente, segura no uso,
 boa utilidade, fácil de aprender e fácil de lembrar.
 
-Segundo \cite{preece2013design}, eficácia é quanto um sistema é bom no que se
-propõe. A eficiência refere-se como o sistema auxilia o usuário a realizar suas
-tarefas com o mínimo de esforço. A segurança no uso é a capacidade do sistema de
-prevenir erros e minimizar as consequências de erros inevitáveis. A boa
-utilidade é a capacidade do sistema de fornecer as funcionalidades necessárias
-para os usuários alcançarem seus objetivos. A facilidade de aprendizado é a
-rapidez com que os usuários podem aprender a usar o sistema. A facilidade de
-lembrar é a capacidade do sistema de permitir que os usuários se lembrem de como
-usá-lo após um período de não uso .
+A eficácia refere-se o quanto um sistema é bom no que se propõe. A eficiência
+tem relação à forma como o sistema auxilia o usuário a realizar suas tarefas com o mínimo
+de esforço. A segurança no uso é a capacidade do sistema de prevenir erros e
+minimizar as consequências de erros inevitáveis. A boa utilidade é a capacidade
+do sistema de fornecer as funcionalidades necessárias para os usuários
+alcançarem seus objetivos. A facilidade de aprendizado é a rapidez com que os
+usuários podem aprender a usar o sistema. A facilidade de lembrar é a capacidade
+do sistema de permitir que os usuários se lembrem de como usá-lo após um período
+de não uso \cite{preece2013design}.
 
 O fluxo de navegabilidade abaixo retrata a sequência de passos feitos pelo
 usuário no sistema e será validado nos ciclos iterativos descritos
@@ -434,7 +440,7 @@ processo dinâmico de refinamento, orientado pelos retornos obtidos ao longo da
 implementação e da análise das experiências dos usuários envolvidos. É destacado
 por \cite{obrien2018practical}, como testes e refinamentos das soluções. Esse
 processo, na prática, é repetido até que alcance um equilíbrio entre o que foi
-idealizado e a produção. É feito uma avaliação formativa a cada ciclo, pois é o
+idealizado e a produção. Efetua-se uma avaliação formativa a cada ciclo, pois é o
 motor que impulsiona o avanço.
 
 A etapa de avaliação é dividida em duas etapas: Ciclos de validação por
@@ -497,7 +503,7 @@ participantes, pois os usuários são mais dispostos a responder quando o
 questionário é curto, simples, fácil de compreender e responder, não exigindo
 muito esforço mental \cite{francisco2020esm}. A aplicação do método consiste na
 criação do formulário de amostragem da experiência do usuário, utilizando a
-Escala Likert com campos de resposta com radio buttons, checkboxes e campos
+Escala Likert com campos de resposta com \textit{radio buttons}, \textit{checkboxes} e campos
 abertos. 
 
 De acordo com \cite{francisco2020esm}, a criação do formulário deve considerar a
