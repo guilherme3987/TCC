@@ -9,7 +9,7 @@ A metodologia adotada para a condução deste estudo é a Design Based Research
 educacional, por meio da construção de um artefato pedagógico e a geração de
 conhecimento científico. É uma metodologia de pesquisa em soluções educacionais,
 envolvendo a colaboração entre pesquisadores e profissionais da educação para
-desenvolver intervenções eficazes e relevantes.\cite{obrien2018practical}.
+desenvolver intervenções eficazes e relevantes \cite{obrien2018practical}.
 
 O DBR é amplamente utilizado na criação de práticas educacionais, pois permite
 estruturar e elaborar artefatos pedagógicos dirigidos à intervenção e solução de
@@ -295,18 +295,19 @@ responsividade do layout, adaptando o jogo para dispositivos \textit{desktop} e
 A camada de comunicação entre o front-end em \textit{React} e a \textit{API
 Gateway} em \textit{FastAPI} baseia-se no modelo cliente-servidor. O
 \textit{FastAPI} atua como o ponto de entrada, recebendo todas as requisições
-oriundas do cliente e as encaminhando em formato \textit{JavaScript Object Notation
-(JSON)} para o motor pedagógico. Uma vez validados, os dados fluem para o Motor
-Pedagógico e de Gamificação, back-end da aplicação, implementado em
-\textit{Python} que centraliza as regras de negócio do sistema. Para garantir a
-persistência e a recuperação dos dados de progresso e usuários, este motor se
-comunica com o Banco de Dados Relacional \textit{MySQL}.
+oriundas do cliente e as encaminhando em formato \textit{JavaScript Object
+Notation (JSON)} para a API do sistema que centraliza a lógica de negócio do
+artefato, englobando o Motor Pedagógico e de Gamificação. Essa camada é composta
+pelos \textit{endpoints} e rotas responsáveis por processar as regras centrais
+da aplicação, tais como o cálculo e distribuição de pontos de experiência (XP),
+a validação sequencial do progresso do estudante pelas fases do PC e a
+persistência do estado dessas interações no banco de dados relacional MySQL.
 
-A plataforma estrutura suas mecânicas de gamificação com base no PBL. Os Pontos
-são divididos entre XP Geral e XP de Atributo. As Insígnias (\textit{Badges})
-funcionam como marcos de conquista de longo prazo, recompensando a persistência,
-sequências de dias ativos e o domínio completo de assuntos matemáticos. Por fim,
-os \textit{Leaderboards} organizam os estudantes em uma liga global.
+Em relação às mecânicas de gamificação, os Pontos são divididos entre XP Geral e
+XP de Atributo. As Insígnias (\textit{Badges}) funcionam como marcos de
+conquista de longo prazo, recompensando a persistência, sequências de dias
+ativos e o domínio completo de assuntos matemáticos. Por fim, os
+\textit{Leaderboards} organizam os estudantes em uma liga global.
 
 As tabelas \ref{table:pontos_xp} e
 \ref{table:penalidades_xp} materializam o motor de engajamento do sistema
@@ -394,7 +395,7 @@ organizada, com uma paleta de cores que favorece a leitura e a concentração.
 
 De acordo com \cite{preece2013design}, o design deve ser implementado com uma
 preocupação central em desenvolver produtos interativos que sejam utilizáveis,
-sendo fáceis de aprender, eficazes no uso. É proporcionar uma experiência
+sendo fáceis de aprender, eficazes no uso, proporcionando uma experiência
 agradável.
 
 Segundo \cite{preece2013design}, a interface da aplicação é desenvolvida com
@@ -402,7 +403,7 @@ foco na simplicidade e na clareza, utilizando uma estrutura de navegação
 intuitiva. Os elementos visuais são organizados de maneira a guiar o usuário
 através das diferentes etapas do processo de resolução de problemas, destacando
 as mecânicas de gamificação para incentivar o engajamento. Esse processo busca
-atender as metas de usabilidade, visando ser eficaz, eficiente, segura no uso,
+atender às metas de usabilidade, visando ser eficaz, eficiente, segura no uso,
 boa utilidade, fácil de aprender e fácil de lembrar.
 
 A eficácia refere-se o quanto um sistema é bom no que se propõe. A eficiência
@@ -514,11 +515,28 @@ a de 5 pontos, visto que escalas maiores fazem o participante parar para pensar.
 Por outro lado, os campos abertos devem ser evitados ou minimizados ao máximo,
 pois podem tornar a entrada de dados cansativa.
 
-Por fim, \cite{francisco2020esm} destaca que o sucesso da coleta depende de uma
+Segundo \cite{francisco2020esm} o sucesso da coleta depende de uma
 configuração técnica voltada para o imediatismo da emoção sentida no jogo.
 Estabelecer esse limite máximo de tempo para o preenchimento é essencial a fim
 de garantir que o dado coletado reflita a experiência do momento e não após a
 sua ocorrência.
+
+O questionário, disponível no \ref{an:exemplo-de-anexo}, foi projetado para
+capturar dados subjetivos dos estudantes após a utilização do artefato, sendo
+segmentado em três macrodimensões teóricas. As dimensões avaliadas compreenderam
+imersão e foco, destinada a mensurar a concentração durante o ciclo de resolução
+de problemas e verificar se o equilíbrio entre os desafios matemáticos e o
+sistema de dicas foi capaz de promover o engajamento, e uso do sistema
+(usabilidade e interface), voltada à análise da clareza das regras da
+plataforma, da facilidade de utilização da interface e da qualidade das dicas
+fornecidas pelo motor do sistema em resposta às ações do usuário.
+
+Por fim, a terceira dimensão aborda o PC e a utilidade percebida. Esta seção
+estabelece um paralelo entre a experiência na plataforma e a resolução
+convencional de exercícios em caderno. Os itens avaliam se o fluxo principal
+guiou o estudante a exercitar os quatro pilares do PC. Logo, aferindo a retenção
+percebida pelo aluno.
+
 
 \subsubsection{Escala de Engajamento do Usuário (UES)}
 \label{sec:ues_form}
@@ -547,4 +565,24 @@ nível de concordância das respostas. Nessa avaliação, o participante deve
 refletir sobre a sua experiência com o sistema e selecionar um valor que varia
 de 1 (Discordo Totalmente) até 5 (Concordo Totalmente) para cada item.
 
+O formulário, disponível em \ref{an:exemplo-de-anexo}, é composto por doze itens obrigatórios estruturados em escala
+Likert de 5 pontos, variando de 1 (Discordo totalmente) a 5 (Concordo
+totalmente), cuja relevância metodológica reside no uso de códigos de
+identificação padronizados para cada item (como FA-S, PU-S, AE-S e RW-S),
+viabilizando a posterior aplicação de técnicas estatísticas avançadas, incluindo
+o cálculo do Alfa de Cronbach e análises fatoriais para validar a consistência
+interna das respostas obtidas. Essa estrutura organiza-se em quatro seções
+fundamentais que mapeiam as dimensões multidimensionais do engajamento.
 
+A Seção 1, referente a Atenção e Imersão (FA-S), é dedicada a mensurar o foco e
+atenção por meio do nível de absorção e da percepção temporal gerados pelas
+mecânicas lúdicas. O objetivo deste bloco é avaliar se a plataforma conseguiu
+reter o estudante. A Seção 2, que aborda a Usabilidade Percebida (PU-S), foca no
+esforço de interação. A Seção 3, focada no Apelo Visual e Estético (AE-S),
+avalia a atratividade da interface como um fator de motivação. Essa dimensão
+investiga o quanto o apelo estético e o design visual agradável do sistema atuam
+de forma favorável na experiência do usuário ao longo das sessões de estudo.
+
+Por fim, o instrumento é encerrado pela Seção 4, destinada a Recompensa e Valor
+da Experiência (RW-S), que investiga o benefício percebido e a satisfação do
+estudante com os elementos de gamificação.
