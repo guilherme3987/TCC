@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  24 JUN 2026 14:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  24 JUN 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1271,4 +1271,288 @@ LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (C:\Users\guilh\AppData\Local
+) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 185.
+ (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+
+Overfull \hbox (4.56003pt too wide) in paragraph at lines 185--185
+[]|  |  $[]$ 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 	\imprimirfolhaderosto{}
+                               [1
+
+
+
+] [2
+
+] (elementos-pre-textuais/resumo.tex) [3] (elementos-pre-textuais/abstract.tex) [4
+
+] (documento.lof) [5
+
+] (documento.lot) [6]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acronym}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 200.
+
+[7] (documento.toc [8]) [9] (elementos-textuais/introducao.tex
+Cap\'{\i }tulo 1.
+[10
+
+
+] [11]) (elementos-textuais/fundamentacao.tex [12]
+Cap\'{\i }tulo 2.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
+(C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [13
+
+] [14] [15] [16] [17] [18] [19]) (elementos-textuais/correlatos.tex [20] [21]
+Cap\'{\i }tulo 3.
+[22
+
+]) (elementos-textuais/metodologia.tex [23]
+Cap\'{\i }tulo 4.
+[24
+
+]
+<figuras/Fluxo_Geral_DBR3.png, id=433, 1445.4pt x 813.0375pt>
+File: figuras/Fluxo_Geral_DBR3.png Graphic file (type png)
+<use figuras/Fluxo_Geral_DBR3.png>
+Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 53.
+(pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
+ [25 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [26] [27]
+<figuras/Diagrma_de_Caso_De_Uso.png, id=459, 1386.17876pt x 895.345pt>
+File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
+<use figuras/Diagrma_de_Caso_De_Uso.png>
+Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 184.
+(pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
+ [28 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
+<figuras/diagrama_arquitetura.png, id=466, 1051.93pt x 1407.2575pt>
+File: figuras/diagrama_arquitetura.png Graphic file (type png)
+<use figuras/diagrama_arquitetura.png>
+Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 245.
+(pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
+ [29] [30 <./figuras/diagrama_arquitetura.png>] [31] [32] [33]
+<figuras/Fluxo de navegabilidade Final.png, id=509, 5595.40437pt x 3762.055pt>
+File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
+<use figuras/Fluxo de navegabilidade Final.png>
+Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 426.
+(pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
+ [34 <./figuras/Fluxo de navegabilidade Final.png>] [35] [36] [37]) (elementos-textuais/resultados.tex [38]
+Cap\'{\i }tulo 5.
+) (elementos-textuais/conclusao.tex [39
+
+]
+Cap\'{\i }tulo 6.
+) (documento.bbl [40
+
+]
+bibitemlist
+
+Underfull \hbox (badness 6725) in paragraph at lines 98--104
+[]\T1/ptm/m/n/12 (+20) Instituto Na-ci-o-nal de Es-tu-dos e Pes-qui-sas Edu-ca-ci-o-nais Aní-sio Tei-xeira (INEP).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+\T1/ptm/b/n/12 (+20) Enem 2024: de-sem-pe-nho mé-dio dos par-ti-ci-pan-tes au-men-tou\T1/ptm/m/n/12 (+20) . 2025. Dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+\T1/ptm/m/n/12 (+20) po-ní-vel em: []$<[]https : / / www . gov . br / inep / pt-[]br / centrais-[]de-[]conteudo / noticias / enem /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+\T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
+ []
+
+[41
+
+] [42]) [43] [44] (elementos-pos-textuais/apendices/forms-esm.tex
+\normalfont AP\^ENDICE A.
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 33--33
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 40--40
+ [][] 
+ []
+
+[45
+
+
+]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 49--49
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 56--56
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 63--63
+ [][] 
+ []
+
+[46]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 73--73
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 80--80
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 87--87
+ [][] 
+ []
+
+[47]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 94--94
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 101--101
+ [][] 
+ []
+
+) (elementos-pos-textuais/apendices/forms-ues.tex [48]
+\normalfont AP\^ENDICE B.
+
+elementos-pos-textuais/apendices/forms-ues.tex:14: LaTeX Error: Command \escalalikert already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 }
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 31--31
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 36--36
+ [][] 
+ []
+
+[49
+
+]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 41--41
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 49--49
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 54--54
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 59--59
+ [][] 
+ []
+
+[50]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 67--67
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 72--72
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 77--77
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 85--85
+ [][] 
+ []
+
+[51]
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 90--90
+ [][] 
+ []
+
+
+Overfull \hbox (1.4867pt too wide) in paragraph at lines 95--95
+ [][] 
+ []
+
+)
+No file documento.ind.
+[52]
+\tf@lof=\write5
+\openout5 = `documento.lof'.
+
+\tf@lot=\write6
+\openout6 = `documento.lot'.
+
+\tf@toc=\write7
+\openout7 = `documento.toc'.
+
+ (documento.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2020/03/25>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 34584 strings out of 467871
+ 625825 string characters out of 5418376
+ 1254204 words of memory out of 5000000
+ 62420 multiletter control sequences out of 15000+600000
+ 692621 words of font info for 334 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,13n,120p,2630b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on documento.pdf (53 pages, 11963428 bytes).
+PDF statistics:
+ 896 PDF objects out of 1000 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
+ 69106 words of extra memory for PDF output out of 74296 (max. 10000000)
+
