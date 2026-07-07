@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  6 JUL 2026 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  7 JUL 2026 00:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1308,7 +1308,7 @@ l.185 	\imprimirfolhaderosto{}
 ] (documento.lot) [6]
 
 Package glossaries Info: Preparing to sort glossary `acronym' (total number of
-(glossaries)             referenced entries: 17)
+(glossaries)             referenced entries: 16)
 
 [7
 
@@ -1337,48 +1337,32 @@ Cap\'{\i }tulo 3.
 
 ]
 Cap\'{\i }tulo 4.
-[23
-
-]
-<figuras/Fluxo_Geral_DBR3.png, id=405, 1445.4pt x 813.0375pt>
+<figuras/Fluxo_Geral_DBR3.png, id=404, 1445.4pt x 813.0375pt>
 File: figuras/Fluxo_Geral_DBR3.png Graphic file (type png)
 <use figuras/Fluxo_Geral_DBR3.png>
-Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 52.
+Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 46.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
- [24 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [25] [26]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=458, 1386.17876pt x 895.345pt>
+[23
+
+] [24 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [25] [26]
+<figuras/Diagrma_de_Caso_De_Uso.png, id=462, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
-Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 183.
+Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 177.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
  [27 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
-<figuras/diagrama_arquitetura.png, id=474, 1051.93pt x 1407.2575pt>
+<figuras/diagrama_arquitetura.png, id=478, 1051.93pt x 1407.2575pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
-Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 244.
+Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 238.
 (pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
- [28]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 248.
-
-[29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
-<figuras/Fluxo de navegabilidade Final.png, id=539, 5595.40437pt x 3762.055pt>
+ [28] [29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
+<figuras/Fluxo de navegabilidade Final.png, id=543, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
-Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 423.
+Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 417.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [33 <./figuras/Fluxo de navegabilidade Final.png>] [34]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 494.
-
-[35]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 541.
-
-[36]) (elementos-textuais/resultados.tex [37]
+ [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35] [36]) (elementos-textuais/resultados.tex [37]
 Cap\'{\i }tulo 5.
 ) (elementos-textuais/conclusao.tex [38
 
@@ -1394,17 +1378,17 @@ Underfull \hbox (badness 1137) in paragraph at lines 10--13
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 72--77
+Underfull \hbox (badness 2762) in paragraph at lines 78--83
 []\T1/ptm/m/n/12 (+20) INEP. \T1/ptm/b/n/12 (+20) Enem 2024: de-sem-pe-nho mé-dio dos par-ti-ci-pan-tes au-men-tou\T1/ptm/m/n/12 (+20) . 2025. Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 \T1/ptm/m/n/12 (+20) po-ní-vel em: []$<[]https : / / www . gov . br / inep / pt-[]br / centrais-[]de-[]conteudo / noticias / enem /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--83
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
  []
 
@@ -1412,12 +1396,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--77
 
 ] [41]) [42] [43] (elementos-pos-textuais/apendices/forms-esm.tex
 \normalfont AP\^ENDICE A.
-<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=663, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=670, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=664, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=671, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used on input line 11.
@@ -1426,22 +1410,22 @@ Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used 
 
 
 ]
-Overfull \vbox (29.68779pt too high) has occurred while \output is active []
+Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
  [45 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
-<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=674, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=681, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
 ) (elementos-pos-textuais/apendices/forms-ues.tex [46 <./figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>] [47 <./figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>]
 \normalfont AP\^ENDICE B.
-<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=685, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=693, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=686, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=694, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used on input line 11.
@@ -1449,15 +1433,15 @@ Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used 
 [48
 
 ]
-Overfull \vbox (29.68779pt too high) has occurred while \output is active []
+Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
  [49 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
-<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=697, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=705, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=698, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=706, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg  used on input line 21.
@@ -1481,17 +1465,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34521 strings out of 467871
- 627887 string characters out of 5418376
- 1254913 words of memory out of 5000000
- 62448 multiletter control sequences out of 15000+600000
- 672487 words of font info for 270 fonts, out of 8000000 for 9000
+ 34487 strings out of 467871
+ 627447 string characters out of 5418376
+ 1254914 words of memory out of 5000000
+ 62420 multiletter control sequences out of 15000+600000
+ 672037 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,120p,2630b,775s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,120p,2630b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (53 pages, 13918206 bytes).
+Output written on documento.pdf (53 pages, 13918122 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
+ 871 PDF objects out of 1000 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
  42802 words of extra memory for PDF output out of 42996 (max. 10000000)
 
