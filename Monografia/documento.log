@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  6 JUL 2026 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  6 JUL 2026 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,6 +1152,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (documento.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 22.
+\g__glossaries_gls_ref_acronym_int=\count477
 )
 \openout1 = `documento.aux'.
 
@@ -1178,16 +1179,16 @@ Package hyperref Info: Link coloring OFF on input line 181.
 \myptabboxwidth=\skip314
  (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count477
+\scratchcounter=\count478
 \scratchdimen=\dimen324
 \scratchbox=\box90
-\nofMPsegments=\count478
-\nofMParguments=\count479
+\nofMPsegments=\count479
+\nofMParguments=\count480
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count480
+\MPscratchCnt=\count481
 \MPscratchDim=\dimen325
-\MPnumerator=\count481
-\makeMPintoPDFobject=\count482
+\MPnumerator=\count482
+\makeMPintoPDFobject=\count483
 \everyMPtoPDFconversion=\toks57
 ) (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1195,7 +1196,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count483
+\c@lstlisting=\count484
 LaTeX Info: Redefining \microtypecontext on input line 181.
 Package microtype Info: Applying patch `item' on input line 181.
 Package microtype Info: Applying patch `toc' on input line 181.
@@ -1306,25 +1307,33 @@ l.185 	\imprimirfolhaderosto{}
 
 ] (documento.lot) [6]
 
-Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acronym}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 200.
+Package glossaries Info: Preparing to sort glossary `acronym' (total number of
+(glossaries)             referenced entries: 17)
 
-[7] (documento.toc) [8] (elementos-textuais/introducao.tex
+[7
+
+
+] (documento.toc) [8] (elementos-textuais/introducao.tex
 Cap\'{\i }tulo 1.
 [9
 
 
 ] [10]) (elementos-textuais/fundamentacao.tex [11]
 Cap\'{\i }tulo 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 17.
+
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
 (C:\Users\guilh\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [12
 
 ] [13] [14] [15] [16]
-<figuras/bncc_computacao.png, id=230, 268.3626pt x 268.8444pt>
+<figuras/bncc_computacao.png, id=315, 268.3626pt x 268.8444pt>
 File: figuras/bncc_computacao.png Graphic file (type png)
 <use figuras/bncc_computacao.png>
-Package pdftex.def Info: figuras/bncc_computacao.png  used on input line 237.
+Package pdftex.def Info: figuras/bncc_computacao.png  used on input line 236.
 (pdftex.def)             Requested size: 227.62206pt x 228.03065pt.
  [17] [18 <./figuras/bncc_computacao.png>] [19] [20]) (elementos-textuais/correlatos.tex [21]
 Cap\'{\i }tulo 3.
@@ -1332,32 +1341,47 @@ Cap\'{\i }tulo 3.
 
 ]
 Cap\'{\i }tulo 4.
-<figuras/Fluxo_Geral_DBR3.png, id=303, 1445.4pt x 813.0375pt>
+<figuras/Fluxo_Geral_DBR3.png, id=404, 1445.4pt x 813.0375pt>
 File: figuras/Fluxo_Geral_DBR3.png Graphic file (type png)
 <use figuras/Fluxo_Geral_DBR3.png>
-Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 42.
+Package pdftex.def Info: figuras/Fluxo_Geral_DBR3.png  used on input line 41.
 (pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
 [23
 
 ] [24 <./figuras/Fluxo_Geral_DBR3.png (PNG copy)>] [25] [26]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=335, 1386.17876pt x 895.345pt>
+<figuras/Diagrma_de_Caso_De_Uso.png, id=462, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
-Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 173.
+Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 172.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
  [27 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
-<figuras/diagrama_arquitetura.png, id=342, 1051.93pt x 1407.2575pt>
+<figuras/diagrama_arquitetura.png, id=478, 1051.93pt x 1407.2575pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
-Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 234.
+Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 233.
 (pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
- [28] [29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
-<figuras/Fluxo de navegabilidade Final.png, id=385, 5595.40437pt x 3762.055pt>
+ [28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 237.
+
+[29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
+<figuras/Fluxo de navegabilidade Final.png, id=543, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
-Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 415.
+Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 412.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35] [36]) (elementos-textuais/resultados.tex [37]
+ [33 <./figuras/Fluxo de navegabilidade Final.png>] [34]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 483.
+
+[35]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 530.
+
+[36]) (elementos-textuais/resultados.tex [37]
 Cap\'{\i }tulo 5.
 ) (elementos-textuais/conclusao.tex [38
 
@@ -1391,12 +1415,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--84
 
 ] [41]) [42] [43] (elementos-pos-textuais/apendices/forms-esm.tex
 \normalfont AP\^ENDICE A.
-<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=496, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=668, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=497, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=669, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used on input line 11.
@@ -1408,19 +1432,19 @@ Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used 
 Overfull \vbox (29.68779pt too high) has occurred while \output is active []
 
  [45 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
-<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=507, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=679, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
 ) (elementos-pos-textuais/apendices/forms-ues.tex [46 <./figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>] [47 <./figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>]
 \normalfont AP\^ENDICE B.
-<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=518, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=690, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=519, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=691, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used on input line 11.
@@ -1431,12 +1455,12 @@ Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used 
 Overfull \vbox (29.68779pt too high) has occurred while \output is active []
 
  [49 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
-<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=530, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=702, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=531, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=703, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg  used on input line 21.
@@ -1460,17 +1484,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34443 strings out of 467871
- 626370 string characters out of 5418376
- 1251588 words of memory out of 5000000
- 62393 multiletter control sequences out of 15000+600000
- 672164 words of font info for 268 fonts, out of 8000000 for 9000
+ 34532 strings out of 467871
+ 628054 string characters out of 5418376
+ 1255129 words of memory out of 5000000
+ 62452 multiletter control sequences out of 15000+600000
+ 672741 words of font info for 274 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,120p,2630b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (53 pages, 13888656 bytes).
+Output written on documento.pdf (53 pages, 13918441 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
  42802 words of extra memory for PDF output out of 42996 (max. 10000000)
 
