@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  14 JUL 2026 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.29)  14 JUL 2026 13:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1326,7 +1326,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [12
 
 ] [13] [14] [15] [16]
-<figuras/bncc_computacao.png, id=313, 268.3626pt x 268.8444pt>
+<figuras/bncc_computacao.png, id=319, 268.3626pt x 268.8444pt>
 File: figuras/bncc_computacao.png Graphic file (type png)
 <use figuras/bncc_computacao.png>
 Package pdftex.def Info: figuras/bncc_computacao.png  used on input line 236.
@@ -1337,7 +1337,7 @@ Cap\'{\i }tulo 3.
 
 ]
 Cap\'{\i }tulo 4.
-<figuras/fluxo_dbr_final.png, id=404, 1445.4pt x 813.0375pt>
+<figuras/fluxo_dbr_final.png, id=410, 1445.4pt x 813.0375pt>
 File: figuras/fluxo_dbr_final.png Graphic file (type png)
 <use figuras/fluxo_dbr_final.png>
 Package pdftex.def Info: figuras/fluxo_dbr_final.png  used on input line 46.
@@ -1345,30 +1345,35 @@ Package pdftex.def Info: figuras/fluxo_dbr_final.png  used on input line 46.
 [23
 
 ] [24 <./figuras/fluxo_dbr_final.png (PNG copy)>] [25] [26]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=462, 1386.17876pt x 895.345pt>
+<figuras/Diagrma_de_Caso_De_Uso.png, id=468, 1386.17876pt x 895.345pt>
 File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
 <use figuras/Diagrma_de_Caso_De_Uso.png>
 Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line 177.
 (pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
  [27 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
-<figuras/diagrama_arquitetura.png, id=478, 1051.93pt x 1407.2575pt>
+<figuras/diagrama_arquitetura.png, id=484, 1051.93pt x 1407.2575pt>
 File: figuras/diagrama_arquitetura.png Graphic file (type png)
 <use figuras/diagrama_arquitetura.png>
 Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 238.
 (pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
  [28] [29 <./figuras/diagrama_arquitetura.png>] [30] [31] [32]
-<figuras/Fluxo de navegabilidade Final.png, id=543, 5595.40437pt x 3762.055pt>
+<figuras/Fluxo de navegabilidade Final.png, id=549, 5595.40437pt x 3762.055pt>
 File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
 <use figuras/Fluxo de navegabilidade Final.png>
 Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on input line 417.
 (pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35] [36]) (elementos-textuais/resultados.tex [37]
+ [33 <./figuras/Fluxo de navegabilidade Final.png>] [34] [35] [36] (elementos-textuais/cronograma.tex [37]
+Overfull \hbox (1.68668pt too wide) in paragraph at lines 24--49
+ [][] 
+ []
+
+)) (elementos-textuais/resultados.tex [38]
 Cap\'{\i }tulo 5.
-) (elementos-textuais/conclusao.tex [38
+) (elementos-textuais/conclusao.tex [39
 
 ]
 Cap\'{\i }tulo 6.
-) (documento.bbl [39
+) (documento.bbl [40
 
 ]
 bibitemlist
@@ -1392,63 +1397,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--83
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]aumentou>[]$[]. Acesso em: 19 maio
  []
 
-[40
+[41
 
-] [41]) [42] [43] (elementos-pos-textuais/apendices/forms-esm.tex
+] [42]) [43] [44] (elementos-pos-textuais/apendices/forms-esm.tex
 \normalfont AP\^ENDICE A.
-<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=670, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=684, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=671, 597.432pt x 845.0772pt>
+<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=685, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-[44
+[45
 
 
 ]
 Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
- [45 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
-<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=681, 597.432pt x 845.0772pt>
+ [46 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
+<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=695, 597.432pt x 845.0772pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-) (elementos-pos-textuais/apendices/forms-ues.tex [46 <./figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>] [47 <./figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>]
+) (elementos-pos-textuais/apendices/forms-ues.tex [47 <./figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>] [48 <./figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>]
 \normalfont AP\^ENDICE B.
-<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=693, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=708, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=694, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=709, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-[48
+[49
 
 ]
 Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
- [49 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
-<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=705, 597.432pt x 845.0772pt>
+ [50 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
+<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=719, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=706, 597.432pt x 845.0772pt>
+<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=720, 597.432pt x 845.0772pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg  used on input line 21.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
- [50 <./figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>]) [51 <./figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>]
+ [51 <./figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>]) [52 <./figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>]
 No file documento.ind.
-[52 <./figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>]
+[53 <./figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>]
 \tf@lof=\write5
 \openout5 = `documento.lof'.
 
@@ -1465,17 +1470,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 34487 strings out of 467871
- 627440 string characters out of 5418376
- 1254918 words of memory out of 5000000
- 62420 multiletter control sequences out of 15000+600000
+ 34502 strings out of 467871
+ 627854 string characters out of 5418376
+ 1255115 words of memory out of 5000000
+ 62428 multiletter control sequences out of 15000+600000
  672037 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,120p,2630b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/guilh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (53 pages, 13915723 bytes).
+Output written on documento.pdf (54 pages, 13921235 bytes).
 PDF statistics:
- 871 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
- 42802 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 889 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
+ 42810 words of extra memory for PDF output out of 42996 (max. 10000000)
 
