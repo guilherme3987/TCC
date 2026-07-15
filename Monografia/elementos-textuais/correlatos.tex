@@ -8,10 +8,14 @@
 \label{ch:trabalhos_correlatos}
 O presente capítulo tem como objetivo apresentar pesquisas que possuem relação
 com a temática desta monografia. Esses trabalhos foram selecionados pela
-convergência entre desenvolvimento do \gls{pc} e práticas gamificadas, com foco no
-engajamento e no aprendizado de matemática. A análise desses trabalhos oferece o
-embasamento teórico e prático necessário para o desenvolvimento da solução
-proposta.
+convergência entre desenvolvimento do \gls{pc} e práticas gamificadas, com foco
+no engajamento e no aprendizado de matemática. A análise desses trabalhos
+oferece o embasamento teórico e prático necessário para o desenvolvimento da
+solução proposta. A Tabela \ref{tab:correlatos} sintetiza a análise comparativa
+dos trabalhos correlatos, categorizando cada estudo quanto aos conceitos de
+\gls{pc}, gamificação e matemática, além de identificar as lacunas que o
+presente trabalho propõe solucionar.
+
  
 A dissertação de \cite{silva2020}, intitulada Pensamento computacional:
 uma análise dos documentos oficiais e das questões de Matemática dos
@@ -39,7 +43,66 @@ fica limitado ao software utilizado.
 Embora focada na construção de artefatos digitais pelos próprios estudantes, a
 pesquisa tem como objetivo validar como o \gls{pc} é utilizado para solucionar
 problemas de matemática e física na construção dos jogos. \cite{filho2025}
-destaca que os estudantes aplicaram conceitos do plano cartesiano para resolver
-o posicionamento dos personagens e definiram variáveis matemáticas para simular
-os efeitos de aceleração e gravidade nos saltos dos avatares.
+destaca que os estudantes aplicaram conceitos do plano cartesiano para
+posicionar os personagens e variáveis matemáticas para simular os efeitos de
+aceleração e gravidade.
+
+
+\begin{table}[H]
+    \centering
+    \caption{Análise comparativa dos trabalhos correlatos}
+    \label{tab:correlatos}
+    \renewcommand{\arraystretch}{1.2}
+    \small
+    \begin{tabular}{| >{\bfseries\raggedright\arraybackslash}p{2.3cm} |
+        >{\raggedright\arraybackslash}p{2.3cm} |
+        >{\raggedright\arraybackslash}p{3.5cm} |
+        >{\raggedright\arraybackslash}p{3.0cm} |
+        >{\raggedright\arraybackslash}p{3.0cm} |}
+        \hline
+        \normalfont\bfseries Trabalho & \normalfont\bfseries Conceito &
+        \normalfont\bfseries Abordagem do \gls{pc} &
+        \normalfont\bfseries Gamificação &
+        \normalfont\bfseries Matemática \\
+        \hline
+
+        \cite{silva2020} &
+        Mapeamento de conceitos de \gls{pc} em provas de matemática &
+        Investiga como os pilares do \gls{pc} estão presentes em questões de vestibulares e nos documentos oficiais da \gls{bncc}. &
+        \textbf{Não aborda.} &
+        Análise de questões de vestibulares e diretrizes curriculares. \\
+        \hline
+
+        \cite{lais2023} &
+        Jogo digital gamificado &
+        Integra os pilares do \gls{pc} por meio da resolução de problemas de Teoria dos Conjuntos no contexto do jogo. &
+        Jogo de aventura com elementos de progressão, mas sem detalhamento completo da metodologia de engajamento. &
+        Exercita conteúdos matemáticos (Teoria dos Conjuntos) de forma contextualizada no enredo. \\
+        \hline
+
+        \cite{teodosio2023atividade} &
+        Atividade gamificada &
+        Desenvolve os pilares do \gls{pc} por meio de resolução de problemas matemáticos com apoio de planilhas eletrônicas e \textit{pixel art}. &
+        Utiliza \gls{pbl} e estímulo visual, mas o artefato não é um jogo digital e fica limitado ao software de planilhas. &
+        Aplica conceitos matemáticos em atividades gamificadas com enfoque em engajamento. \\
+        \hline
+
+        \cite{filho2025} &
+        Construção de artefatos digitais &
+        Valida a aplicação do \gls{pc} na resolução de problemas matemáticos e físicos durante a criação de jogos pelos estudantes. &
+        Os próprios estudantes constroem elementos gamificados, mas não há mecânicas de recompensa ou progressão estruturadas. &
+        Aborda matemática e física por meio do posicionamento de personagens e simulação de grandezas físicas. \\
+        \hline
+
+        Este trabalho &
+        \textit{Software} gamificado educacional &
+        Operacionaliza os quatro pilares do \gls{pc} (decomposição, abstração, reconhecimento de padrões e algoritmos) de forma sequencial e obrigatória na resolução de questões do \gls{enem}. &
+        Implementa sistema completo de \gls{pbl} com \gls{xp}, insígnias, ligas, matriz de penalidades e custo estratégico de dicas. &
+        Processa questões reais do \gls{enem} de matemática por meio de pipeline \gls{etl}, mapeando competências matemáticas aos pilares do \gls{pc}. \\
+        \hline
+    \end{tabular}
+
+    \vspace{0.2cm}
+    {\small Fonte: Elaborado pelo autor (2026).}
+\end{table}
 
