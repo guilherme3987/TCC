@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.15)  15 AUG 2026 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.15)  10 SEP 2026 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**documento.tex
-(./documento.tex
+**projeto.tex
+(./projeto.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -1247,37 +1247,37 @@ File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count446
 \AM@templatesizebox=\box86
 ))
-\documento@idxfile=\write4
-\openout4 = `documento.idx'.
+\projeto@idxfile=\write4
+\openout4 = `projeto.idx'.
 
 
-Writing index file documento.idx 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 18
-1.
+Writing index file projeto.idx 
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 90
+.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (./documento.aux)
-\openout1 = `documento.aux'.
+) (./projeto.aux)
+\openout1 = `projeto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-Package hyperref Info: Link coloring OFF on input line 181.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+Package hyperref Info: Link coloring OFF on input line 90.
 \myptabbox=\box87
 \myptabboxwidth=\skip313
 
@@ -1304,19 +1304,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count453
-LaTeX Info: Redefining \microtypecontext on input line 181.
-Package microtype Info: Applying patch `item' on input line 181.
-Package microtype Info: Applying patch `toc' on input line 181.
-Package microtype Info: Applying patch `eqnum' on input line 181.
-Package microtype Info: Applying patch `footnote' on input line 181.
-Package microtype Info: Applying patch `verbatim' on input line 181.
+LaTeX Info: Redefining \microtypecontext on input line 90.
+Package microtype Info: Applying patch `item' on input line 90.
+Package microtype Info: Applying patch `toc' on input line 90.
+Package microtype Info: Applying patch `eqnum' on input line 90.
+Package microtype Info: Applying patch `footnote' on input line 90.
+Package microtype Info: Applying patch `verbatim' on input line 90.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 181.
+LaTeX Info: Redefining \showhyphens on input line 90.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1342,23 +1342,23 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <lib/logo_uneb.png, id=4, 273.27094pt x 320.69812pt>
 File: lib/logo_uneb.png Graphic file (type png)
 <use lib/logo_uneb.png>
-Package pdftex.def Info: lib/logo_uneb.png  used on input line 184.
+Package pdftex.def Info: lib/logo_uneb.png  used on input line 93.
 (pdftex.def)             Requested size: 95.64624pt x 112.24602pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc} <./lib/logo_uneb.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--185
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 185.
+ 94.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1367,19 +1367,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 185.
+ 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 185.
+ 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 185.
+ 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -1390,20 +1390,20 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-85.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 
-Overfull \hbox (4.56003pt too wide) in paragraph at lines 185--185
+Overfull \hbox (4.56003pt too wide) in paragraph at lines 94--94
 []|  |  $[]$ 
  []
 
@@ -1412,151 +1412,118 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 	\imprimirfolhaderosto{}
-                               [1
+l.94 	\imprimirfolhaderosto{}
+                              [1
 
 
 
-] [2
+] (./projeto.lof) [2
 
-] (./elementos-pre-textuais/resumo.tex)
-[3] (./elementos-pre-textuais/abstract.tex) [4
+] (./projeto.lot) [3]
+Using TeX to sort glossary entries---this may take a while
+[4
 
-] (./documento.lof) [5
+
+] (./projeto.toc [5]) [6] (./elementos-textuais/introducao.tex)
+(./elementos-textuais/resumo.tex [7
+
+
+]) (./elementos-textuais/hipotese.tex
+[8
+
+]) (./elementos-textuais/objetivos.tex [9
 
 ]
-(./documento.lot) [6]
-Using TeX to sort glossary entries---this may take a while
-[7
-
-
-] (./documento.toc) [8] (./elementos-textuais/introducao.tex [9
-
-
-] [10])
-(./elementos-textuais/fundamentacao.tex [11]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-7.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [12
+))
+(./elementos-textuais/metodologia.tex [10
 
-] [13] [14]
-[15] [16]
-<figuras/bncc_computacao.png, id=323, 268.3626pt x 268.8444pt>
-File: figuras/bncc_computacao.png Graphic file (type png)
-<use figuras/bncc_computacao.png>
-Package pdftex.def Info: figuras/bncc_computacao.png  used on input line 236.
-(pdftex.def)             Requested size: 227.62206pt x 228.03065pt.
- [17] [18 <./figuras/bncc_computacao.png>] [19] [20])
-(./elementos-textuais/correlatos.tex [21]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+] [11
 
-Overfull \hbox (8.33986pt too wide) in paragraph at lines 57--104
+] [12] [13] [14] [15])
+(./elementos-textuais/riscos.tex [16]
+Overfull \hbox (0.61125pt too wide) in paragraph at lines 8--17
  [][] 
  []
 
-[22
+) (./elementos-textuais/beneficios.tex [17
 
-]) (./elementos-textuais/metodologia.tex [23]
-<figuras/fluxo_dbr_final.png, id=446, 1445.4pt x 813.0375pt>
-File: figuras/fluxo_dbr_final.png Graphic file (type png)
-<use figuras/fluxo_dbr_final.png>
-Package pdftex.def Info: figuras/fluxo_dbr_final.png  used on input line 46.
-(pdftex.def)             Requested size: 455.24411pt x 256.07095pt.
- [24
+])
+(./elementos-textuais/desfechos.tex [18
 
-] [25 <./figuras/fluxo_dbr_final.png (PNG copy)>] [26] [27]
-<figuras/Diagrma_de_Caso_De_Uso.png, id=505, 1386.17876pt x 895.345pt>
-File: figuras/Diagrma_de_Caso_De_Uso.png Graphic file (type png)
-<use figuras/Diagrma_de_Caso_De_Uso.png>
-Package pdftex.def Info: figuras/Diagrma_de_Caso_De_Uso.png  used on input line
- 177.
-(pdftex.def)             Requested size: 455.24411pt x 294.04393pt.
- [28 <./figuras/Diagrma_de_Caso_De_Uso.png (PNG copy)>]
-<figuras/diagrama_arquitetura.png, id=521, 1051.93pt x 1407.2575pt>
-File: figuras/diagrama_arquitetura.png Graphic file (type png)
-<use figuras/diagrama_arquitetura.png>
-Package pdftex.def Info: figuras/diagrama_arquitetura.png  used on input line 2
-38.
-(pdftex.def)             Requested size: 432.48051pt x 578.56831pt.
- [29] [30 <./figuras/diagrama_arquitetura.png>] [31] [32] [33]
-<figuras/Fluxo de navegabilidade Final.png, id=586, 5595.40437pt x 3762.055pt>
-File: figuras/Fluxo de navegabilidade Final.png Graphic file (type png)
-<use figuras/Fluxo de navegabilidade Final.png>
-Package pdftex.def Info: figuras/Fluxo de navegabilidade Final.png  used on inp
-ut line 417.
-(pdftex.def)             Requested size: 432.48051pt x 290.7526pt.
- [34 <./figuras/Fluxo de navegabilidade Final.png>] [35] [36] [37]
-(./elementos-textuais/cronograma.tex [38]
-Overfull \hbox (1.68668pt too wide) in paragraph at lines 24--49
- [][] 
+]) (./elementos-textuais/cronograma.tex
+[19
+
+]
+Overfull \hbox (0.94148pt too wide) in paragraph at lines 30--31
+[]\T1/ptm/b/n/12 (-20) Nota im-por-tante (CEP/U-NEB): \T1/ptm/m/n/12 (-20) a co
+-leta de da-dos pri-má-rios (for-mu-lá-rios ESM/UES
  []
 
-)) (./elementos-textuais/resultados.tex [39])
-(./elementos-textuais/conclusao.tex [40
+) (./elementos-textuais/orcamento.tex [20
 
-]) (./documento.bbl [41
+]) (./projeto.bbl [21
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 1137) in paragraph at lines 10--13
+Underfull \hbox (badness 1137) in paragraph at lines 16--19
 []\T1/ptm/m/n/12 (+20) BNCC. \T1/ptm/b/n/12 (+20) Base Na-ci-o-nal Co-mum Cur-r
 i-cu-lar\T1/ptm/m/n/12 (+20) . Bra-sí-lia, 2017. Dis-po-ní-vel em: []$<[]http :
  / /
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 78--83
+Underfull \hbox (badness 2762) in paragraph at lines 53--58
 []\T1/ptm/m/n/12 (+20) INEP. \T1/ptm/b/n/12 (+20) Enem 2024: de-sem-pe-nho mé-d
 io dos par-ti-ci-pan-tes au-men-tou\T1/ptm/m/n/12 (+20) . 2025. Dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 53--58
 \T1/ptm/m/n/12 (+20) po-ní-vel em: []$<[]https : / / www . gov . br / inep / pt
 -[]br / centrais-[]de-[]conteudo / noticias / enem /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 53--58
 \T1/ptm/m/n/12 (+20) enem-[]2024-[]desempenho-[]medio-[]dos-[]participantes-[]a
 umentou>[]$[]. Acesso em: 19 maio
  []
 
-[42
+[22
 
-] [43]) [44] [45] (./elementos-pos-textuais/apendices/forms-esm.tex
-<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=723, 597.432pt x 845.0772
+]) [23] [24] (./elementos-pos-textuais/apendices/tcle.tex)
+(./elementos-pos-textuais/apendices/forms-esm.tex [25
+
+
+]
+<figuras/Experiencia_Usuario/Experiencia_Pag1.jpg, id=295, 597.432pt x 845.0772
 pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag1.jpg  used
  on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=724, 597.432pt x 845.0772
+<figuras/Experiencia_Usuario/Experiencia_Pag2.jpg, id=296, 597.432pt x 845.0772
 pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag2.jpg>
 Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag2.jpg  used
  on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
- [46
-
+ [26
 
 ]
 Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
 
-[47 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
-<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=734, 597.432pt x 845.0772
+[27 <./figuras/Experiencia_Usuario/Experiencia_Pag1.jpg>]
+<figuras/Experiencia_Usuario/Experiencia_Pag3.jpg, id=306, 597.432pt x 845.0772
 pt>
 File: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg Graphic file (type jpg)
 <use figuras/Experiencia_Usuario/Experiencia_Pag3.jpg>
@@ -1564,79 +1531,79 @@ Package pdftex.def Info: figuras/Experiencia_Usuario/Experiencia_Pag3.jpg  used
  on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
 )
-(./elementos-pos-textuais/apendices/forms-ues.tex [48 <./figuras/Experiencia_Us
-uario/Experiencia_Pag2.jpg>] [49 <./figuras/Experiencia_Usuario/Experiencia_Pag
+(./elementos-pos-textuais/apendices/forms-ues.tex [28 <./figuras/Experiencia_Us
+uario/Experiencia_Pag2.jpg>] [29 <./figuras/Experiencia_Usuario/Experiencia_Pag
 3.jpg>]
-<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=747, 597.432pt x 845.0772
+<figuras/Engajamento_Usuario/Engajamento_Pag1.jpg, id=318, 597.432pt x 845.0772
 pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag1.jpg  used
  on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=748, 597.432pt x 845.0772
+<figuras/Engajamento_Usuario/Engajamento_Pag2.jpg, id=319, 597.432pt x 845.0772
 pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag2.jpg  used
  on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
- [50
+ [30
 
 ]
 Overfull \vbox (27.20978pt too high) has occurred while \output is active []
 
 
-[51 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
-<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=758, 597.432pt x 845.0772
+[31 <./figuras/Engajamento_Usuario/Engajamento_Pag1.jpg>]
+<figuras/Engajamento_Usuario/Engajamento_Pag3.jpg, id=330, 597.432pt x 845.0772
 pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag3.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag3.jpg  used
  on input line 16.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
-<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=759, 597.432pt x 845.0772
+<figuras/Engajamento_Usuario/Engajamento_Pag4.jpg, id=331, 597.432pt x 845.0772
 pt>
 File: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg Graphic file (type jpg)
 <use figuras/Engajamento_Usuario/Engajamento_Pag4.jpg>
 Package pdftex.def Info: figuras/Engajamento_Usuario/Engajamento_Pag4.jpg  used
  on input line 21.
 (pdftex.def)             Requested size: 455.24411pt x 643.96747pt.
- [52 <./figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>]) [53 <./figuras/Enga
-jamento_Usuario/Engajamento_Pag3.jpg>] (./documento.ind) [54 <./figuras/Engajam
-ento_Usuario/Engajamento_Pag4.jpg>]
+ [32 <./figuras/Engajamento_Usuario/Engajamento_Pag2.jpg>]) [33 <./figuras/Enga
+jamento_Usuario/Engajamento_Pag3.jpg>] (./projeto.ind) [34 <./figuras/Engajamen
+to_Usuario/Engajamento_Pag4.jpg>]
 \tf@lof=\write5
-\openout5 = `documento.lof'.
+\openout5 = `projeto.lof'.
 
 \tf@lot=\write6
-\openout6 = `documento.lot'.
+\openout6 = `projeto.lot'.
 
 \tf@toc=\write7
-\openout7 = `documento.toc'.
+\openout7 = `projeto.toc'.
 
- (./documento.aux)
+ (./projeto.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 33034 strings out of 474222
- 560416 string characters out of 5748733
+ 32745 strings out of 474222
+ 555082 string characters out of 5748733
  1941975 words of memory out of 5000000
- 54265 multiletter control sequences out of 15000+600000
- 619502 words of font info for 319 fonts, out of 8000000 for 9000
+ 54101 multiletter control sequences out of 15000+600000
+ 597489 words of font info for 236 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,120p,2441b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (55 pages, 13824615 bytes).
+ 99i,12n,120p,2439b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on projeto.pdf (35 pages, 2185648 bytes).
 PDF statistics:
- 932 PDF objects out of 1000 (max. 8388607)
- 834 compressed objects within 9 object streams
- 157 named destinations out of 1000 (max. 500000)
- 64826 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 40833 words of extra memory for PDF output out of 42996 (max. 10000000)
 

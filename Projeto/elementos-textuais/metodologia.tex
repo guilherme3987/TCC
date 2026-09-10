@@ -1,0 +1,199 @@
+\chapter{Metodologia Proposta}
+
+\section{Abordagem Metodológica}
+
+A pesquisa adota a \textbf{Design-Based Research} (DBR), uma metodologia de pesquisa em soluções educacionais que combina rigor científico com relevância prática \cite{vandenakker2006,plomp2018pesquisa}. Caracteriza-se por:
+
+\begin{itemize}
+    \item \textbf{Caráter iterativo:} ciclos sucessivos de análise, planejamento, desenvolvimento, avaliação e revisão;
+    \item \textbf{Colaboração entre pesquisadores e profissionais da educação:} participação ativa dos docentes na construção e validação do artefato;
+    \item \textbf{Reflexão sistemática:} documentação explícita de todas as decisões, gerando novo arcabouço teórico e prático;
+    \item \textbf{Postura pragmática:} enfrentamento direto dos problemas na realidade escolar.
+\end{itemize}
+
+\section{Etapas da DBR}
+
+\begin{table}[htbp]
+    \centering
+    \caption{\label{tab:dbr-etapas}Etapas da DBR}
+    \begin{tabular}{|p{4.5cm}|p{10cm}|}
+    \hline
+    \textbf{Etapa do DBR} & \textbf{Atividades} \\ \hline
+    Identificação do problema & Revisão Sistemática de Literatura; Mapeamento das competências matemáticas do ENEM e dos pilares do PC. \\ \hline
+    Construção do artefato & Definição da arquitetura, mecânicas de gamificação e design; Desenvolvimento da primeira versão funcional. \\ \hline
+    Ciclos de avaliação & Ciclo 1: Avaliação por professores de Matemática do curso de Sistemas de Informação (grupo focal). Ciclo 2: Avaliação por alunos da Universidade para Todos (UPT) (formulários ESM e UES). \\ \hline
+    Reflexões e melhorias & Ciclo 1: Refinamento do sistema a partir do feedback dos professores. Ciclo 2: Uso pelos alunos e aplicação dos formulários; Análise dos dados e geração de conhecimento. \\ \hline
+    \end{tabular}
+    \fonte{Elaborado pelo autor (2026).}
+\end{table}
+
+\section{Arquitetura do Sistema}
+
+O sistema é estruturado em dois ambientes.
+
+\textbf{Ambiente 1 Plataforma Educacional Gamificada:}
+
+\begin{itemize}
+    \item \textbf{\textit{Front-end}:} React + Tailwind CSS (responsividade desktop/mobile);
+    \item \textbf{API Gateway:} FastAPI (recebe requisições HTTPS, valida \textit{payloads} JSON, roteamento);
+    \item \textbf{Motor Pedagógico e de Gamificação:} lógica de negócio (cálculo de XP, validação sequencial do progresso pelo PC, persistência);
+    \item \textbf{Banco de dados relacional:} MySQL.
+\end{itemize}
+
+\textbf{Ambiente 2 Módulo ETL (Extração, Transformação e Carga):}
+
+\begin{itemize}
+    \item \textbf{Extração:} Python (\textit{requests} e \textit{httpx}) coletando dados da API ENEM DEV \textit{self-hosted} em lote;
+    \item \textbf{Transformação:} Python (Pandas, Pydantic) normalização, validação, enriquecimento (mapeamento das questões aos pilares do PC);
+    \item \textbf{Armazenamento:} PostgreSQL (área de \textit{staging}).
+\end{itemize}
+
+\section{Mecânicas de Gamificação}
+
+\subsection{Sistema de Pontos (PBL)}
+
+\begin{table}[htbp]
+    \centering
+    \caption{\label{tab:xp}Pontos de XP por etapa concluída}
+    \begin{tabular}{|p{5cm}|c|c|}
+    \hline
+    \textbf{Etapa concluída} & \textbf{XP Geral} & \textbf{XP de Atributo} \\ \hline
+    Decomposição & +2.0 & +2.0 \\ \hline
+    Abstração & +2.0 & +2.0 \\ \hline
+    Padrões & +2.0 & +2.0 \\ \hline
+    Algoritmos & +3.0 & +3.0 \\ \hline
+    Conclusão (Bônus) & +1.0 & +0.25 (cada atributo) \\ \hline
+    \end{tabular}
+    \fonte{Elaborado pelo autor (2026).}
+\end{table}
+
+\subsection{Matriz de Penalidades}
+
+\begin{table}[htbp]
+    \centering
+    \caption{\label{tab:penalidades}Matriz de penalidades}
+    \begin{tabular}{|p{5cm}|p{5cm}|p{4.5cm}|}
+    \hline
+    \textbf{Ação do usuário} & \textbf{Penalidade} & \textbf{Impacto no XP} \\ \hline
+    Tentativa errada & \(\times\)0.98 (\(-2\%\)) & Mínimo \\ \hline
+    Erro persistente (3+) & \(\times\)0.90 (\(-10\%\)) & Leve \\ \hline
+    Dica 1 & \(\times\)0.80 (\(-20\%\)) & Médio \\ \hline
+    Dica 2 & \(\times\)0.50 (\(-50\%\)) & Alto \\ \hline
+    Dica 3 & \(\times\)0.40 (\(-60\%\)) & Crítico \\ \hline
+    \end{tabular}
+    \fonte{Elaborado pelo autor (2026).}
+\end{table}
+
+\section{Diagrama de Caso de Uso}
+
+O diagrama mapeia dois atores:
+\begin{itemize}
+    \item \textbf{Estudante} (agente primário): Autenticar Usuário, Iniciar Sessão de Estudo, Resolver Questão (com extensões: Decompor Enunciado, Abstrair Dados, Reconhecer Padrão, Criar Algoritmo), Solicitar Dica, Visualizar Progresso;
+    \item \textbf{Sistema} (ator externo): processamento automatizado, aplicação de penalidades de XP.
+\end{itemize}
+
+\section{Design e Usabilidade}
+
+O design é fundamentado em princípios de usabilidade, acessibilidade e engajamento \cite{preece2013design}, visando ser eficaz, eficiente, seguro, útil, fácil de aprender e fácil de lembrar. O fluxo de navegabilidade é validado nos ciclos iterativos da DBR.
+
+\section{Instrumentos de Coleta de Dados}
+
+\textbf{Método de Amostragem de Experiência (ESM):}
+\begin{itemize}
+    \item Formulário curto com Escala Likert (5 pontos), aplicado imediatamente após a interação com o sistema;
+    \item Avalia três dimensões: Imersão e Foco, Usabilidade (interface e dicas), PC e Utilidade Percebida;
+    \item Tempo estimado de preenchimento: menos de 1 minuto \cite{francisco2020esm}.
+\end{itemize}
+
+\textbf{Escala de Engajamento do Usuário (UES):}
+\begin{itemize}
+    \item 12 itens obrigatórios em Escala Likert (5 pontos), estruturados em quatro dimensões: Atenção Focada (FA-S), Usabilidade Percebida (PU-S), Apelo Estético (AE-S) e Recompensa (RW-S) \cite{obrien2018practical}.
+\end{itemize}
+
+\textbf{Grupo Focal (Ciclo 1 Professores):}
+
+O grupo focal é uma técnica qualitativa para compreender percepções, experiências e significados atribuídos pelos professores ao artefato \cite{gil2021pesquisa}. A sessão é estruturada em dois momentos:
+
+\begin{enumerate}
+    \item \textbf{Apresentação da proposta do projeto e da estrutura da ferramenta:} exposição do Cognitivo, da sua arquitetura, das mecânicas de gamificação e do fluxo pedagógico do Pensamento Computacional;
+    \item \textbf{Testes práticos e validação:} os professores interagem diretamente com a ferramenta, permitindo coletar seus comentários, sugestões e percepções técnicas/educacionais e alinhar as abordagens pedagógicas adotadas.
+\end{enumerate}
+
+\section{Critérios de Inclusão}
+
+\begin{itemize}
+    \item Estudantes regularmente matriculados na Universidade para Todos (UPT);
+    \item Professores de matemática com experiência docente no ensino superior;
+    \item Participantes que assinarem o Termo de Consentimento Livre e Esclarecido (TCLE);
+    \item Estudantes com acesso a dispositivo eletrônico com navegador web e conexão à internet.
+\end{itemize}
+
+\section{Critérios de Exclusão}
+
+\begin{itemize}
+    \item Estudantes que não assinarem o TCLE;
+    \item Participantes que não completarem a sessão de uso da plataforma ou não responderem aos formulários de avaliação;
+    \item Professores sem vínculo com a disciplina de matemática ou área correlata.
+\end{itemize}
+
+\section{Metodologia de Análise de Dados}
+
+\subsection{Dados Qualitativos (Ciclo 1 Professores)}
+
+\begin{itemize}
+    \item \textbf{Técnica:} grupo focal ;
+    \item \textbf{Análise:} análise de conteúdo temática \cite{gil2021pesquisa}, com categorização \textit{a priori} dos indicadores: validação dos conteúdos matemáticos, acurácia dos gabaritos, eficácia das mecânicas de gamificação e adequação pedagógica do fluxo do PC.
+\end{itemize}
+
+\subsection{Dados Quantitativos (Ciclo 2 Alunos)}
+
+\begin{itemize}
+    \item \textbf{Instrumentos:} ESM (Escala Likert 5 pontos) e UES (12 itens, 4 dimensões);
+    \item \textbf{Análise:}
+    \begin{itemize}
+        \item Cálculo do Alfa de Cronbach para validar a consistência interna de cada escala;
+        \item Análises fatoriais para verificar a estrutura dimensional dos instrumentos;
+        \item Estatísticas descritivas (média, mediana, desvio-padrão) por dimensão;
+        \item Análise comparativa entre as dimensões de atenção focada, usabilidade percebida, apelo estético e recompensa;
+    \end{itemize}
+\end{itemize}
+
+\section{Tamanho da Amostra}
+
+\begin{itemize}
+    \item \textbf{Ciclo 1 (Professores):} grupo focal com professores de matemática do curso de Sistemas de Informação da UNEB 
+    \item \textbf{Ciclo 2 (Alunos):} estudantes regularmente matriculados na Universidade para Todos (UPT) que voluntariamente participarem dos testes de uso da plataforma. A amostra será por conveniência, com adesão voluntária após assinatura do TCLE.
+\end{itemize}
+
+\section{Detalhamento do Uso de Dados Secundários}
+
+Conforme definição da Resolução CNS 466/12 e da cartilha do CEP/UNEB, dados secundários são aqueles obtidos em fontes que não foram coletados diretamente pelo pesquisador com os participantes, incluindo arquivos publicados e não publicados.
+
+\subsection{Dados Secundários Utilizados no Projeto}
+
+O projeto utiliza \textbf{dados secundários} por meio do pipeline ETL:
+\begin{itemize}
+    \item \textbf{Fonte:} API ENEM DEV (\url{https://enem.dev/}), hospedada em instância \textit{self-hosted};
+    \item \textbf{Dados coletados:} questões de matemática do ENEM, incluindo enunciados, alternativas, gabaritos e metadados;
+\end{itemize}
+
+\subsection{Processo de Extração e Tratamento}
+
+\begin{itemize}
+    \item \textbf{Extração:} requisições síncronas (biblioteca \textit{requests}) para consultas pontuais e assíncronas (biblioteca \textit{httpx}) para coleta massiva em lote;
+    \item \textbf{Transformação:}
+    \begin{itemize}
+        \item Normalização com Pandas (estruturação em tabelas, limpeza de caracteres corrompidos);
+        \item Validação com Pydantic (garantia de integridade dos dados);
+        \item Enriquecimento: mapeamento de cada questão aos quatro pilares do PC (decomposição, abstração, reconhecimento de padrões e algoritmos);
+    \end{itemize}
+    \item \textbf{Armazenamento:} PostgreSQL (área de \textit{staging} para rastreamento e integridade).
+\end{itemize}
+
+\subsection{Dados Primários Coletados na Pesquisa}
+
+Além dos dados secundários, a pesquisa coleta \textbf{dados primários} diretamente com os participantes:
+\begin{itemize}
+    \item \textbf{Formulários ESM e UES:} aplicados imediatamente após a interação dos alunos com a plataforma (coleta de dados diretamente com o participante);
+    \item \textbf{Grupo focal com professores:} sessão de coleta de dados qualitativos diretamente com os docentes.
+\end{itemize}
