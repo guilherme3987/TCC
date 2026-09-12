@@ -1125,7 +1125,10 @@
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de Quadros}
 
-%\newfloat[chapter]{quadro}{loq}{\quadroname}
+\floatstyle{plaintop}
+\newfloat{quadro}{htbp}{loq}
+\floatstyle{plain}
+\floatname{quadro}{\quadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
 

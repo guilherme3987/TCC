@@ -1,199 +1,253 @@
-\chapter{Metodologia Proposta}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                         Metodologia                                 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Abordagem Metodológica}
+\chapter{Metodologia}
+\label{ch:metodologia}
+A metodologia adotada para a condução deste estudo é a \gls{dbr}, devido à
+intenção de gerar uma solução prática para o problema educacional, por meio da
+construção de um artefato pedagógico e a geração de conhecimento científico. É
+uma metodologia de pesquisa em soluções educacionais, envolvendo a colaboração
+entre pesquisadores e profissionais da educação, cuja participação ativa na
+pesquisa contribui para a construção de intervenções mais relevantes e
+aplicáveis à prática. Além disso, a reflexão sistemática, descrita por
+\cite{obrien2018practical}, aliada à documentação explícita de todas as
+decisões, confere o rigor científico à metodologia e permite gerar conclusões
+que são convertidas em novo arcabouço teórico e prático, que retroalimentam a
+solução em questão e promovem o progresso no campo de estudo, gerando referência
+para trabalhos futuros.
 
-A pesquisa adota a \textbf{Design-Based Research} (DBR), uma metodologia de pesquisa em soluções educacionais que combina rigor científico com relevância prática \cite{vandenakker2006,plomp2018pesquisa}. Caracteriza-se por:
+A metodologia tem caráter iterativo, já que seu desenvolvimento não ocorre de
+forma linear, mas por meio de sucessivos ciclos para análise, planejamento,
+desenvolvimento, avaliação e revisão dos protótipos, possibilitando que os
+resultados obtidos em cada etapa sejam incorporados às fases subsequentes,
+promovendo o aperfeiçoamento progressivo da intervenção proposta. Essa melhoria
+contínua materializa-se por meio de microciclos, nos quais os pesquisadores
+elaboram conjecturas prévias, implementam as atividades instrucionais e realizam
+reflexões imediatas com base nas reações e nos resultados reais observados nos
+alunos \cite{obrien2018practical}. 
 
-\begin{itemize}
-    \item \textbf{Caráter iterativo:} ciclos sucessivos de análise, planejamento, desenvolvimento, avaliação e revisão;
-    \item \textbf{Colaboração entre pesquisadores e profissionais da educação:} participação ativa dos docentes na construção e validação do artefato;
-    \item \textbf{Reflexão sistemática:} documentação explícita de todas as decisões, gerando novo arcabouço teórico e prático;
-    \item \textbf{Postura pragmática:} enfrentamento direto dos problemas na realidade escolar.
-\end{itemize}
+Diante disso, a metodologia assume uma postura prática e contextualizada, em que
+os problemas são enfrentados diretamente na realidade escolar, por meio de
+experimentos pragmáticos focando sempre na utilidade real. O \gls{dbr} é, portanto,
+uma abordagem essencialmente pragmática, orientada para a elaboração e o teste
+de soluções educacionais \cite{obrien2018practical}. Por fim, possibilita
+a criação do fluxo \ref{fig:fluxo-geral-dbr} que descreve as etapas empregadas para o
+desenvolvimento do artefato, evidenciando a aplicação da metodologia \gls{dbr}, desde
+a identificação do problema até a avaliação da solução proposta e a geração de
+conhecimento científico. O processo é estruturado em quatro etapas principais:
+Identificação do problema, Desenvolvimento de soluções, Ciclos de avaliação e
+Reflexões e melhorias.
 
-\section{Etapas da DBR}
-
-\begin{table}[htbp]
+\begin{figure}[H]
     \centering
-    \caption{\label{tab:dbr-etapas}Etapas da DBR}
-    \begin{tabular}{|p{4.5cm}|p{10cm}|}
-    \hline
-    \textbf{Etapa do DBR} & \textbf{Atividades} \\ \hline
-    Identificação do problema & Revisão Sistemática de Literatura; Mapeamento das competências matemáticas do ENEM e dos pilares do PC. \\ \hline
-    Construção do artefato & Definição da arquitetura, mecânicas de gamificação e design; Desenvolvimento da primeira versão funcional. \\ \hline
-    Ciclos de avaliação & Ciclo 1: Avaliação por professores de Matemática do curso de Sistemas de Informação (grupo focal). Ciclo 2: Avaliação por alunos da Universidade para Todos (UPT) (formulários ESM e UES). \\ \hline
-    Reflexões e melhorias & Ciclo 1: Refinamento do sistema a partir do feedback dos professores. Ciclo 2: Uso pelos alunos e aplicação dos formulários; Análise dos dados e geração de conhecimento. \\ \hline
-    \end{tabular}
+    \caption{Fluxo geral do \texorpdfstring{\gls{dbr}}{DBR}}
+    \label{fig:fluxo-geral-dbr}
+    \includegraphics[width=\textwidth]{figuras/fluxo_dbr_final.png}
     \fonte{Elaborado pelo autor (2026).}
-\end{table}
+\end{figure}
 
-\section{Arquitetura do Sistema}
+O Quadro \ref{qua:dbr} apresenta a operacionalização da pesquisa, relacionando as etapas da
+\gls{dbr} aos entregáveis e atividades desenvolvidos ao longo do projeto. Essa
+estrutura evidencia a aplicação da metodologia, demonstrando como os
+objetivos e desenvolvimento foram articulados de forma
+iterativa, desde a compreensão do problema até a avaliação da solução proposta e
+a geração de conhecimento científico. Além disso, a organização das atividades
+em consonância com as fases da \gls{dbr} reforça o caráter intervencionista,
+colaborativo e pragmático da pesquisa.
 
-O sistema é estruturado em dois ambientes.
-
-\textbf{Ambiente 1 Plataforma Educacional Gamificada:}
-
-\begin{itemize}
-    \item \textbf{\textit{Front-end}:} React + Tailwind CSS (responsividade desktop/mobile);
-    \item \textbf{API Gateway:} FastAPI (recebe requisições HTTPS, valida \textit{payloads} JSON, roteamento);
-    \item \textbf{Motor Pedagógico e de Gamificação:} lógica de negócio (cálculo de XP, validação sequencial do progresso pelo PC, persistência);
-    \item \textbf{Banco de dados relacional:} MySQL.
-\end{itemize}
-
-\textbf{Ambiente 2 Módulo ETL (Extração, Transformação e Carga):}
-
-\begin{itemize}
-    \item \textbf{Extração:} Python (\textit{requests} e \textit{httpx}) coletando dados da API ENEM DEV \textit{self-hosted} em lote;
-    \item \textbf{Transformação:} Python (Pandas, Pydantic) normalização, validação, enriquecimento (mapeamento das questões aos pilares do PC);
-    \item \textbf{Armazenamento:} PostgreSQL (área de \textit{staging}).
-\end{itemize}
-
-\section{Mecânicas de Gamificação}
-
-\subsection{Sistema de Pontos (PBL)}
-
-\begin{table}[htbp]
+\begin{quadro}[H]
     \centering
-    \caption{\label{tab:xp}Pontos de XP por etapa concluída}
-    \begin{tabular}{|p{5cm}|c|c|}
-    \hline
-    \textbf{Etapa concluída} & \textbf{XP Geral} & \textbf{XP de Atributo} \\ \hline
-    Decomposição & +2.0 & +2.0 \\ \hline
-    Abstração & +2.0 & +2.0 \\ \hline
-    Padrões & +2.0 & +2.0 \\ \hline
-    Algoritmos & +3.0 & +3.0 \\ \hline
-    Conclusão (Bônus) & +1.0 & +0.25 (cada atributo) \\ \hline
+    \caption{Etapas do \texorpdfstring{\gls{dbr}}{DBR} e seus respectivos desenvolvimentos}
+    \label{qua:dbr}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{ | >{\bfseries\raggedright\arraybackslash}p{4.0cm} |
+        >{\raggedright\arraybackslash}p{10.5cm} | }
+        \hline
+        \normalfont\bfseries Etapas do DBR & \normalfont\bfseries Etapas de
+        Desenvolvimento \\
+        \hline
+
+        Identificação do problema &
+        \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
+            \item Revisão Sistemática de Literatura.
+            \item Mapear as principais competências matemáticas das questões do \gls{enem} e como o \gls{pc} é desenvolvido.
+        \end{itemize} \\
+        \hline
+
+        Construção do artefato &
+        \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
+            \item Definição da arquitetura e das mecânicas de gamificação da plataforma.
+            \item Desenvolvimento da primeira versão funcional da plataforma.
+        \end{itemize} \\
+        \hline
+
+        Ciclos de avaliação &
+        \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
+            \item Ciclo 1: Avaliação por professores de Matemática do curso de Sistemas de Informação.
+            \item Ciclo 2: Avaliação por alunos da \gls{upt}.
+        \end{itemize} \\
+        \hline
+
+        Reflexões e melhorias &
+        \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
+            \item Ciclo 1: Refinamento do sistema a partir do feedback dos professores.
+            \item Ciclo 2: Uso de sistema pelos alunos e aplicação dos formulários \gls{esm} e \gls{ues}.
+            \item Analisar os dados dos formulários e geração de conhecimento.
+        \end{itemize} \\
+        \hline
     \end{tabular}
-    \fonte{Elaborado pelo autor (2026).}
-\end{table}
 
-\subsection{Matriz de Penalidades}
+    \vspace{0.2cm}
+    {\small Fonte: Elaborado pelo autor (2026).}
+\end{quadro}
 
-\begin{table}[htbp]
-    \centering
-    \caption{\label{tab:penalidades}Matriz de penalidades}
-    \begin{tabular}{|p{5cm}|p{5cm}|p{4.5cm}|}
-    \hline
-    \textbf{Ação do usuário} & \textbf{Penalidade} & \textbf{Impacto no XP} \\ \hline
-    Tentativa errada & \(\times\)0.98 (\(-2\%\)) & Mínimo \\ \hline
-    Erro persistente (3+) & \(\times\)0.90 (\(-10\%\)) & Leve \\ \hline
-    Dica 1 & \(\times\)0.80 (\(-20\%\)) & Médio \\ \hline
-    Dica 2 & \(\times\)0.50 (\(-50\%\)) & Alto \\ \hline
-    Dica 3 & \(\times\)0.40 (\(-60\%\)) & Crítico \\ \hline
-    \end{tabular}
-    \fonte{Elaborado pelo autor (2026).}
-\end{table}
+Outro aspecto relevante é o caráter qualitativo que é descrito por \cite{yin2016pesquisa} como uma
+investigação com capacidade de entender, traduzir e valorizar as visões dos
+sujeitos envolvidos diretamente no fenômeno estudado. É capturar as perspectiva
+dos participantes, focando nos
+significados e nas percepções de professores e alunos ao longo do desenvolvimento 
+do sistema. 
 
-\section{Diagrama de Caso de Uso}
+Justifica-se como uma pesquisa qualitativa, pois é fundamental abranger dimensões sociais, 
+institucionais e ambientais, nas quais a vida humana se desenrola. Esses fatores exercem profunda influência sobre os
+comportamentos e eventos investigados.\cite{yin2016pesquisa}. 
 
-O diagrama mapeia dois atores:
-\begin{itemize}
-    \item \textbf{Estudante} (agente primário): Autenticar Usuário, Iniciar Sessão de Estudo, Resolver Questão (com extensões: Decompor Enunciado, Abstrair Dados, Reconhecer Padrão, Criar Algoritmo), Solicitar Dica, Visualizar Progresso;
-    \item \textbf{Sistema} (ator externo): processamento automatizado, aplicação de penalidades de XP.
-\end{itemize}
+\section{Ciclo de validação por professores}
+O processo de avaliação por parte dos professores é fundamental para validar a
+viabilidade, a aplicabilidade e a relevância do sistema desenvolvido, garantindo
+que o artefato pedagógico atenda às necessidades educacionais e seja eficaz na
+promoção do aprendizado, sendo utilizado a técnia de grupo focal.
 
-\section{Design e Usabilidade}
+O planejamento do grupo focal é uma das
+estratégias mais estruturadas entre as variadas abordagens empregadas na coleta
+de dados em pesquisas qualitativas, exigindo decisões rigorosas do pesquisador.
+Os participantes devem estar em consonância com os objetivos da pesquisa
+\cite{gil2021pesquisa}.
 
-O design é fundamentado em princípios de usabilidade, acessibilidade e engajamento \cite{preece2013design}, visando ser eficaz, eficiente, seguro, útil, fácil de aprender e fácil de lembrar. O fluxo de navegabilidade é validado nos ciclos iterativos da DBR.
-
-\section{Instrumentos de Coleta de Dados}
-
-\textbf{Método de Amostragem de Experiência (ESM):}
-\begin{itemize}
-    \item Formulário curto com Escala Likert (5 pontos), aplicado imediatamente após a interação com o sistema;
-    \item Avalia três dimensões: Imersão e Foco, Usabilidade (interface e dicas), PC e Utilidade Percebida;
-    \item Tempo estimado de preenchimento: menos de 1 minuto \cite{francisco2020esm}.
-\end{itemize}
-
-\textbf{Escala de Engajamento do Usuário (UES):}
-\begin{itemize}
-    \item 12 itens obrigatórios em Escala Likert (5 pontos), estruturados em quatro dimensões: Atenção Focada (FA-S), Usabilidade Percebida (PU-S), Apelo Estético (AE-S) e Recompensa (RW-S) \cite{obrien2018practical}.
-\end{itemize}
-
-\textbf{Grupo Focal (Ciclo 1 Professores):}
-
-O grupo focal é uma técnica qualitativa para compreender percepções, experiências e significados atribuídos pelos professores ao artefato \cite{gil2021pesquisa}. A sessão é estruturada em dois momentos:
-
-\begin{enumerate}
-    \item \textbf{Apresentação da proposta do projeto e da estrutura da ferramenta:} exposição do Cognitivo, da sua arquitetura, das mecânicas de gamificação e do fluxo pedagógico do Pensamento Computacional;
-    \item \textbf{Testes práticos e validação:} os professores interagem diretamente com a ferramenta, permitindo coletar seus comentários, sugestões e percepções técnicas/educacionais e alinhar as abordagens pedagógicas adotadas.
-\end{enumerate}
-
-\section{Critérios de Inclusão}
+O grupo focal com docentes que lecionam disciplinas da área de Matemática no curso de Bacharelado em Sistemas de Informação possibilita compreender, de forma aprofundada, percepções, experiências e significados
+atribuídos pelos participantes em relação ao fenômeno estudado. A dinâmica com este grupo organiza-se em dois grupos focais complementares:
 
 \begin{itemize}
-    \item Estudantes regularmente matriculados na Universidade para Todos (UPT);
-    \item Professores de matemática com experiência docente no ensino superior;
-    \item Participantes que assinarem o Termo de Consentimento Livre e Esclarecido (TCLE);
-    \item Estudantes com acesso a dispositivo eletrônico com navegador web e conexão à internet.
+    \item Grupo Focal 1: Sessão prática destinada à apresentação guiada do software e à experimentação direta pelos docentes.
+    \item Grupo Focal 2: Sessão de discussão coletiva estruturada para captar percepções, sugestões de melhoria e críticas quanto à acurácia dos conteúdos matemáticos e ao rigor das mecânicas de gamificação.
 \end{itemize}
 
-\section{Critérios de Exclusão}
+Nesta fase, para validar o artefato, utilizaremos
+critérios de avaliação específicos fundamentados em indicadores qualitativos. As
+métricas e dimensões analíticas desses indicadores visam verificar a exatidão e
+a eficiência da solução, com foco na validação dos conteúdos matemáticos,
+verificando se os enunciados, dados e gabaritos mantêm a acurácia e o rigor
+conceitual exigidos e como o sistema trata e processa essas demandas cognitivas
+e se as mecânicas de gamificação foram projetadas de modo a induzir e estimular
+o raciocínio. 
 
-\begin{itemize}
-    \item Estudantes que não assinarem o TCLE;
-    \item Participantes que não completarem a sessão de uso da plataforma ou não responderem aos formulários de avaliação;
-    \item Professores sem vínculo com a disciplina de matemática ou área correlata.
-\end{itemize}
+A  avaliação também ccontempla a usabilidade, aferindo o desempenho da interface com foco nas metas de usabilidade por meio da análise da clareza visual, da facilidade de aprendizado dos comandos, da eficiência na execução das tarefas e da capacidade do sistema de prevenir erros durante a prática. Paralelamente, investiga-se a aplicabilidade, verificando a capacidade do artefato pedagógico de funcionar de maneira efetiva frente às condições, desafios, restrições e dinâmicas reais do contexto escolar e da prática docente.
 
-\section{Metodologia de Análise de Dados}
+\section{Ciclo de validação por alunos}
+Composto por alunos inscritos no programa \gls{upt}
+em preparação para a prova de Matemática do ENEM, o ciclo de validação pelos alunos 
+tem como objetivo aferir se a aplicação do sistema afeta o raciocínio, compreensão, criatividade, atitude e a motivação
+dos alunos, como descrito por \cite{plomp2018pesquisa}.
 
-\subsection{Dados Qualitativos (Ciclo 1 Professores)}
+Nessa etapa serão aplicados os formulários de Método de Amostragem de
+Experiência (\gls{esm}) \ref{sec:esm_form} e \gls{ues}
+\ref{sec:ues_form}. Esses métodos de coleta de dados possibilitam a obtenção de
+informações sobre a experiência e o engajamento dos alunos durante a interação
+com o sistema, permitindo uma avaliação mais abrangente e detalhada dos impactos
+da intervenção proposta.
 
-\begin{itemize}
-    \item \textbf{Técnica:} grupo focal ;
-    \item \textbf{Análise:} análise de conteúdo temática \cite{gil2021pesquisa}, com categorização \textit{a priori} dos indicadores: validação dos conteúdos matemáticos, acurácia dos gabaritos, eficácia das mecânicas de gamificação e adequação pedagógica do fluxo do PC.
-\end{itemize}
+\subsection{Método de Amostragem de Experiência (\texorpdfstring{\acrshort{esm}}{ESM})}
+\label{sec:esm_form}
+O método de amostragem de experiência é utilizado para medir a experiência do
+usuário ao utilizar um sistema, coletando informações durante o uso. É descrito
+por \cite{francisco2020esm}, como investigações que necessitam coletar dados de
+uma experiência que ocorreu com base em um evento específico para entender como
+os participantes interagem com o sistema.
 
-\subsection{Dados Quantitativos (Ciclo 2 Alunos)}
+O uso desse método fundamenta-se na necessidade de garantir a adesão dos
+participantes, pois os usuários são mais dispostos a responder quando o
+questionário é curto, simples, fácil de compreender e responder, não exigindo
+muito esforço mental \cite{francisco2020esm}. A aplicação do método consiste na
+criação do formulário de amostragem da experiência do usuário, utilizando a
+Escala Likert com campos de resposta com \textit{radio buttons}, \textit{checkboxes} e campos
+abertos. 
 
-\begin{itemize}
-    \item \textbf{Instrumentos:} ESM (Escala Likert 5 pontos) e UES (12 itens, 4 dimensões);
-    \item \textbf{Análise:}
-    \begin{itemize}
-        \item Cálculo do Alfa de Cronbach para validar a consistência interna de cada escala;
-        \item Análises fatoriais para verificar a estrutura dimensional dos instrumentos;
-        \item Estatísticas descritivas (média, mediana, desvio-padrão) por dimensão;
-        \item Análise comparativa entre as dimensões de atenção focada, usabilidade percebida, apelo estético e recompensa;
-    \end{itemize}
-\end{itemize}
+De acordo com \cite{francisco2020esm}, a criação do formulário deve considerar a
+possibilidade de resposta em menos de um minuto. A agilidade deve ser garantida
+por meio de campos de resposta rápida. Quando o objetivo for medir o grau de
+concordância com uma afirmação, deve-se preferir o uso de escalas menores, como
+a de 5 pontos, visto que escalas maiores fazem o participante parar para pensar.
+Por outro lado, os campos abertos devem ser evitados ou minimizados ao máximo,
+pois podem tornar a entrada de dados cansativa.
 
-\section{Tamanho da Amostra}
+Segundo \cite{francisco2020esm} o sucesso da coleta depende de uma
+configuração técnica voltada para o imediatismo da emoção sentida no jogo.
+Estabelecer esse limite máximo de tempo para o preenchimento é essencial a fim
+de garantir que o dado coletado reflita a experiência do momento e não após a
+sua ocorrência.
 
-\begin{itemize}
-    \item \textbf{Ciclo 1 (Professores):} grupo focal com professores de matemática do curso de Sistemas de Informação da UNEB 
-    \item \textbf{Ciclo 2 (Alunos):} estudantes regularmente matriculados na Universidade para Todos (UPT) que voluntariamente participarem dos testes de uso da plataforma. A amostra será por conveniência, com adesão voluntária após assinatura do TCLE.
-\end{itemize}
+O questionário, disponível no apêndice \ref{ap:forms-esm}, foi projetado para
+capturar dados subjetivos dos estudantes após a utilização do artefato, sendo
+segmentado em três macrodimensões teóricas. As dimensões avaliadas compreenderam
+imersão e foco, destinada a mensurar a concentração durante o ciclo de resolução
+de problemas e verificar se o equilíbrio entre os desafios matemáticos e o
+sistema de dicas foi capaz de promover o engajamento, e uso do sistema
+(usabilidade e interface), voltada à análise da clareza das regras da
+plataforma, da facilidade de utilização da interface e da qualidade das dicas
+fornecidas pelo motor do sistema em resposta às ações do usuário.
 
-\section{Detalhamento do Uso de Dados Secundários}
+Por fim, a terceira dimensão aborda o \gls{pc} e a utilidade percebida. Esta seção
+estabelece um paralelo entre a experiência na plataforma e a resolução
+convencional de exercícios em caderno. Os itens avaliam se o fluxo principal
+guiou o estudante a exercitar os quatro pilares do \gls{pc}. Logo, aferindo a retenção
+percebida pelo aluno.
 
-Conforme definição da Resolução CNS 466/12 e da cartilha do CEP/UNEB, dados secundários são aqueles obtidos em fontes que não foram coletados diretamente pelo pesquisador com os participantes, incluindo arquivos publicados e não publicados.
 
-\subsection{Dados Secundários Utilizados no Projeto}
+\subsection{Escala de Engajamento do Usuário (\texorpdfstring{\acrshort{ues}}{UES})}
+\label{sec:ues_form}
+A escala de engajamento do usuário é o critério para medição do engajamento e é
+dividida em dimensões, descrita por \cite{obrien2018practical}, que estabelece o
+instrumento de medição composto por doze questões e quatro dimensões
+estruturais: Atenção Focada, Usabilidade Percebida, Apelo Estético e Recompensa.
 
-O projeto utiliza \textbf{dados secundários} por meio do pipeline ETL:
-\begin{itemize}
-    \item \textbf{Fonte:} API ENEM DEV (\url{https://enem.dev/}), hospedada em instância \textit{self-hosted};
-    \item \textbf{Dados coletados:} questões de matemática do ENEM, incluindo enunciados, alternativas, gabaritos e metadados;
-\end{itemize}
+Segundo \cite{obrien2018practical} a atenção focada reflete estado em que o
+indivíduo se sente pela experiência interativa. A usabilidade percebida envolve
+a relação entre o nível de controle percebido e o esforço necessário para o
+usuário realizar sua tarefa. O apelo estético avalia o nível de atratividade e
+o apelo visual proporcionados pela interface. A dimensão referente a recompensa,
+caracteriza-se pelos aspectos do resultado experiencial, consolidando sucesso
+geral da interação e a disposição do usuário em recomendar o sistema
+(durabilidade), o interesse e a curiosidade despertados durante o uso
+(novidade), além da sensação lúdica de ter se divertido e sido atraído pela
+experiência (envolvimento sentido) \cite{obrien2018practical}.
 
-\subsection{Processo de Extração e Tratamento}
+Conforme \cite{obrien2018practical}, durante a aplicação do instrumento de
+avaliação, o participante deve refletir acerca de sua experiência interativa com
+o sistema e indicar seu nível de concordância para cada afirmação. Nesse
+sentido, no formulário é usada a Escala de Likert como instrumento de medição do
+nível de concordância das respostas. Nessa avaliação, o participante deve
+refletir sobre a sua experiência com o sistema e selecionar um valor que varia
+de 1 (Discordo Totalmente) até 5 (Concordo Totalmente) para cada item.
 
-\begin{itemize}
-    \item \textbf{Extração:} requisições síncronas (biblioteca \textit{requests}) para consultas pontuais e assíncronas (biblioteca \textit{httpx}) para coleta massiva em lote;
-    \item \textbf{Transformação:}
-    \begin{itemize}
-        \item Normalização com Pandas (estruturação em tabelas, limpeza de caracteres corrompidos);
-        \item Validação com Pydantic (garantia de integridade dos dados);
-        \item Enriquecimento: mapeamento de cada questão aos quatro pilares do PC (decomposição, abstração, reconhecimento de padrões e algoritmos);
-    \end{itemize}
-    \item \textbf{Armazenamento:} PostgreSQL (área de \textit{staging} para rastreamento e integridade).
-\end{itemize}
+O formulário, disponível no apêndice \ref{ap:forms-ues}, é composto por doze itens obrigatórios estruturados em escala
+Likert de 5 pontos, variando de 1 (Discordo totalmente) a 5 (Concordo
+totalmente), cuja relevância metodológica reside no uso de códigos de
+identificação padronizados para cada item (como FA-S, PU-S, AE-S e RW-S),
+viabilizando a posterior aplicação de técnicas estatísticas avançadas, incluindo
+o cálculo do Alfa de Cronbach e análises fatoriais para validar a consistência
+interna das respostas obtidas. Essa estrutura organiza-se em quatro seções
+fundamentais que mapeiam as dimensões multidimensionais do engajamento.
 
-\subsection{Dados Primários Coletados na Pesquisa}
+A Seção 1, referente a Atenção e Imersão (FA-S), é dedicada a mensurar o foco e
+atenção por meio do nível de absorção e da percepção temporal gerados pelas
+mecânicas lúdicas. O objetivo deste bloco é avaliar se a plataforma conseguiu
+reter o estudante. A Seção 2, que aborda a Usabilidade Percebida (PU-S), foca no
+esforço de interação. A Seção 3, focada no Apelo Visual e Estético (AE-S),
+avalia a atratividade da interface como um fator de motivação. Essa dimensão
+investiga o quanto o apelo estético e o design visual agradável do sistema atuam
+de forma favorável na experiência do usuário ao longo das sessões de estudo.
 
-Além dos dados secundários, a pesquisa coleta \textbf{dados primários} diretamente com os participantes:
-\begin{itemize}
-    \item \textbf{Formulários ESM e UES:} aplicados imediatamente após a interação dos alunos com a plataforma (coleta de dados diretamente com o participante);
-    \item \textbf{Grupo focal com professores:} sessão de coleta de dados qualitativos diretamente com os docentes.
-\end{itemize}
+Por fim, o instrumento é encerrado pela Seção 4, destinada a Recompensa e Valor
+da Experiência (RW-S), que investiga o benefício percebido e a satisfação do
+estudante com os elementos de gamificação.

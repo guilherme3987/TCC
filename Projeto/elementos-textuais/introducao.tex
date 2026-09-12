@@ -1,11 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                         INTRODUCAO                                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Introdução}
+\label{ch:introducao}
+O \gls{enem} é uma prova aplicada anualmente no
+Brasil que tem como objetivo avaliar o desempenho dos estudantes ao final da
+educação básica \cite{brasil2026enem}, abrangendo quatro áreas do conhecimento: 
+Linguagens e Códigos, Ciências Humanas, Ciências da Natureza e Matemática, além
+da redação do tipo dissertativo-argumentativa. Com a nota obtida, os estudantes
+podem concorrer a vagas em universidades públicas e privadas, financiar os
+estudos e buscar oportunidades em universidades internacionais, o que torna o
+exame uma das principais formas de acesso ao ensino superior e um dos
+momentos mais importantes da trajetória escolar de muitos jovens no país.
 
-O Exame Nacional do Ensino Médio (ENEM) é a principal via de acesso ao ensino superior no Brasil, avaliando estudantes ao final da educação básica em quatro áreas do conhecimento: Linguagens e Códigos, Ciências Humanas, Ciências da Natureza e Matemática, além da redação. Os dados do ENEM 2024 revelam que, embora a média geral tenha subido de 543 para 546 pontos, a área de Matemática e suas Tecnologias caiu de 535 para 529 pontos, evidenciando uma dificuldade persistente dos estudantes nessa disciplina \cite{inep2025enem}.
+A matriz de referência do \gls{enem} exige que o estudante compreenda e use os
+sistemas simbólicos das diferentes linguagens como meios de organização
+cognitiva da realidade para constituição de significados, expressões,
+comunicação, seleção, organização, relação e interpretação de dados
+e informações apresentados de diversas formas para tomar decisões e lidar com
+problemas \cite{matriz_enem}. É destacado por \cite{piton2018analise} que os
+estudantes apresentam dificuldades significativas na resolução de itens que
+exigem interpretação de enunciados e aplicação de conceitos matemáticos de forma
+contextualizada.
 
-A matriz de referência do ENEM exige que o estudante compreenda e utilize sistemas simbólicos para organização cognitiva da realidade, interpretação de dados e tomada de decisões \cite{matriz_enem}. Pesquisas indicam que as dificuldades não derivam apenas de lacunas de conhecimento, mas de esquemas cognitivos inadequados, baixa compreensão dos enunciados e desengajamento \cite{piton2018analise,soares2026diferencas}.
+De acordo com \cite{soares2026diferencas}, a dificuldade na disciplina de matemática 
+não é determinada apenas pelo conteúdo, mas por uma combinação de fatores como a
+formulação dos enunciados, o grau de contextualização, a complexidade
+linguística, o tipo de representação mobilizada e o número de operações
+cognitivas exigidas para resolver a questão.
 
-Diante disso, o Pensamento Computacional (PC) surge como habilidade analítica fundamental, descrita por \citeonline{wing2006} como tão indispensável quanto a leitura, a escrita e a aritmética, ao promover decomposição de problemas, reconhecimento de padrões, abstração e elaboração de algoritmos.
+Segundo \cite{jesus2026ensino}, é necessário que os alunos sejam expostos a
+experiências que os desafiem intelectualmente, a tarefas cognitivamente
+desafiadoras, implementando metodologias voltadas para a resolução de problemas
+e para a construção ativa de significados. O uso de tarefas abertas e
+investigativas pode contribuir de forma direta para a redução de erros
+conceituais e para o fortalecimento da autorregulação e engajamento dos
+estudantes durante o processo de aprendizagem.
 
-A Base Nacional Comum Curricular (BNCC) \cite{brasil2017} e a BNCC Computação \cite{brasil_bncc_computacao} estabelecem o PC como dimensão essencial para lidar com as tecnologias na sociedade contemporânea. Paralelamente, os elementos de gamificação -- pontos, insígnias e \textit{leaderboards} (PBL) -- podem elevar o engajamento comportamental e cognitivo dos estudantes \cite{silpasuwanchai2016developing}.
+Essas dificuldades destacadas pelos autores citados representam um desafio para a
+educação básica, uma vez que a Matemática desempenha papel fundamental no
+desenvolvimento de competências relacionadas à análise e resolução
+de problemas. Além disso, o baixo desempenho nessa área pode impactar
+diretamente o acesso dos estudantes ao ensino superior, considerando a
+importância da nota do \gls{enem} nos processos seletivos de universidades. 
 
-Este trabalho apresenta o \textbf{Cognitivo}, um software gamificado fundamentado nos quatro pilares do PC, projetado para aumentar o engajamento de estudantes em preparação para a prova de matemática do ENEM.
+Esse cenário torna-se ainda mais desafiador na sociedade atual, moldada por
+inovações tecnológicas que transformam os ambientes de aprendizagem, comunicação
+e interação social. Essa realidade ressalta o papel da tecnologia para apoiar o
+ensino de Matemática, incentivando a investigação de abordagens que contribuam
+para o desenvolvimento de habilidades analíticas voltadas à resolução de
+problemas, destacado o \gls{pc}, definido por \cite{wing2006} como uma habilidade analítica 
+essencial para todos os indivíduos na sociedade moderna, não sendo um conhecimento restrito aos cientistas da
+computação. Essa perspectiva foca em estratégias de decomposição de problemas,
+reconhecimento de padrões, abstração e elaboração de algoritmos como ferramentas
+para o desenvolvimento do raciocínio lógico e da capacidade de solucionar
+desafios em diferentes áreas do conhecimento.
+
+No Brasil, a \gls{bncc} é a diretriz normativa que define as aprendizagens essenciais para o
+ensino estruturado da tecnologia na Educação Básica, com foco na garantia da
+educação integral e no desenvolvimento de habilidades, atitudes e valores para
+resolver demandas da vida cotidiana, do mundo do trabalho e do exercício da
+cidadania, visando a construção de uma sociedade democrática e inclusiva. O \gls{pc} é
+apresentado como uma dimensão fundamental para lidar com as tecnologias na
+sociedade contemporânea, ao lado do mundo digital e da cultura digital 
+\cite{brasil2017}.
+
+O contexto apresentado a necessidade de uma investigação sobre
+compreender de que maneira um \textit{software} gamificado, fundamentado no conceito do \gls{pc}, pode melhorar
+o engajamento dos estudantes durante o processo de preparação para a prova de
+matemática do \gls{enem}. Define-se como objetivo geral conceber e avaliar o sistema.
+A execução desse objetivo é direcionada por um conjunto de objetivos
+específicos, iniciando pelo mapeamento das principais competências matemáticas
+das questões do \gls{enem} e de como o \gls{pc} é desenvolvido. Na sequência, busca-se
+conceber e testar o sistema gamificado para operacionalizar a abstração,
+decomposição, reconhecimento de padrões e algoritmos no contexto dessas
+questões, seguido pela validação do artefato educacional com professores de
+matemática. Por fim, consolida-se a investigação ao avaliar a experiência e o engajamento dos
+estudantes. Logo, a presença de seres humanos é fundamental, uma vez que o conhecimento almejado não pode ser adquirido por outros meios, assumindo-se o compromisso ético de preservar a dignidade e a autonomia dos envolvidos em todas as etapas do estudo.
