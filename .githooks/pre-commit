@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Git pre-commit hook: comprime os PDFs antes do commit e
+# re-adiciona os arquivos comprimidos ao índice.
+#
+# Instalação (uma vez): git config core.hooksPath .githooks
+
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+# Ignora o hook se não houver Ghostscript instalado
+command -v gs >/dev/null 2>&1 || { echo "pre-commit: gs não encontrado, pulando compressão de PDFs"; exit 0; }
+
+./scripts/compress_pdfs.sh
+
+# Re-adiciona os PDFs comprimidos ao índice
+git add "$(git ls-files '*.pdf')" 2>/dev/null || true
