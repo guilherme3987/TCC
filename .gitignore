@@ -1,0 +1,50 @@
+# =====================
+# Artefatos de compilação LaTeX
+# =====================
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.loq
+*.nav
+*.out
+*.pdf
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+texput.log
+
+# Diretórios temporários de ferramentas LaTeX
+_minted-*/
+__latexindent_temp.tex
+*.synctex(busy)
+
+# =====================
+# Pacotes e arquivos zip
+# =====================
+*.zip
+*.tar
+*.gz
+*.7z
+
+# =====================
+# Sistemas operacionais / editores
+# =====================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
