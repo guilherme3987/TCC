@@ -89,3 +89,33 @@
 
 % Gera o Indice do documento
 \makeindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       Ambiente de QUADRO                          %%
+%%                                                                   %%
+%% Conforme a ABNT, o quadro é utilizado para apresentar conteúdos    %%
+%% textuais, esquemas e sínteses, enquanto a tabela é reservada a     %%
+%% dados numéricos e estatísticos. O contador 'quadro' (sem reset por %%
+%% capítulo), a lista de quadros (\listofquadros / arquivo .loq) e o  %%
+%% comando \imprimirlistadequadros já são definidos em                %%
+%% lib/uecetex2.sty; por isso, o \newfloat abaixo apenas cria o       %%
+%% ambiente flutuante, reaproveitando essa infraestrutura.            %%
+%%                                                                   %%
+%% Uso:                                                              %%
+%%   \begin{quadro}[H]                                               %%
+%%       \caption{Título do quadro}                                  %%
+%%       \label{qua:identificador}                                   %%
+%%       \begin{tabular}{...} ... \end{tabular}                     %%
+%%       \fonte{Elaborado pelo autor (2026).}                        %%
+%%   \end{quadro}                                                    %%
+%%                                                                   %%
+%% Referência no texto: "O Quadro \ref{qua:identificador} ..."       %%
+%% A legenda segue o padrão ABNT já configurado no documento         %%
+%% ("Quadro 1 – Título do quadro").                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Legenda acima do quadro (estilo 'plaintop') e fonte abaixo, conforme a
+%% ABNT; ao final, o estilo padrão do pacote float ('plain') é restaurado.
+\floatstyle{plaintop}
+\newfloat{quadro}{htbp}{loq}
+\floatname{quadro}{\quadroname}
+\floatstyle{plain}

@@ -100,15 +100,16 @@
 	%\imprimirepigrafe{elementos-pre-textuais/epigrafe}
 	%\imprimirresumo{elementos-pre-textuais/resumo}
 	%\imprimirabstract{elementos-pre-textuais/abstract}
-	\imprimirlistadeilustracoes
+	%\imprimirlistadeilustracoes % [ALTERADO: removido porque o documento deixou de ter figuras após a retirada do fluxo DBR]
 	\imprimirlistadequadros
 	\imprimirlistadeabreviaturasesiglas	
 	\imprimirsumario
 	
 	%Elementos textuais
 	\textual
-	\input{elementos-textuais/introducao}
+	% [ALTERADO: o RESUMO passou a vir antes da INTRODUÇÃO, conforme correção da orientadora]
 	\input{elementos-textuais/resumo}
+	\input{elementos-textuais/introducao}
 	\input{elementos-textuais/hipotese}
 	\input{elementos-textuais/objetivos}
 	\input{elementos-textuais/metodologia}
