@@ -1,0 +1,13 @@
+\documentclass[
+    a4paper, 12pt, chapter=TITLE, section=TITLE, oneside,
+    english, spanish, brazil
+]{abntex2}
+\input{lib/preambulo}
+\newacronym{esm}{ESM}{\textit{Experience Sampling Method}}
+\newacronym{ues}{UES}{\textit{User Engagement Scale}}
+\begin{document}
+\apendice{\texorpdfstring{\gls{esm}}{ESM}}
+\includepdf[pages=1-4, pagecommand={\thispagestyle{abntheadings}}]{figuras/Experiencia_Usuario/avaliacao-experiencia-usuario.pdf}
+\apendice{\texorpdfstring{\gls{ues}}{UES}}
+Fim do teste t4.
+\end{document}

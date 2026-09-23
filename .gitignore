@@ -48,3 +48,8 @@ Desktop.ini
 *.swo
 .vscode/
 .idea/
+
+# =====================
+# Exceções: instrumentos aplicados incluídos como apêndices
+# =====================
+!Projeto/figuras/Experiencia_Usuario/avaliacao-experiencia-usuario.pdf
