@@ -378,6 +378,54 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
 
 \end{table}
 
+\subsection{Banco de dados}
+\label{sec:banco-de-dados}
+
+O banco de dados do Cognitivo foi projetado para dar suporte a uma plataforma
+de aprendizagem focada em Pensamento Computacional (PC). Ele gerencia a
+progressão dos usuários pelas ligas, registra as sessões de estudo e armazena
+questões com diferentes atributos de classificação. A solução utiliza o
+\textit{MySQL} com o mecanismo \textit{InnoDB}, que assegura a integridade
+referencial por meio de chaves estrangeiras.
+
+O modelo organiza-se em domínios funcionais. No núcleo estão as entidades
+\textit{User}, que centraliza o perfil, os pontos de PC acumulados e a liga
+atual do usuário; \textit{Study\_Session}, que reúne as atividades realizadas
+em um período e conecta o usuário às tentativas de resposta; e
+\textit{Question}, que armazena os enunciados e as respostas corretas. O domínio
+de suporte e classificação é composto por \textit{League}, que define as faixas
+de pontuação das ligas, e \textit{PC\_Atributes}, que registra os pilares do PC:
+Decomposição, Abstração, Padrões e Algoritmos. A associação
+\textit{Question\_has\_PC\_Atributes} representa o relacionamento muitos-para-muitos
+entre questões e atributos, permitindo que uma questão avalie mais de um pilar.
+
+Para representar os detalhes do conteúdo, \textit{Question\_Alternatives}
+armazena as opções de resposta, \textit{Question\_image} mantém os caminhos das
+imagens associadas às questões e \textit{Question\_Hint} registra as dicas e a
+penalidade (\textit{punish}) aplicada ao utilizá-las. O histórico de interações
+é mantido por \textit{Question\_Attempt}, que registra acertos e erros, a
+experiência obtida e o tempo de resposta, e por
+\textit{Question\_Hint\_Used}, que identifica as dicas consumidas em cada
+sessão, apoiando a auditoria da pontuação.
+
+Os relacionamentos organizam o fluxo entre usuários, sessões e desempenho:
+cada usuário pertence a uma liga (muitos-para-um), pode realizar várias
+sessões (um-para-muitos), e cada sessão pode conter várias tentativas de
+resolução e vários registros de uso de dicas (um-para-muitos). No domínio do
+conteúdo, uma questão pode possuir várias alternativas, imagens e dicas, além
+de estar relacionada a várias tentativas registradas por diferentes usuários
+em sessões distintas. Uma dica pode, por sua vez, aparecer em vários registros
+de uso, enquanto a associação entre questões e atributos do PC permanece
+muitos-para-muitos por meio de \textit{Question\_has\_PC\_Atributes}.
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Modelo relacional do banco de dados do Cognitivo}
+    \label{fig:modelo-banco-dados}
+    \includegraphics[width=\textwidth]{figuras/database.png}
+    \fonte{Elaborado pelo autor (2026).}
+\end{figure}
+
 \subsection{Design}
 O design da aplicação é fundamentado em princípios de usabilidade,
 acessibilidade e engajamento, visando proporcionar uma experiência intuitiva e
@@ -442,41 +490,23 @@ o nível de experiência e engajamento dos alunos, utilizando os formulários de
 de Experiência (\gls{esm}) e \gls{ues}.
 
 \subsection{Ciclo de validação por professores}
-O processo de avaliação por parte dos professores é fundamental para validar a
-viabilidade, a aplicabilidade e a relevância do sistema desenvolvido, garantindo
-que o artefato pedagógico atenda às necessidades educacionais e seja eficaz na
-promoção do aprendizado.
+O processo de avaliação por parte dos professores é fundamental para validar a viabilidade, a aplicabilidade e a relevância do sistema desenvolvido, garantindo que o artefato pedagógico atenda às necessidades educacionais e seja eficaz na promoção do aprendizado. A sessão foi realizada em ambiente virtual (on-line), formato que viabiliza a comunicação síncrona em tempo real, elimina barreiras geográficas e propicia maior espontaneidade nas interações \cite{abreu2009}. Seguindo o procedimento metodológico para grupos focais virtuais, a atividade iniciou-se com uma demonstração dirigida do sistema, na qual o moderador apresentou os objetivos e o funcionamento da plataforma para alinhar o entendimento dos participantes \cite{abreu2009}.
 
-Para realizar a validação com os professores, será utilizado um grupo focal. Essa técnica possibilita
-compreender, de forma aprofundada, percepções, experiências e significados
-atribuídos pelos participantes em relação ao fenômeno estudado. Por se tratar de
-uma abordagem qualitativa, o grupo focal permite captar nuances, contradições e
-consensos construídos coletivamente, oferecendo uma compreensão mais ampla e
-interpretativa do problema investigado. O planejamento do grupo focal é uma das
-estratégias mais estruturadas entre as variadas abordagens empregadas na coleta
-de dados em pesquisas qualitativas, exigindo decisões rigorosas do pesquisador.
-Os participantes devem estar em consonância com os objetivos da pesquisa
-\cite{gil2021pesquisa}.
+Para a condução desta etapa, utilizou-se a técnica de grupo focal, que possibilita compreender, de forma aprofundada, as percepções, experiências e significados atribuídos pelos participantes ao fenômeno estudado. Por se tratar de uma abordagem qualitativa, o grupo focal permite captar nuances, contradições e consensos construídos coletivamente, oferecendo uma compreensão interpretativa mais ampla do problema investigado. O planejamento desta técnica é rigoroso, exigindo a seleção de participantes cujos perfis estejam em consonância com os objetivos da pesquisa \cite{gil2021pesquisa}.
 
-A validação com professores de matemática do curso de Sistemas de Informação
-foca nas percepções para que as intervenções educacionais ultrapassem a
-idealização teórica, e para que sua aplicabilidade e sua capacidade de
-sobreviver e funcionar de maneira efetiva frente às condições, desafios e
-restrições reais do contexto educacional e do "chão da escola" sejam verificadas
-\cite{plomp2018pesquisa}. Nesta fase, para validar o artefato, utilizaremos
-critérios de avaliação específicos fundamentados em indicadores qualitativos. As
-métricas e dimensões analíticas desses indicadores visam verificar a exatidão e
-a eficiência da solução, com foco na validação dos conteúdos matemáticos,
-verificando se os enunciados, dados e gabaritos mantêm a acurácia e o rigor
-conceitual exigidos e como o sistema trata e processa essas demandas cognitivas
-e se as mecânicas de gamificação foram projetadas de modo a induzir e estimular
-o raciocínio. 
+A validação contou com a participação de professores de matemática do curso de Sistemas de Informação, cuja expertise técnica e pedagógica qualifica as percepções coletadas. O objetivo foi garantir que as intervenções educacionais ultrapassassem a idealização teórica, verificando a capacidade do sistema de operar efetivamente diante dos desafios e restrições reais do contexto educacional \cite{plomp2018pesquisa}. Para tanto, foram empregados critérios de avaliação fundamentados em indicadores qualitativos, com foco na exatidão dos conteúdos matemáticos (enunciados, dados e gabaritos), na eficiência do processamento das demandas cognitivas e na capacidade das mecânicas de gamificação em estimular o raciocínio.
+
+Após a apresentação, as discussões ocorreram de forma livre e interativa, resultando em percepções relevantes sobre a usabilidade e aplicabilidade do artefato. Paralelamente, foram evidenciados aspectos positivos da solução, como o papel do erro como elemento de reforço no processo de aprendizagem, incentivando o estudante a refazer os passos e analisar criticamente a resolução. Observou-se que as mecânicas de gamificação implementadas, especificamente a fragmentação da questão em níveis, a penalização de \gls{xp} por erros recorrentes e o custo estratégico associado ao uso excessivo de auxílios, forçam o usuário a um processo de autorreflexão sobre o erro. Os participantes também destacaram a importância de se aplicar rigorosamente os conceitos de abstração, decomposição e reconhecimento de padrões, bem como a necessidade de estruturar a sequência lógica das soluções.
+
+No que tange às melhorias, destacaram-se a necessidade de aprimorar a interação com o sistema, a reestruturação da etapa de abstração para foco nos pontos centrais do problema e o refinamento da decomposição para uma fragmentação mais analítica da problemática. Adicionalmente, sugeriu-se a implementação de mecânicas de passos sequenciais nas fases de decomposição e algoritmo para melhor estruturação do raciocínio lógico do estudante, bem como a criação de um folhetim de uso do sistema, contendo um passo a passo para guiar o usuário durante a interação com a plataforma. Outro ponto de aprimoramento reside na possibilidade de implementar mecanismos de orientação direcionada, que priorizem as fases com maior índice de erro em detrimento daquelas com maior taxa de acerto nas sessões, compelindo o usuário a aprimorar seu desempenho nas etapas de maior dificuldade.
+
+Ficou evidente a necessidade de aprimorar a interação com o sistema, a reestruturação da etapa de abstração para foco nos pontos centrais do problema e o refinamento da decomposição para uma fragmentação mais analítica da problemática. Adicionalmente, sugeriu-se a implementação de mecânicas de passos sequenciais nas fases de decomposição e algoritmo para melhor estruturação do raciocínio lógico do estudante, bem como a criação de um folhetim de uso do sistema, contendo um passo a passo para guiar o usuário durante a interação com a plataforma. Outro ponto de aprimoramento reside na possibilidade de implementar mecanismos de orientação direcionada, que priorizem as fases com maior índice de erro em detrimento daquelas com maior taxa de acerto nas sessões, compelindo o usuário a aprimorar seu desempenho nas etapas de maior dificuldade.
+
 
 \subsection{Ciclo de validação por alunos}
 O ciclo de validação pelos alunos tem como objetivo aferir se o produto
-resultou nos impactos e nas consequências de aprendizagem desejados e como a
-intervenção afeta o raciocínio, compreensão, criatividade, atitude e a motivação
-dos alunos, como descrito por \cite{plomp2018pesquisa}.
+resultou nos impactos e nas consequências de engajamento dos alunos na disciplina
+de matemática.
 
 Nessa etapa serão aplicados os formulários de Método de Amostragem de
 Experiência (\gls{esm}) \ref{sec:esm_form} e \gls{ues}

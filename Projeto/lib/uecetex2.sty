@@ -632,6 +632,63 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           Contracapa              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% A ABNT NBR 14724:2024 nao define "contracapa" como elemento da parte
+% externa (que compreende apenas capa e lombada). Adota-se aqui a
+% disposicao padrao ABNT da folha de rosto (secao 4.2.1.1.1), com os
+% dados de identificacao na ordem aliestablecida:
+%   a) nome do autor; b) titulo; c) subtitulo; d) volume;
+%   e) natureza; f) orientador; g) local; h) ano de deposito.
+\newcommand{\imprimircapacontratcc}{%
+	\begin{capa}%
+		\center
+
+		\MakeUppercase{\imprimirautor}\par
+
+		\vspace{6.5cm}
+
+		\MakeUppercase{\imprimirtitulo}\par
+
+		\vspace{2.5cm}
+
+		%Retira o espaco do paragrafo
+		\hspace*{-2cm}%
+		%Adiciona o espaco da margem
+		\hspace*{8cm}%
+		\begin{minipage}{8cm}
+			\begin{SingleSpace}
+				Projeto de pesquisa a ser submetido ao Comit\^e de \'Etica em
+				Pesquisa (CEP).
+				\newline
+				\newline
+				\artigoorientador: \ignorespaces\imprimirorientador
+				\abntex@ifnotempty{\imprimircoorientador}{
+					\newline
+					\artigocoorientador: \ignorespaces\imprimircoorientador
+				}
+			\end{SingleSpace}
+		\end{minipage}
+
+		\vfill
+		\centering
+		\normalsize\MakeUppercase\imprimirlocal \par
+		\normalsize\imprimirdata
+	\end{capa}
+}
+
+\newcommand{\imprimircontracapa}{%
+	\ifthenelse{\boolean{uecetex2@ehdissertacao}}{ %
+	}{
+		\ifthenelse{\boolean{uecetex2@ehtese}}{ %
+		}{
+			\imprimircapacontratcc
+		}
+	}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%           Folha de Rosto            %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

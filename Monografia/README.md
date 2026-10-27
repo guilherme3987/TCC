@@ -56,7 +56,7 @@ A integração sistemática dos quatro pilares do Pensamento Computacional (deco
 - Projetar a arquitetura do sistema com separação de responsabilidades (Plataforma Educacional Gamificada e Módulo ETL).
 - Conceber e validar diagramas de caso de uso e fluxo de navegabilidade da plataforma.
 - Implementar mecânicas de gamificação (XP Geral, XP de Atributo, insígnias, ligas, matriz de penalidades e custo estratégico de dicas).
-- Validar o artefato educacional com professores de matemática por meio de grupo focal (Ciclo 1).
+- Validar o artefato educacional com professores de matemática por meio de grupo focal (Ciclo 1), incluindo a sugestão de criação de um folhetim de uso do sistema com passo a passo para guiar o usuário.
 - Validar o sistema com alunos da UNEB, aplicando os formulários ESM e UES (Ciclo 2).
 
 ---
