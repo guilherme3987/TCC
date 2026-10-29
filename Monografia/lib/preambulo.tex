@@ -56,8 +56,39 @@
 \usepackage{etoolbox}                               % Usado para alterar a fonte da Section no Sumário
 \usepackage[nogroupskip,nonumberlist,acronym]{glossaries}                % Permite fazer o glossario
 \usepackage{caption}                                % Altera o comportamento da tag caption
-\usepackage[alf, abnt-emphasize=bf, bibjustif, recuo=0cm, abnt-etal-cite=2, abnt-etal-list=0]{abntex2cite}  % Citações padrão ABNT
-%\usepackage[bottom]{footmisc}                      % Mantém as notas de rodapé sempre na mesma posição
+\usepackage[style=abnt, backend=biber]{biblatex}
+\addbibresource{elementos-pos-textuais/referencias.bib}
+\ExecuteBibliographyOptions{giveninits=true}
+
+% Forçar a remoção de caixa alta (UPPERCASE) nas citações ABNT do biblatex
+\DeclareFieldFormat{citeauthor}{\mkbibname{#1}}
+\DeclareFieldFormat{citeauthor-rev}{\mkbibname{#1}}
+
+% Nome do autor em citações no texto: apenas a primeira letra maiúscula
+% (ex: (Silva, 2024)), conforme novo padrão. A lista de referências não é afetada.
+\renewcommand*{\mkbibnamefamily}[1]{\MakeSentenceCase{#1}}
+
+% Customização para garantir (Silva, 2024)
+\DeclareCiteCommand{\citep}
+  {\usebibmacro{prenote}\printtext[parens]{%
+     \usebibmacro{citeindex}%
+     \printnames{author}%
+     \setunit{\addcomma\space}%
+     \printfield{year}}}
+  {\usebibmacro{postnote}}
+  {\usebibmacro{citeindex}}
+
+\DeclareCiteCommand{\citet}
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printnames{author}%
+   \setunit{\addspace}%
+   \printtext[parens]{\printfield{year}}}
+  {\usebibmacro{postnote}}
+  {\usebibmacro{citeindex}}
+
+% compatibilidade: abntex2cite definia \citeonline; no biblatex o equivalente \`e \textcite
+\let\citeonline\textcite
 %\usepackage{times}                                 % Usa a fonte Times
 \usepackage{mathptmx}                               % Usa a fonte Times New Roman										
 %\usepackage{lmodern}                               % Usa a fonte Latin Modern
