@@ -1,0 +1,1297 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{abreu2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=eafa4988126f55efb96584b423d1e88e}{%
+           family={Abreu},
+           familyi={A\bibinitperiod},
+           given={Nelsio},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4424f1120b6e7d372a62c7204826071}{%
+           family={Baldanza},
+           familyi={B\bibinitperiod},
+           given={Renata},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2c1517841d308e59241e09c09d9b171}{%
+           family={Guedes-Gondim},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Sonia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \strng{fullhash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \strng{bibnamehash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \strng{authorbibnamehash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \strng{authornamehash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \strng{authorfullhash}{3a144f1b7869bfadd2431ec2e482e8b0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1807-1775}
+      \field{journaltitle}{JISTEM - Journal of Information Systems and Technology Management}
+      \field{number}{1}
+      \field{title}{Os Grupos Focais On-Line: das Reflexões Conceituais à Aplicação em Ambiente Virtual}
+      \field{volume}{6}
+      \field{year}{2009}
+      \field{pages}{5\bibrangedash 24}
+      \range{pages}{20}
+    \endentry
+    \entry{brasil2017}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=365eeb52e11cf8dfb21214c2ceb63b5a}{%
+           family={{BNCC}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \list{publisher}{1}{%
+        {MEC/SEB}%
+      }
+      \strng{namehash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \strng{fullhash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \strng{bibnamehash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \strng{authorbibnamehash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \strng{authornamehash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \strng{authorfullhash}{365eeb52e11cf8dfb21214c2ceb63b5a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Base Nacional Comum Curricular}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://basenacionalcomum.mec.gov.br/
+      \endverb
+      \verb{url}
+      \verb http://basenacionalcomum.mec.gov.br/
+      \endverb
+      \warn{\item manual entry 'brasil2017' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brasil_bncc_computacao}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01ac4350a33749cf370519a93c7af70f}{%
+           family={{BNCC Computação}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Brasília, DF]}%
+      }
+      \list{publisher}{1}{%
+        {Ministério da Educação}%
+      }
+      \strng{namehash}{01ac4350a33749cf370519a93c7af70f}
+      \strng{fullhash}{01ac4350a33749cf370519a93c7af70f}
+      \strng{bibnamehash}{01ac4350a33749cf370519a93c7af70f}
+      \strng{authorbibnamehash}{01ac4350a33749cf370519a93c7af70f}
+      \strng{authornamehash}{01ac4350a33749cf370519a93c7af70f}
+      \strng{authorfullhash}{01ac4350a33749cf370519a93c7af70f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Base Nacional Comum Curricular: Computação}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.gov.br/mec/pt-br/escolas-conectadas/arquivos/BNCCComputaoCompletodiagramado.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/mec/pt-br/escolas-conectadas/arquivos/BNCCComputaoCompletodiagramado.pdf
+      \endverb
+      \warn{\item misc entry 'brasil_bncc_computacao' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{computacional2026}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ae08ed3fc57eed301e596f3ff546e90}{%
+           family={{Brackmann}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \strng{namehash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \strng{fullhash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \strng{bibnamehash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \strng{authorbibnamehash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \strng{authornamehash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \strng{authorfullhash}{8ae08ed3fc57eed301e596f3ff546e90}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Educação básica}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://www.computacional.com.br/educacao-basica
+      \endverb
+      \verb{url}
+      \verb https://www.computacional.com.br/educacao-basica
+      \endverb
+      \warn{\item misc entry 'computacional2026' (elementos-pos-textuais/referencias.bib): Invalid format '6 jul. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brackmann2016computational}{inproceedings}{}
+      \name{author}{5}{ul=1}{%
+        {{un=0,uniquepart=base,hash=fef9f03899620ec8d36a0a0a8fdd13c8}{%
+           family={Brackmann},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be2c3dea29f6813ba3b3eb05ccc37f0f}{%
+           family={Barone},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4c9d9753daff9f305c4ec9d5e2a63d2}{%
+           family={Casali},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44809e9004523a9b65787f3ea24194bd}{%
+           family={Boucinha},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=688ec44b5c3ab28350fbef90cf175175}{%
+           family={Muñoz-Hernandez},
+           familyi={M\bibinithyphendelim H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Salamanca}%
+      }
+      \list{publisher}{1}{%
+        {[s. n.]}%
+      }
+      \strng{namehash}{3472ba4f3874bcfe31034829d1380d8a}
+      \strng{fullhash}{f663cf80d88392b97813e6854a046079}
+      \strng{bibnamehash}{3472ba4f3874bcfe31034829d1380d8a}
+      \strng{authorbibnamehash}{3472ba4f3874bcfe31034829d1380d8a}
+      \strng{authornamehash}{3472ba4f3874bcfe31034829d1380d8a}
+      \strng{authorfullhash}{f663cf80d88392b97813e6854a046079}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Symposium on Computers in Education (SIIE)}
+      \field{title}{Computational thinking: panorama of the Americas}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/SIIE.2016.7751839
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/SIIE.2016.7751839
+      \endverb
+      \warn{\item inproceedings entry 'brackmann2016computational' (elementos-pos-textuais/referencias.bib): Invalid format '11 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brown_c4_model_book}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0653a11aad687a389587e0000e0f4a13}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Victoria, BC, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Leanpub}%
+      }
+      \strng{namehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{fullhash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{bibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorbibnamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authornamehash}{0653a11aad687a389587e0000e0f4a13}
+      \strng{authorfullhash}{0653a11aad687a389587e0000e0f4a13}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The C4 model for visualising software architecture}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.oreilly.com/library/view/the-c4-model/9798341660113/
+      \endverb
+      \verb{url}
+      \verb https://www.oreilly.com/library/view/the-c4-model/9798341660113/
+      \endverb
+      \warn{\item book entry 'brown_c4_model_book' (elementos-pos-textuais/referencias.bib): Invalid format '28 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{filho2025}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b9306108fe00aa28111b7f7315013f1b}{%
+           family={Filho},
+           familyi={F\bibinitperiod},
+           given={Jaime\bibnamedelimb Antonio\bibnamedelima Daniel},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b85842c079a229646b67c5482f9e2fe}{%
+           family={Tozevich},
+           familyi={T\bibinitperiod},
+           given={Luís\bibnamedelimb Gustavo\bibnamedelima Werle},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72cc362e792113b83eda26072c504498}{%
+           family={Einloft},
+           familyi={E\bibinitperiod},
+           given={Guilherme\bibnamedelima Meneghetti},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcfb05338a6cbc1a70a869beac84d482}{%
+           family={Chaves},
+           familyi={C\bibinitperiod},
+           given={Diego\bibnamedelima Ribeiro},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68c05b2d98e282644cfdfa0a761f1956}{%
+           family={Librelotto},
+           familyi={L\bibinitperiod},
+           given={Giovani\bibnamedelima Rubert},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \list{publisher}{1}{%
+        {[s. n.]}%
+      }
+      \strng{namehash}{95a78e77d0defc5878721962a59c05e1}
+      \strng{fullhash}{f786b3674c0733c7d242668325d9d8d6}
+      \strng{bibnamehash}{95a78e77d0defc5878721962a59c05e1}
+      \strng{authorbibnamehash}{95a78e77d0defc5878721962a59c05e1}
+      \strng{authornamehash}{95a78e77d0defc5878721962a59c05e1}
+      \strng{authorfullhash}{f786b3674c0733c7d242668325d9d8d6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Anais do XXXI Workshop de Informática na Escola (WIE)}
+      \field{month}{11}
+      \field{title}{O uso das plataformas Scratch e Code.org para o desenvolvimento do Pensamento Computacional na educação básica: relato de experiência alinhado à BNCC}
+      \field{year}{2025}
+      \field{pages}{500\bibrangedash 510}
+      \range{pages}{11}
+      \verb{urlraw}
+      \verb https://doi.org/10.5753/wie.2025.13496
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5753/wie.2025.13496
+      \endverb
+      \warn{\item inproceedings entry 'filho2025' (elementos-pos-textuais/referencias.bib): Invalid format '6 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{francisco2020esm}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9d2caf992e664e9a89bc87102b94bbdf}{%
+           family={Francisco},
+           familyi={F\bibinitperiod},
+           given={Rosemary},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=baed6fe664f8412f75ecbf1507141792}{%
+           family={Jaques},
+           familyi={J\bibinitperiod},
+           given={Patrícia\bibnamedelima Augustin},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f6688ca71de1b403c0a65750d737a2c0}{%
+           family={Siqueira},
+           familyi={S\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc8e18d16ab20a41ced7bf89374203ec}{%
+           family={Bittencourt},
+           familyi={B\bibinitperiod},
+           given={Ig},
+           giveni={I\bibinitperiod}}}%
+        {{hash=7aab1f935e9702c7231daf2696bce2ae}{%
+           family={Pimentel},
+           familyi={P\bibinitperiod},
+           given={Mariano\bibnamedelima (org.)},
+           giveni={M\bibinitperiod\bibinitdelim (\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Porto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {SBC}%
+      }
+      \strng{namehash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{fullhash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{bibnamehash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{authorbibnamehash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{authornamehash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{authorfullhash}{9d2caf992e664e9a89bc87102b94bbdf}
+      \strng{editorbibnamehash}{429821220e564882d6c3fe8067a6cfaa}
+      \strng{editornamehash}{429821220e564882d6c3fe8067a6cfaa}
+      \strng{editorfullhash}{3d68566676e7a3bddfb91833aa00a1bb}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Metodologia de Pesquisa Científica em Informática na Educação: abordagem quantitativa}
+      \field{chapter}{1}
+      \field{title}{{Experience Sampling Method} ({ESM})}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{urlraw}
+      \verb https://metodologia.ceie-br.org/livro-2
+      \endverb
+      \verb{url}
+      \verb https://metodologia.ceie-br.org/livro-2
+      \endverb
+      \warn{\item incollection entry 'francisco2020esm' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{gil2021pesquisa}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3cf41486bd8a66a0d3ab86521444be0}{%
+           family={Gil},
+           familyi={G\bibinitperiod},
+           given={Antonio\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{publisher}{1}{%
+        {Atlas}%
+      }
+      \strng{namehash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \strng{fullhash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \strng{bibnamehash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \strng{authorbibnamehash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \strng{authornamehash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \strng{authorfullhash}{b3cf41486bd8a66a0d3ab86521444be0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9786559770496}
+      \field{note}{E-book}
+      \field{title}{Como fazer pesquisa qualitativa}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://integrada.minhabiblioteca.com.br/reader/books/9786559770496/
+      \endverb
+      \verb{url}
+      \verb https://integrada.minhabiblioteca.com.br/reader/books/9786559770496/
+      \endverb
+      \warn{\item book entry 'gil2021pesquisa' (elementos-pos-textuais/referencias.bib): Invalid format '28 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brasil2026enem}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=266e61b70f52ca64d6c99fddde80afb7}{%
+           family={INEP},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Brasília, DF]}%
+      }
+      \strng{namehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{fullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{bibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorbibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authornamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorfullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Enem}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem
+      \endverb
+      \warn{\item misc entry 'brasil2026enem' (elementos-pos-textuais/referencias.bib): Invalid format '19 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{inep2025enem}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=266e61b70f52ca64d6c99fddde80afb7}{%
+           family={INEP},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{fullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{bibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorbibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authornamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorfullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Enem} 2024: desempenho médio dos participantes aumentou}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2024-desempenho-medio-dos-participantes-aumentou
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2024-desempenho-medio-dos-participantes-aumentou
+      \endverb
+      \warn{\item misc entry 'inep2025enem' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{matriz_enem}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=266e61b70f52ca64d6c99fddde80afb7}{%
+           family={INEP},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília, DF}%
+      }
+      \list{publisher}{1}{%
+        {INEP/MEC}%
+      }
+      \strng{namehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{fullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{bibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorbibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authornamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorfullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Matrizes de Referência do {ENEM}}
+      \field{year}{2023}
+      \warn{\item manual entry 'matriz_enem' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brasil2026saeb}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=266e61b70f52ca64d6c99fddde80afb7}{%
+           family={INEP},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Brasília, DF]}%
+      }
+      \strng{namehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{fullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{bibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorbibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authornamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorfullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \field{extraname}{4}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Resultados}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb
+      \endverb
+      \warn{\item misc entry 'brasil2026saeb' (elementos-pos-textuais/referencias.bib): Invalid format '20 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{brasil2026pisa}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=266e61b70f52ca64d6c99fddde80afb7}{%
+           family={INEP},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {[Brasília, DF]}%
+      }
+      \strng{namehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{fullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{bibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorbibnamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authornamehash}{266e61b70f52ca64d6c99fddde80afb7}
+      \strng{authorfullhash}{266e61b70f52ca64d6c99fddde80afb7}
+      \field{extraname}{5}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Resultados}
+      \field{year}{2026}
+      \verb{urlraw}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa/resultados
+      \endverb
+      \verb{url}
+      \verb https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/pisa/resultados
+      \endverb
+      \warn{\item misc entry 'brasil2026pisa' (elementos-pos-textuais/referencias.bib): Invalid format '20 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{jesus2026ensino}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84c69f6ebc63d26d790d37dcdde87912}{%
+           family={Jesus},
+           familyi={J\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \strng{namehash}{84c69f6ebc63d26d790d37dcdde87912}
+      \strng{fullhash}{84c69f6ebc63d26d790d37dcdde87912}
+      \strng{bibnamehash}{84c69f6ebc63d26d790d37dcdde87912}
+      \strng{authorbibnamehash}{84c69f6ebc63d26d790d37dcdde87912}
+      \strng{authornamehash}{84c69f6ebc63d26d790d37dcdde87912}
+      \strng{authorfullhash}{84c69f6ebc63d26d790d37dcdde87912}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2965-6672}
+      \field{journaltitle}{Revista Tópicos}
+      \field{number}{30}
+      \field{title}{Ensino de Matemática e dificuldades de aprendizagem}
+      \field{volume}{4}
+      \field{year}{2026}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+    \endentry
+    \entry{kimball2004data}{book}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=6ec3b140429bc59ad63c593b172f665c}{%
+           family={Kimball},
+           familyi={K\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d8b446c0d13f71dfa7e049f774ceec0}{%
+           family={Caserta},
+           familyi={C\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=257f73b4d408fcd5e8d4a110ef8c8f49}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Margy},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d99337e42d20d8f76fee2ed9f96cba1}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73666c9dbec8d8dacd567a2a6285d556}{%
+           family={Mundy},
+           familyi={M\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2341c4ffdf6cc837b3758c77de773f9e}{%
+           family={Thornthwaite},
+           familyi={T\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \list{publisher}{1}{%
+        {[s. n.]}%
+      }
+      \strng{namehash}{89082991fcc23979e1f55de887ebbfe7}
+      \strng{fullhash}{500ecdfab326d8247f73d4064e95a8d1}
+      \strng{bibnamehash}{89082991fcc23979e1f55de887ebbfe7}
+      \strng{authorbibnamehash}{89082991fcc23979e1f55de887ebbfe7}
+      \strng{authornamehash}{89082991fcc23979e1f55de887ebbfe7}
+      \strng{authorfullhash}{500ecdfab326d8247f73d4064e95a8d1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780764567575}
+      \field{title}{The data warehouse ETL toolkit: practical techniques for extracting, cleaning, conforming, and delivering data}
+      \field{year}{2004}
+    \endentry
+    \entry{lais2023}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c14f56e8575cbe0511ad4fec56e69f79}{%
+           family={Lais},
+           familyi={L\bibinitperiod},
+           given={Raquel},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d1817fb74077132d119a36836629c83}{%
+           family={Honda},
+           familyi={H\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17d385e21158c564d3e275cd36ba0bfe}{%
+           family={Pires},
+           familyi={P\bibinitperiod},
+           given={Fernanda},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0677e9bb91c7fe4cd6da521e3653db45}{%
+           family={Queroga},
+           familyi={Q\bibinitperiod},
+           given={João},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c491ee896d697e7f81973b65de742108}{%
+           family={Pessoa},
+           familyi={P\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed9e1098a57918db675350a107dcdd88}
+      \strng{fullhash}{a689dd4e2fc6c4bd223be5d034c123c9}
+      \strng{bibnamehash}{ed9e1098a57918db675350a107dcdd88}
+      \strng{authorbibnamehash}{ed9e1098a57918db675350a107dcdd88}
+      \strng{authornamehash}{ed9e1098a57918db675350a107dcdd88}
+      \strng{authorfullhash}{a689dd4e2fc6c4bd223be5d034c123c9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Congresso Brasileiro de Informática na Educação (CBIE)}
+      \field{month}{11}
+      \field{title}{Enigma pirata: um jogo para exercitar Matemática e Pensamento Computacional através da Teoria dos Conjuntos}
+      \field{year}{2023}
+      \field{pages}{169\bibrangedash 172}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.5753/cbie_estendido.2023.233303
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5753/cbie_estendido.2023.233303
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5753/cbie_estendido.2023.233303
+      \endverb
+    \endentry
+    \entry{michael2006seriousgame}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bca76a25f6eeacb1f1948b36de5ade06}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dedf1ef5ac837568bd49421d73d8520}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Sande},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \list{publisher}{1}{%
+        {[s. n.]}%
+      }
+      \strng{namehash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \strng{fullhash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \strng{bibnamehash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \strng{authorbibnamehash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \strng{authornamehash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \strng{authorfullhash}{8caa0e7a37ca1f610cdd0504772f5452}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1592006221}
+      \field{month}{1}
+      \field{title}{Serious games: games that educate, train, and inform}
+      \field{year}{2006}
+    \endentry
+    \entry{obrien2018practical}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8a718cb765f42c5bca730cd1f801b131}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Heather\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3449b8552331ee5f6ace198f37c3908f}{%
+           family={Cairns},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8afb2c93d55a5a48ea1845b23eb996d5}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4c66c3de478891afb7d96d026b474931}
+      \strng{fullhash}{4c66c3de478891afb7d96d026b474931}
+      \strng{bibnamehash}{4c66c3de478891afb7d96d026b474931}
+      \strng{authorbibnamehash}{4c66c3de478891afb7d96d026b474931}
+      \strng{authornamehash}{4c66c3de478891afb7d96d026b474931}
+      \strng{authorfullhash}{4c66c3de478891afb7d96d026b474931}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Studies}
+      \field{title}{A practical approach to measuring user engagement with the refined {User Engagement Scale} ({UES}) and new {UES} short form}
+      \field{volume}{112}
+      \field{year}{2018}
+      \field{pages}{28\bibrangedash 39}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.ijhcs.2018.01.004
+      \endverb
+      \warn{\item article entry 'obrien2018practical' (elementos-pos-textuais/referencias.bib): Invalid format '20 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{piton2018analise}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31bef88b8788226968889b5304310335}{%
+           family={Piton-Gonçalves},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ac5bc055f7b924206ec5702adc377d5}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={André\bibnamedelima Marcos},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Bento Gonçalves, RS}%
+      }
+      \strng{namehash}{f777292156f516502fb4732c764fe9f0}
+      \strng{fullhash}{f777292156f516502fb4732c764fe9f0}
+      \strng{bibnamehash}{f777292156f516502fb4732c764fe9f0}
+      \strng{authorbibnamehash}{f777292156f516502fb4732c764fe9f0}
+      \strng{authornamehash}{f777292156f516502fb4732c764fe9f0}
+      \strng{authorfullhash}{f777292156f516502fb4732c764fe9f0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{REMAT: Revista Eletrônica da Matemática}
+      \field{number}{2}
+      \field{title}{Análise da dificuldade e da discriminação de itens de Matemática do ENEM}
+      \field{volume}{4}
+      \field{year}{2018}
+      \field{pages}{38\bibrangedash 53}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.35819/remat2018v4i2id3060
+      \endverb
+      \verb{urlraw}
+      \verb https://periodicos.ifrs.edu.br/index.php/REMAT/article/view/3060
+      \endverb
+      \verb{url}
+      \verb https://periodicos.ifrs.edu.br/index.php/REMAT/article/view/3060
+      \endverb
+      \warn{\item article entry 'piton2018analise' (elementos-pos-textuais/referencias.bib): Invalid format '2 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{plomp2018pesquisa}{book}{}
+      \name{editor}{4}{}{%
+        {{un=0,uniquepart=base,hash=d18a5e467fd94aea1fba4d6e4f22b02b}{%
+           family={Plomp},
+           familyi={P\bibinitperiod},
+           given={Tjeerd},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=447fb4440e39855ba0619af5631d988a}{%
+           family={Nieveen},
+           familyi={N\bibinitperiod},
+           given={Nienke},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3f084efcc73df6848ab08a7a2ff2498}{%
+           family={Nonato},
+           familyi={N\bibinitperiod},
+           given={Emanuel},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f37b6bc41af8a19c31bd5dfe429e6e89}{%
+           family={Matta},
+           familyi={M\bibinitperiod},
+           given={Alfredo\bibnamedelima (org.)},
+           giveni={A\bibinitperiod\bibinitdelim (\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {São Paulo}%
+      }
+      \list{publisher}{1}{%
+        {Artesanato Educacional}%
+      }
+      \strng{namehash}{df9fab43819f63914e8f8d064fc96f4d}
+      \strng{fullhash}{71277d3e33a4b5f5630ec68812d6c9a4}
+      \strng{bibnamehash}{df9fab43819f63914e8f8d064fc96f4d}
+      \strng{editorbibnamehash}{df9fab43819f63914e8f8d064fc96f4d}
+      \strng{editornamehash}{df9fab43819f63914e8f8d064fc96f4d}
+      \strng{editorfullhash}{71277d3e33a4b5f5630ec68812d6c9a4}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-85-64803-20-6}
+      \field{title}{Pesquisa-Aplicação em Educação: uma introdução}
+      \field{year}{2018}
+      \warn{\item book entry 'plomp2018pesquisa' (elementos-pos-textuais/referencias.bib): Invalid format '28 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{pontes2019questoes}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cf03ece58a1a097fed3a6abf0e4f6ea}{%
+           family={Pontes},
+           familyi={P\bibinitperiod},
+           given={Jailson},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5ab5699d53c5a7af169f02c2437e61}{%
+           family={Núñez},
+           familyi={N\bibinitperiod},
+           given={Isauro},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Montes Claros}%
+      }
+      \strng{namehash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \strng{fullhash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \strng{bibnamehash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \strng{authorbibnamehash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \strng{authornamehash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \strng{authorfullhash}{a108c3af4112b4311b8fe4defdfd0fa9}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Educação, Escola \& Sociedade}
+      \field{number}{14}
+      \field{title}{Questões de Matemática do {ENEM} 2015: erros e dificuldades de aprendizagem}
+      \field{volume}{12}
+      \field{year}{2019}
+      \field{pages}{e201902}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://www.periodicos.unimontes.br/index.php/rees/article/view/110
+      \endverb
+      \verb{url}
+      \verb https://www.periodicos.unimontes.br/index.php/rees/article/view/110
+      \endverb
+      \warn{\item article entry 'pontes2019questoes' (elementos-pos-textuais/referencias.bib): Invalid format '21 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{preece2013design}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bfa7da93edab02bc2f7734b80f61f6db}{%
+           family={Preece},
+           familyi={P\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b63a3a4f037d8449395335bf9703194a}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Yvonne},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c13b944e2b68ee928fb824b303ed11f}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Porto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {Bookman}%
+      }
+      \strng{namehash}{c85228cac58f48b4cfa748188a1c0e25}
+      \strng{fullhash}{c85228cac58f48b4cfa748188a1c0e25}
+      \strng{bibnamehash}{c85228cac58f48b4cfa748188a1c0e25}
+      \strng{authorbibnamehash}{c85228cac58f48b4cfa748188a1c0e25}
+      \strng{authornamehash}{c85228cac58f48b4cfa748188a1c0e25}
+      \strng{authorfullhash}{c85228cac58f48b4cfa748188a1c0e25}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{9788582600061}
+      \field{title}{Design de interação: além da interação humano-computador}
+      \field{year}{2013}
+      \warn{\item book entry 'preece2013design' (elementos-pos-textuais/referencias.bib): Invalid format '19 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{silpasuwanchai2016developing}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ff8f9395c80a0692785cc7c4d7497376}{%
+           family={Silpasuwanchai},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \strng{fullhash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \strng{bibnamehash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \strng{authorbibnamehash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \strng{authornamehash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \strng{authorfullhash}{272dcbc4f33ecd6f2e91a0137524308d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 ACM Conference on Designing Interactive Systems}
+      \field{isbn}{9781450340311}
+      \field{title}{Developing a comprehensive engagement framework of gamification for reflective learning}
+      \field{year}{2016}
+      \field{pages}{459\bibrangedash 472}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2901790.2901836
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2901790.2901836
+      \endverb
+      \warn{\item inproceedings entry 'silpasuwanchai2016developing' (elementos-pos-textuais/referencias.bib): Invalid format '29 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{silva2020}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c4e29df482614f889c03ced9496b5cf}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Fernanda\bibnamedelimb Martins\bibnamedelima da},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade Estadual Paulista (UNESP), Faculdade de Ciências}%
+      }
+      \list{location}{1}{%
+        {Bauru}%
+      }
+      \strng{namehash}{9c4e29df482614f889c03ced9496b5cf}
+      \strng{fullhash}{9c4e29df482614f889c03ced9496b5cf}
+      \strng{bibnamehash}{9c4e29df482614f889c03ced9496b5cf}
+      \strng{authorbibnamehash}{9c4e29df482614f889c03ced9496b5cf}
+      \strng{authornamehash}{9c4e29df482614f889c03ced9496b5cf}
+      \strng{authorfullhash}{9c4e29df482614f889c03ced9496b5cf}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{month}{fev.}
+      \field{title}{Pensamento computacional: uma análise dos documentos oficiais e das questões de Matemática dos vestibulares}
+      \field{type}{Dissertação (Mestrado)}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb http://hdl.handle.net/11449/192267
+      \endverb
+      \verb{url}
+      \verb http://hdl.handle.net/11449/192267
+      \endverb
+      \warn{\item thesis entry 'silva2020' (elementos-pos-textuais/referencias.bib): Invalid format '5 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{soares2026diferencas}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=da79fcb5bfb1a05628307ed9f98bdd38}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi J.\bibnamedelimi M.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=282dda89a0a0b242d9ad5e0dc4b0da61}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={I.\bibnamedelimi de\bibnamedelima C.},
+           giveni={I\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=501e76236c9ffa707544bdf28046cf06}{%
+           family={Xavier},
+           familyi={X\bibinitperiod},
+           given={M.\bibnamedelimi E.\bibnamedelimi L.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3c8b490748b340a7b4f7e13de47451c}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={R.\bibnamedelimi S.\bibnamedelimi do},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim d\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f699e8b83979c82116f09a083a4af05}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi A.\bibnamedelimi T.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=597338949c36b6032840af642d135023}{%
+           family={Magalhães},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \strng{namehash}{9caa651e8bf29055fb1966f711ed5d08}
+      \strng{fullhash}{63280a8aff88041726ddbbf3ea5be1b0}
+      \strng{bibnamehash}{9caa651e8bf29055fb1966f711ed5d08}
+      \strng{authorbibnamehash}{9caa651e8bf29055fb1966f711ed5d08}
+      \strng{authornamehash}{9caa651e8bf29055fb1966f711ed5d08}
+      \strng{authorfullhash}{63280a8aff88041726ddbbf3ea5be1b0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Regae: Revista de Gestão e Avaliação Educacional}
+      \field{title}{Diferenças na dificuldade dos itens de Matemática do Enem: uma análise por competência avaliativa}
+      \field{year}{2026}
+      \field{pages}{e96143}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.5902/2318133896143
+      \endverb
+      \verb{urlraw}
+      \verb https://periodicos.ufsm.br/regae/article/view/96143
+      \endverb
+      \verb{url}
+      \verb https://periodicos.ufsm.br/regae/article/view/96143
+      \endverb
+      \warn{\item article entry 'soares2026diferencas' (elementos-pos-textuais/referencias.bib): Invalid format '2 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{sommerville2011software}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=391822eb61c91ef5882d24cbd1592b6f}{%
+           family={Sommerville},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {[S. l.]}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{391822eb61c91ef5882d24cbd1592b6f}
+      \strng{fullhash}{391822eb61c91ef5882d24cbd1592b6f}
+      \strng{bibnamehash}{391822eb61c91ef5882d24cbd1592b6f}
+      \strng{authorbibnamehash}{391822eb61c91ef5882d24cbd1592b6f}
+      \strng{authornamehash}{391822eb61c91ef5882d24cbd1592b6f}
+      \strng{authorfullhash}{391822eb61c91ef5882d24cbd1592b6f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{International Computer Science Series}
+      \field{title}{Software engineering}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://books.google.com.br/books?id=l0egcQAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.br/books?id=l0egcQAACAAJ
+      \endverb
+      \warn{\item book entry 'sommerville2011software' (elementos-pos-textuais/referencias.bib): Invalid format '21 jun. 2026' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{teodosio2023atividade}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3ba475daa7378b90699b23e87bdfb5a9}{%
+           family={Teodosio},
+           familyi={T\bibinitperiod},
+           given={Elaine\bibnamedelimb de\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c8ea2150cc5267796a6c2f75e2458409}{%
+           family={Vila\bibnamedelima Nova},
+           familyi={V\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={Arnaldo\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Porto Alegre}%
+      }
+      \list{publisher}{1}{%
+        {Sociedade Brasileira de Computação}%
+      }
+      \strng{namehash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \strng{fullhash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \strng{bibnamehash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \strng{authorbibnamehash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \strng{authornamehash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \strng{authorfullhash}{2eda17ad1e192b4cc6f2fa6a97ad1c9e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Anais do 34. Simpósio Brasileiro de Informática na Educação (SBIE)}
+      \field{title}{Atividade de Matemática gamificada com pixel art}
+      \field{year}{2023}
+      \field{pages}{255\bibrangedash 263}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://doi.org/10.5753/sbie.2023.234849
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5753/sbie.2023.234849
+      \endverb
+    \endentry
+    \entry{wing2006}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fc244460284339da385f5113c9207b79}{%
+           family={Wing},
+           familyi={W\bibinitperiod},
+           given={Jeannette\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{fc244460284339da385f5113c9207b79}
+      \strng{fullhash}{fc244460284339da385f5113c9207b79}
+      \strng{bibnamehash}{fc244460284339da385f5113c9207b79}
+      \strng{authorbibnamehash}{fc244460284339da385f5113c9207b79}
+      \strng{authornamehash}{fc244460284339da385f5113c9207b79}
+      \strng{authorfullhash}{fc244460284339da385f5113c9207b79}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{3}
+      \field{title}{Computational Thinking}
+      \field{volume}{49}
+      \field{year}{2006}
+      \field{pages}{33\bibrangedash 35}
+      \range{pages}{3}
+      \warn{\item article entry 'wing2006' (elementos-pos-textuais/referencias.bib): Invalid format '5 maio 2026' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

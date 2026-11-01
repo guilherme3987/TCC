@@ -60,6 +60,11 @@
 \addbibresource{elementos-pos-textuais/referencias.bib}
 \ExecuteBibliographyOptions{giveninits=true}
 
+% Expressão "et al." em itálico (citações e lista de referências)
+\DefineBibliographyStrings{brazilian}{%
+  andothers = {\mkbibemph{et\addabbrvspace al\adddot}}%
+}
+
 % Forçar a remoção de caixa alta (UPPERCASE) nas citações ABNT do biblatex
 \DeclareFieldFormat{citeauthor}{\mkbibname{#1}}
 \DeclareFieldFormat{citeauthor-rev}{\mkbibname{#1}}

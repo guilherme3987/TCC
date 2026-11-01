@@ -11,7 +11,7 @@ uma metodologia de pesquisa em soluções educacionais, envolvendo a colaboraç�
 entre pesquisadores e profissionais da educação, cuja participação ativa na
 pesquisa contribui para a construção de intervenções mais relevantes e
 aplicáveis à prática. Além disso, a reflexão sistemática, descrita por
-\cite{obrien2018practical}, aliada à documentação explícita de todas as
+\citeonline{obrien2018practical}, aliada à documentação explícita de todas as
 decisões, confere o rigor científico à metodologia e permite gerar conclusões
 que são convertidas em novo arcabouço teórico e prático, que retroalimentam a
 solução em questão e promovem o progresso no campo de estudo, gerando referência
@@ -85,7 +85,7 @@ colaborativo e pragmático da pesquisa.
         Ciclos de avaliação &
         \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
             \item Ciclo 1: Avaliação por professores de Matemática do curso de Sistemas de Informação.
-            \item Ciclo 2: Avaliação por alunos da \gls{upt}.
+            \item Ciclo 2: Avaliação por alunos.
         \end{itemize} \\
         \hline
 
@@ -104,7 +104,7 @@ colaborativo e pragmático da pesquisa.
 \section{Identificação do problema}
 
 A etapa inicial da metodologia \gls{dbr} é a investigação preliminar, descrita por
-\cite{obrien2018practical}, como parte essencial para obter um insight profundo
+\citeonline{obrien2018practical}, como parte essencial para obter uma compreensão profunda
 sobre o problema educacional, compreendendo a situação-problema e as
 possibilidades de inovação. 
 
@@ -164,7 +164,7 @@ dados do \gls{etl}.
 
 O processo de modelagem e criação do Diagrama de Casos de Uso foi estruturado a
 partir da perspectiva de Engenharia de Requisitos defendida por
-\cite{sommerville2011software}, a qual preconiza que os modelos de casos de uso
+\citeonline{sommerville2011software}, a qual preconiza que os modelos de casos de uso
 devem ser utilizados para descrever as interações entre o sistema computacional
 e seus agentes externos. Essa técnica é fundamental para delimitar a fronteira
 da aplicação (\textit{system boundary}) e mapear o escopo funcional. A figura
@@ -212,7 +212,7 @@ enunciado antes de recorrer à assistência automatizada da plataforma.
 
 \subsection{Arquitetura do Sistema}
 \label{sec:arquitetura}
-Segundo \cite{brown_c4_model_book}, a arquitetura de um Sistema de Software é
+Segundo \citeonline{brown_c4_model_book}, a arquitetura de um Sistema de Software é
 uma estrutura composta por contêineres. Esses Contêineres consistem em diversas
 aplicações e armazenamentos de dados que, juntos, integram o sistema, englobando
 esquemas de banco de dados, aplicativos móveis, aplicações de console e
@@ -231,6 +231,8 @@ validando a integridade dos \textit{payloads} \gls{json} e realizando o roteamen
 fluxo para o Motor Pedagógico e de Gamificação, centralizando os mecanismos de
 controle de acesso e segurança do sistema.
 
+
+A figura \ref{fig:diagrama-arquitetura} retrata a arquitetura do sistema, evidenciando o fluxo de dados entre os contêineres que compõem a aplicação.
 \begin{figure}[H]
     \centering
     \caption{Diagrama de Arquitetura}
@@ -242,7 +244,7 @@ controle de acesso e segurança do sistema.
 \subsection{Módulo \texorpdfstring{\gls{etl}}{ETL}}
 \label{sec:etl}
 
-Segundo \cite{kimball2004data}, o \gls{etl} é o
+Segundo \citeonline{kimball2004data}, o \gls{etl} é o
 sistema de fluxo contínuo que, inicialmente, extrai as informações dos sistemas
 de origem, processa e realiza a limpeza dos dados ao estabelecer padrões de
 qualidade e consistência, englobando a remoção de erros, a correção de dados
@@ -269,15 +271,31 @@ cada questão do \gls{enem} de acordo com os pilares do \gls{pc}, associando o
 enunciado, a resolução da questão e os conceitos de decomposição, reconhecimento
 de padrões, abstração e algoritmos.
 
-Os dados são armazenados no \textit{PostgreSQL} que atua como área de \textit{staging},
-pois, de acordo com \cite{kimball2004data}, a gravação dos dados em disco em
-formatos permanentes ou semipermanentes ao longo das diversas etapas do fluxo
-garante a integridade e o rastreamento do processo.
+O processo ETL possibilitou a extração de 636 registros de questões de Matemática, a partir de um conjunto inicial de 1.500 questões disponibilizadas pela API \href{https://enem.dev/}{ENEM.dev}. Após as etapas de transformação e tratamento dos dados, foi produzido um conjunto de dados (\textit{dataset}) composto por 551 questões do ENEM, abrangendo 15 edições do exame, no período de 2009 a 2023.
 
-\subsection{Sistema Gamificado}
-\label{sec:sistema_gamificado}
+Os dados são armazenados no PostgreSQL, utilizado como área de \textit{staging}. Essa abordagem está alinhada à recomendação de \citeonline{kimball2004data}, segundo a qual a persistência dos dados em formatos permanentes ou semipermanentes ao longo das diferentes etapas do fluxo de processamento contribui para garantir a integridade e a rastreabilidade do processo.
 
-O estudante acessa via protocolo \gls{https} por meio de seu navegador a aplicação web e o \textit{React}
+\subsection{Back-End}
+
+O backend da plataforma Cognitivo é desenvolvido em Python 3.12 utilizando o framework Flask, seguindo o padrão de design Application Factory. Esta arquitetura permite a criação de múltiplas instâncias da aplicação, facilitando a configuração de diferentes ambientes, como desenvolvimento, testes (utilizando SQLite em memória) e produção. A organização do código é modularizada através de Blueprints, que separam as responsabilidades da API em quatro domínios principais: autenticação (`auth`), gestão de usuários (`users`), gerenciamento de questões (`questions`) e controle de sessões de estudo (`sessions`).
+
+A autenticação é híbrida, suportando tanto o login via Google (integrado ao Firebase) quanto um sistema nativo de e-mail e senha. O fluxo de autenticação culmina na emissão de tokens JWT (JSON Web Tokens), que garantem a segurança e a identificação do usuário em rotas privadas. Para a persistência de dados, o sistema utiliza o MariaDB 11 com a biblioteca SQLAlchemy como ORM, permitindo a manipulação de entidades como usuários, ligas de progressão, questões do ENEM, sessões de estudo e logs de atividades.
+
+O núcleo da lógica de negócio reside no gerenciamento das sessões de estudo. O backend controla a progressão do aluno através de fases baseadas nos pilares do Pensamento Computacional (Abstração, Decomposição, Reconhecimento de Padrões e Algoritmos). O sistema implementa um motor de cálculo de experiência (XP) e penalidades: o ganho de pontos é influenciado por erros persistentes e pelo uso de dicas, aplicando multiplicadores redutores ao XP final. A progressão do usuário é monitorada por um sistema de ligas (de Bronze a Lendário), onde a mudança de categoria ocorre automaticamente ao atingir a pontuação mínima requerida.
+
+A comunicação com o frontend é realizada via HTTP/JSON, com a API expondo endpoints para a listagem de questões, registro de tentativas de resposta e consulta de estatísticas de desempenho por pilar. A infraestrutura é totalmente containerizada com Docker Compose, orquestrando a API Flask, o banco de dados MariaDB e o servidor de desenvolvimento do frontend, garantindo a consistência do ambiente entre diferentes máquinas. A figura \ref{fig:modelo-back-dend} apresenta a arquitetura do backend, destacando os principais componentes e suas interações.
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Arquitetura do Back-End}
+    \label{fig:modelo-back-dend}
+    \includegraphics[width=\textwidth]{figuras/backend-c4.png}
+    \fonte{Elaborado pelo autor (2026).}
+\end{figure}
+
+\subsection{Front-End}
+O usuário acessa via protocolo \gls{https} por meio de seu navegador a aplicação web e o \textit{React}
 gerencia o estado da aplicação, permitindo que as transições entre os níveis
 ocorram de forma fluida e sem a necessidade de recarregar a página. O
 \textit{Tailwind CSS} fornece classes utilitárias que garantem a total
@@ -292,7 +310,19 @@ artefato, englobando o Motor Pedagógico e de Gamificação. Essa camada é comp
 pelos \textit{endpoints} e rotas responsáveis por processar as regras centrais
 da aplicação, tais como o cálculo e distribuição de pontos de experiência (\gls{xp}),
 a validação sequencial do progresso do estudante pelas fases do \gls{pc} e a
-persistência do estado dessas interações no banco de dados relacional MySQL.
+persistência do estado dessas interações no banco de dados relacional MySQL. A figura \ref{fig:modelo-front-dend} apresenta a arquitetura do front-end, destacando os principais componentes e suas interações.
+
+\begin{figure}[H]
+    \centering
+    \caption{Arquitetura do Front-End}
+    \label{fig:modelo-front-dend}
+    \includegraphics[width=\textwidth]{figuras/frontend-c4.png}
+    \fonte{Elaborado pelo autor (2026).}
+\end{figure}
+
+\subsection{Sistema Gamificado}
+\label{sec:sistema_gamificado}
+
 
 Em relação às mecânicas de gamificação, os Pontos são divididos entre \gls{xp} Geral e
 \gls{xp} de Atributo. As Insígnias (\textit{Badges}) funcionam como marcos de
@@ -381,44 +411,101 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
 \subsection{Banco de dados}
 \label{sec:banco-de-dados}
 
-O banco de dados do Cognitivo foi projetado para dar suporte a uma plataforma
-de aprendizagem focada em Pensamento Computacional (PC). Ele gerencia a
-progressão dos usuários pelas ligas, registra as sessões de estudo e armazena
-questões com diferentes atributos de classificação. A solução utiliza o
-\textit{MySQL} que assegura a integridade
-referencial por meio de chaves estrangeiras.
+O Cognitivo utiliza o MySQL como sistema gerenciador de banco de dados. 
+O esquema reúne o cadastro e a progressão dos
+estudantes, o conteúdo das questões, as sessões de estudo e os registros de
+desempenho, além de uma estrutura de \textit{logs}. A separação entre esses
+conjuntos mantém as responsabilidades delimitadas e permite que autenticação,
+resolução de questões, concessão de experiência e atualização da liga consultem
+apenas as tabelas necessárias. A integridade referencial é mantida por chaves
+estrangeiras, enquanto as restrições de verificação e os índices complementam o
+controle sobre os valores armazenados e o acesso aos dados.
 
-O modelo organiza-se em domínios funcionais. No núcleo estão as entidades
-\textit{User}, que centraliza o perfil, os pontos de PC acumulados e a liga
-atual do usuário; \textit{Study\_Session}, que reúne as atividades realizadas
-em um período e conecta o usuário às tentativas de resposta; e
-\textit{Question}, que armazena os enunciados e as respostas corretas. O domínio
-de suporte e classificação é composto por \textit{League}, que define as faixas
-de pontuação das ligas, e \textit{PC\_Atributes}, que registra os pilares do PC:
-Decomposição, Abstração, Padrões e Algoritmos. A associação
-\textit{Question\_has\_PC\_Atributes} representa o relacionamento muitos-para-muitos
-entre questões e atributos, permitindo que uma questão avalie mais de um pilar.
+A identificação e a progressão do estudante concentram-se em duas tabelas. A
+tabela de usuários (\textit{User}) armazena e-mail, senha, objetivo de estudo,
+tipo de usuário, pontuação acumulada e o estado do cadastro, representado por
+indicadores de e-mail verificado e \textit{onboarding} concluído. O e-mail e o
+identificador do Google são únicos, e a senha admite valor nulo, o que permite
+manter contas criadas por autenticação externa sem senha local. A liga atual é
+opcional nessa tabela, o que permite registrar a progressão dos usuários.
+A tabela de ligas (\textit{League}), por sua vez, descreve as faixas de
+pontuação por meio de limites mínimo e máximo e de uma ordem. Nome e ordem são
+únicos, e o banco exige que o limite inferior não ultrapasse o superior. A associação entre
+usuário e liga é de muitos para um, ou seja, permite que vários usuários estejam na mesma liga,
+e a faixa de pontuação correspondente pode ser localizada
+a partir de \textit{pc\_points\_user}, que mantém o total acumulado em coluna
+própria.
 
-Para representar os detalhes do conteúdo, \textit{Question\_Alternatives}
-armazena as opções de resposta, \textit{Question\_image} mantém os caminhos das
-imagens associadas às questões e \textit{Question\_Hint} registra as dicas e a
-penalidade (\textit{punish}) aplicada ao utilizá-las. O histórico de interações
-é mantido por \textit{Question\_Attempt}, que registra acertos e erros, a
-experiência obtida e o tempo de resposta, e por
-\textit{Question\_Hint\_Used}, que identifica as dicas consumidas em cada
-sessão, apoiando a auditoria da pontuação.
+O conteúdo das questões tem origem na tabela de questões (\textit{Question}), que
+guarda o ano, o título, o enunciado, o contexto, a letra
+da resposta correta e a resolução cognitiva em \gls{json}, cuja validade é
+verificada pelo banco. O identificador externo é único e corresponde ao código da
+questão. A letra da resposta é restrita a um caractere
+maiúsculo. As alternativas ficam em \textit{Question\_Alternatives}, nas quais a letra é única
+dentro de cada questão. As imagens são mantidas em \textit{Question\_image}, e as
+dicas, em \textit{Question\_Hint}, que registra o conteúdo, uma penalidade entre
+0 e 1 e, opcionalmente, a fase associada.
 
-Os relacionamentos organizam o fluxo entre usuários, sessões e desempenho:
-cada usuário pertence a uma liga (muitos-para-um), pode realizar várias
-sessões (um-para-muitos), e cada sessão pode conter várias tentativas de
-resolução e vários registros de uso de dicas (um-para-muitos). No domínio do
-conteúdo, uma questão pode possuir várias alternativas, imagens e dicas, além
-de estar relacionada a várias tentativas registradas por diferentes usuários
-em sessões distintas. Uma dica pode, por sua vez, aparecer em vários registros
-de uso, enquanto a associação entre questões e atributos do PC permanece
-muitos-para-muitos por meio de \textit{Question\_has\_PC\_Atributes}.
+A classificação das questões por pilares do Pensamento Computacional é feita pela
+tabela de atributos (\textit{PC\_Atributes}), que mantém nome e \textit{slug}
+únicos para cada atributo, e pela associativa
+\textit{Question\_has\_PC\_Atributes}, que resolve a relação muitos-para-muitos
+entre questões e atributos. A chave primária dessa tabela é formada pelas duas
+chaves estrangeiras. Uma questão pode, assim, ser associada a mais de um pilar, e
+um mesmo pilar pode reunir questões distintas, sem que a classificação se repita
+em colunas da tabela de questões.
 
-\begin{figure}[htbp]
+A tabela de sessões
+(\textit{Study\_Session}) reúne duração planejada,
+duração real, pontos ganhos, data de início, data de término e status. O vínculo
+com \textit{User} é feito para que o histórico de um usuário
+com sessões não pode ser apagado. Uma restrição de verificação relaciona o status
+à data de término: sessões em andamento devem manter \textit{finished\_at} nulo,
+enquanto sessões concluídas ou abandonadas precisam preenchê-la. A aplicação,
+portanto, deve atualizar os dois campos em conjunto.
+
+Cada resposta é uma linha na tabela de tentativas (\textit{Question\_Attempt}),
+associada à sessão e registra a alternativa
+escolhida, o acerto, os pontos, a fase de raciocínio, os horários e a perda de
+vida. A alternativa é validada por uma chave estrangeira composta entre a questão
+e a letra escolhida, o que impede o uso de uma opção de outra questão. Como a
+letra é opcional, a tentativa também pode representar tempo esgotado ou pulo. O
+banco impede a marcação de perda de vida em resposta correta. O consumo de dicas é registrado em
+\textit{Question\_Hint\_Used}, que liga a sessão a uma dica específica, exige que
+a dica pertença à questão informada e impede o uso duplicado da mesma dica na
+sessão.
+
+A concessão de experiência é registrada em \textit{Question\_XP\_Award}, que
+armazena experiência geral e de atributo, nas versões base e final, o atributo,
+referenciado pelo \textit{slug} de \textit{PC\_Atributes}, e a chave
+do prêmio. A chave estrangeira composta com a sessão garante que o usuário
+premiado seja o dono da sessão. A unicidade por sessão, questão e chave do prêmio
+evita duplicidades. O progresso por atributo pode ser obtido pela soma por
+usuário e \textit{slug}, e o ranking usa o índice de pontos de \textit{User}. O
+banco não exige o preenchimento do \textit{slug} quando há experiência de
+atributo, nem relações entre valores base e finais. Essas verificações ficam na
+aplicação.
+
+A tabela de auditoria (\textit{Log}) permanece separada das tabelas de negócio.
+Ela registra a ação, a entidade e o identificador afetado, os detalhes em
+\gls{json}, o endereço IP, o agente do usuário e a data da ocorrência. O vínculo
+com \textit{User} é opcional e usa \textit{ON DELETE SET NULL}, e a exclusão de
+uma conta não apaga os registros de auditoria. A validação do \gls{json}
+também é feita pelo banco, o que preserva a consistência dos detalhes
+armazenados.
+
+Os vínculos entre essas estruturas acompanham o fluxo da aplicação: o usuário
+abre uma sessão, a sessão recebe tentativas e usos de dicas, e as premiações de
+experiência registram o resultado. A questão fornece alternativas, imagens,
+dicas e atributos do Pensamento Computacional, enquanto as chaves estrangeiras e
+as políticas de exclusão preservam a ligação entre conteúdo e histórico,
+removendo registros dependentes e bloqueando a exclusão daqueles que possuem
+dados associados.
+
+A Figura \ref{fig:modelo-banco-dados} apresenta o modelo relacional, com as
+tabelas, chaves e relacionamentos descritos.
+
+\begin{figure}[H]
     \centering
     \caption{Modelo relacional do banco de dados do Cognitivo}
     \label{fig:modelo-banco-dados}
@@ -426,18 +513,19 @@ muitos-para-muitos por meio de \textit{Question\_has\_PC\_Atributes}.
     \fonte{Elaborado pelo autor (2026).}
 \end{figure}
 
+
 \subsection{Design}
 O design da aplicação é fundamentado em princípios de usabilidade,
 acessibilidade e engajamento, visando proporcionar uma experiência intuitiva e
 motivadora para os estudantes. A interface é projetada para ser limpa e
 organizada, com uma paleta de cores que favorece a leitura e a concentração.
 
-De acordo com \cite{preece2013design}, o design deve ser implementado com uma
+De acordo com \citeonline{preece2013design}, o design deve ser implementado com uma
 preocupação central em desenvolver produtos interativos que sejam utilizáveis,
 sendo fáceis de aprender, eficazes no uso, proporcionando uma experiência
 agradável.
 
-Segundo \cite{preece2013design}, a interface da aplicação é desenvolvida com
+Segundo \citeonline{preece2013design}, a interface da aplicação é desenvolvida com
 foco na simplicidade e na clareza, utilizando uma estrutura de navegação
 intuitiva. Os elementos visuais são organizados de maneira a guiar o usuário
 através das diferentes etapas do processo de resolução de problemas, destacando
@@ -478,7 +566,7 @@ funcionalidade da proposta.
 A validação não é compreendida como um momento único e final, mas como um
 processo dinâmico de refinamento, orientado pelos retornos obtidos ao longo da
 implementação e da análise das experiências dos usuários envolvidos. É destacado
-por \cite{obrien2018practical}, o papel dos testes e refinamentos das soluções. Esse
+por \citeonline{obrien2018practical}, o papel dos testes e refinamentos das soluções. Esse
 processo, na prática, é repetido até que alcance um equilíbrio entre o que foi
 idealizado e a produção. Efetua-se uma avaliação formativa a cada ciclo, pois é o
 motor que impulsiona o avanço.
@@ -514,8 +602,8 @@ a acurácia e o rigor conceitual exigidos e como o sistema trata e processa essa
 cognitivas e se as mecânicas de gamificação foram projetadas de modo a induzir e estimular o
 raciocínio.
 
-O grupo focal foi realizado remotamente no dia 20 de outubro de 2026, com a participação dos docentes Diego Gervais, Maria Líva e Gerusa Pinheiro, especialistas na área de Matemática do curso de Bacharelado em Sistemas de Informação. A sessão, com duração de 45 minutos, foi estruturada para avaliar a clareza e a precisão dos conteúdos matemáticos, a eficácia das mecânicas de gamificação no engajamento dos estudantes, bem como para levantar sugestões de melhorias e ajustes.
-As contribuições dos participantes foram fundamentais para identificar aspectos que possibilitem o aperfeiçoamento pedagógico e funcional da solução, consolidando o grupo focal como uma etapa estratégica de coleta de percepções para o aprimoramento do sistema Cognitivo. Os resultados detalhados desta análise estão relatados no capítulo \ref{ch:analise-dados}, cujos insights fundamentaram as implementações de melhorias subsequentes no sistema.
+O grupo focal foi realizado remotamente no dia 20 de outubro de 2026, com a participação dos docentes Diego Gervais, Maria Líva e Gerusa Pinheiro, professores que lecionam disciplinas da área de Matemática do curso de Bacharelado em Sistemas de Informação. A sessão, com duração de 45 minutos, foi estruturada para avaliar a clareza e a precisão dos conteúdos matemáticos, a eficácia das mecânicas de gamificação no engajamento dos estudantes, bem como para levantar sugestões de melhorias e ajustes.
+As contribuições dos participantes foram fundamentais para identificar aspectos que possibilitem o aperfeiçoamento pedagógico e funcional da solução, consolidando o grupo focal como uma etapa estratégica de coleta de percepções para o aprimoramento do sistema Cognitivo. Os resultados detalhados desta análise estão relatados no capítulo \ref{ch:analise-dados}.
 
 
 \subsection{Ciclo de validação por alunos}
@@ -534,7 +622,7 @@ da intervenção proposta.
 \label{sec:esm_form}
 O método de amostragem de experiência é utilizado para medir a experiência do
 usuário ao utilizar um sistema, coletando informações durante o uso. É descrito
-por \cite{francisco2020esm}, como investigações que necessitam coletar dados de
+por \citeonline{francisco2020esm}, como investigações que necessitam coletar dados de
 uma experiência que ocorreu com base em um evento específico para entender como
 os participantes interagem com o sistema.
 
@@ -546,7 +634,7 @@ criação do formulário de amostragem da experiência do usuário, utilizando a
 Escala Likert com campos de resposta com \textit{radio buttons}, \textit{checkboxes} e campos
 abertos. 
 
-De acordo com \cite{francisco2020esm}, a criação do formulário deve considerar a
+De acordo com \citeonline{francisco2020esm}, a criação do formulário deve considerar a
 possibilidade de resposta em menos de um minuto. A agilidade deve ser garantida
 por meio de campos de resposta rápida. Quando o objetivo for medir o grau de
 concordância com uma afirmação, deve-se preferir o uso de escalas menores, como
@@ -554,7 +642,7 @@ a de 5 pontos, visto que escalas maiores fazem o participante parar para pensar.
 Por outro lado, os campos abertos devem ser evitados ou minimizados ao máximo,
 pois podem tornar a entrada de dados cansativa.
 
-Segundo \cite{francisco2020esm} o sucesso da coleta depende de uma
+Segundo \citeonline{francisco2020esm}, o sucesso da coleta depende de uma
 configuração técnica voltada para o imediatismo da emoção sentida no jogo.
 Estabelecer esse limite máximo de tempo para o preenchimento é essencial a fim
 de garantir que o dado coletado reflita a experiência do momento e não após a
@@ -580,11 +668,11 @@ percebida pelo aluno.
 \subsubsection{Escala de Engajamento do Usuário (\texorpdfstring{\acrshort{ues}}{UES})}
 \label{sec:ues_form}
 A escala de engajamento do usuário é o critério para medição do engajamento e é
-dividida em dimensões, descrita por \cite{obrien2018practical}, que estabelece o
+dividida em dimensões, descrita por \citeonline{obrien2018practical}, que estabelece o
 instrumento de medição composto por doze questões e quatro dimensões
 estruturais: Atenção Focada, Usabilidade Percebida, Apelo Estético e Recompensa.
 
-Segundo \cite{obrien2018practical} a atenção focada reflete estado em que o
+Segundo \citeonline{obrien2018practical}, a atenção focada reflete estado em que o
 indivíduo se sente pela experiência interativa. A usabilidade percebida envolve
 a relação entre o nível de controle percebido e o esforço necessário para o
 usuário realizar sua tarefa. O apelo estético avalia o nível de atratividade e
@@ -595,7 +683,7 @@ geral da interação e a disposição do usuário em recomendar o sistema
 (novidade), além da sensação lúdica de ter se divertido e sido atraído pela
 experiência (envolvimento sentido) \cite{obrien2018practical}.
 
-Conforme \cite{obrien2018practical}, durante a aplicação do instrumento de
+Conforme \citeonline{obrien2018practical}, durante a aplicação do instrumento de
 avaliação, o participante deve refletir acerca de sua experiência interativa com
 o sistema e indicar seu nível de concordância para cada afirmação. Nesse
 sentido, no formulário é usada a Escala de Likert como instrumento de medição do
