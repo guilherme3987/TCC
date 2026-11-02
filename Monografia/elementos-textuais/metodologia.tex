@@ -277,13 +277,40 @@ Os dados são armazenados no PostgreSQL, utilizado como área de \textit{staging
 
 \subsection{Back-End}
 
-O backend da plataforma Cognitivo é desenvolvido em Python 3.12 utilizando o framework Flask, seguindo o padrão de design Application Factory. Esta arquitetura permite a criação de múltiplas instâncias da aplicação, facilitando a configuração de diferentes ambientes, como desenvolvimento, testes (utilizando SQLite em memória) e produção. A organização do código é modularizada através de Blueprints, que separam as responsabilidades da API em quatro domínios principais: autenticação (`auth`), gestão de usuários (`users`), gerenciamento de questões (`questions`) e controle de sessões de estudo (`sessions`).
+O backend da plataforma Cognitivo é desenvolvido em \textit{Python} 3.12
+utilizando o framework \textit{Flask}, seguindo o padrão de design
+\textit{Application Factory}. Esta arquitetura permite a criação de múltiplas
+instâncias da aplicação, facilitando a configuração de diferentes ambientes,
+como desenvolvimento, testes e produção. A organização do código é modularizada
+através de módulos, que separam as responsabilidades da \gls{api} em quatro
+domínios principais: autenticação (\textit{auth}), gestão de usuários
+(\textit{users}), gerenciamento de questões (\textit{questions}) e controle de
+sessões de estudo (\textit{sessions}).
 
-A autenticação é híbrida, suportando tanto o login via Google (integrado ao Firebase) quanto um sistema nativo de e-mail e senha. O fluxo de autenticação culmina na emissão de tokens JWT (JSON Web Tokens), que garantem a segurança e a identificação do usuário em rotas privadas. Para a persistência de dados, o sistema utiliza o MariaDB 11 com a biblioteca SQLAlchemy como ORM, permitindo a manipulação de entidades como usuários, ligas de progressão, questões do ENEM, sessões de estudo e logs de atividades.
+A autenticação é híbrida, suportando tanto o \textit{login} via Google
+(integrado ao \textit{Firebase}) quanto um sistema nativo de e-mail e senha. O
+fluxo de autenticação culmina na emissão de tokens JWT (\gls{json}
+\textit{Web Tokens}), que garantem a segurança e a identificação do usuário em
+rotas privadas. Para a persistência de dados, o sistema utiliza a biblioteca \textit{SQLAlchemy} com \gls{orm}, permitindo a
+manipulação de entidades como usuários, ligas de progressão, questões do
+\gls{enem}, sessões de estudo e \textit{logs} de atividades.
 
-O núcleo da lógica de negócio reside no gerenciamento das sessões de estudo. O backend controla a progressão do aluno através de fases baseadas nos pilares do Pensamento Computacional (Abstração, Decomposição, Reconhecimento de Padrões e Algoritmos). O sistema implementa um motor de cálculo de experiência (XP) e penalidades: o ganho de pontos é influenciado por erros persistentes e pelo uso de dicas, aplicando multiplicadores redutores ao XP final. A progressão do usuário é monitorada por um sistema de ligas (de Bronze a Lendário), onde a mudança de categoria ocorre automaticamente ao atingir a pontuação mínima requerida.
+O núcleo da lógica de negócio reside no gerenciamento das sessões de estudo. O
+backend controla a progressão do aluno através de fases baseadas nos pilares do
+\gls{pc} (Abstração, Decomposição, Reconhecimento de Padrões e Algoritmos). O
+sistema implementa um motor de cálculo de experiência (\gls{xp}) e penalidades:
+o ganho de pontos é influenciado por erros persistentes e pelo uso de dicas,
+aplicando multiplicadores redutores ao \gls{xp} final. A progressão do usuário
+é monitorada por um sistema de ligas (de Bronze a Lendário), onde a mudança de
+categoria ocorre automaticamente ao atingir a pontuação mínima requerida.
 
-A comunicação com o frontend é realizada via HTTP/JSON, com a API expondo endpoints para a listagem de questões, registro de tentativas de resposta e consulta de estatísticas de desempenho por pilar. A infraestrutura é totalmente containerizada com Docker Compose, orquestrando a API Flask, o banco de dados MariaDB e o servidor de desenvolvimento do frontend, garantindo a consistência do ambiente entre diferentes máquinas. A figura \ref{fig:modelo-back-dend} apresenta a arquitetura do backend, destacando os principais componentes e suas interações.
+A \gls{api} expõe \textit{endpoints} para a listagem de questões, registro de
+tentativas de resposta e consulta de estatísticas de desempenho por pilar. A
+infraestrutura é baseada em \textit{Docker},
+orquestrando a \gls{api} \textit{Flask}, o banco de dados \textit{MySQL} e o
+servidor de desenvolvimento, garantindo a consistência do ambiente
+entre diferentes máquinas. A Figura \ref{fig:modelo-back-dend} apresenta a
+arquitetura do backend, destacando os principais componentes e suas interações.
 
 
 \begin{figure}[H]
@@ -320,7 +347,7 @@ persistência do estado dessas interações no banco de dados relacional MySQL. 
     \fonte{Elaborado pelo autor (2026).}
 \end{figure}
 
-\subsection{Sistema Gamificado}
+\subsection{Elementos de gamificação empregados}
 \label{sec:sistema_gamificado}
 
 
@@ -407,6 +434,34 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
   \fonte{Elaborada pelo autor (2026).}
 
 \end{table}
+
+As insígnias (\textit{badges}) são definidas em um catálogo mantido no backend
+(\textit{badges.py}), que reúne, para cada conquista, nome, descrição, cor,
+ícone, raridade, categoria e critério de desbloqueio. O catálogo distribui as
+conquistas em quatro categorias. A primeira reúne as insígnias de \gls{pc},
+associadas aos pilares Abstração, Decomposição, Reconhecimento de Padrões e
+Algoritmo, com meta de 25 \gls{xp} por pilar e uma insígnia geral concedida aos
+100 \gls{xp}. As demais acompanham a progressão do estudante: ligas, definidas
+pela faixa alcançada, níveis organizados em marcos de 100 \gls{xp} e
+atividade, que considera sessões concluídas e a maior sequência de acertos.
+
+O progresso de cada insígnia é calculado pela função
+\textit{collect\_badge\_metrics()}. Para as conquistas de \gls{pc}, a função soma
+o \gls{xp} ganho por atributo nos registros de \textit{Question\_XP\_Award}. Nas
+insígnias de liga, considera-se a ordem da liga atual do usuário. Nas de nível,
+toma-se o total de \gls{xp} acumulado. Na categoria de atividade, contam-se as
+sessões concluídas e calcula-se a maior sequência de acertos do histórico. A
+avaliação ocorre quando o estudante acessa o \textit{endpoint}
+\textit{/api/users/me/badges} ou no momento em que ganha \gls{xp} ou encerra uma
+sessão, por meio da função \textit{sync\_user\_badges()}, que persiste apenas os
+novos desbloqueios na tabela \textit{User\_Badge}, cuja chave é única por
+usuário e \textit{slug}.
+
+Uma vez conquistada, a insígnia permanece associada ao usuário ainda que
+penalidades reduzam sua pontuação, o que preserva o caráter de marco histórico
+da conquista. O front-end apresenta o catálogo completo na tela Conquistas, com
+estado bloqueado ou desbloqueado, progresso e data de desbloqueio, e utiliza os
+ícones dos pilares nas insígnias de \gls{pc}.
 
 \subsection{Banco de dados}
 \label{sec:banco-de-dados}
@@ -550,7 +605,7 @@ anteriormente.
     \centering
     \caption{Fluxo de navegabilidade}
     \label{fig:design}
-    \includegraphics[width=0.95\textwidth]{figuras/Fluxo de navegabilidade Final.png}
+    \includegraphics[width=0.95\textwidth]{figuras/Fluxo de navegabilidade_Final.png}
     \fonte{Elaborado pelo autor (2026).}
 \end{figure}
 
