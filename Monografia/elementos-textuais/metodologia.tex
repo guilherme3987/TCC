@@ -85,7 +85,7 @@ colaborativo e pragmático da pesquisa.
         Ciclos de avaliação &
         \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
             \item Ciclo 1: Avaliação por professores de Matemática do curso de Sistemas de Informação.
-            \item Ciclo 2: Avaliação por alunos.
+            \item Ciclo 2: Avaliação por alunos do segundo semestre do curso de Sistemas de Informação.
         \end{itemize} \\
         \hline
 
@@ -351,33 +351,53 @@ persistência do estado dessas interações no banco de dados relacional MySQL. 
 \label{sec:sistema_gamificado}
 
 
-Em relação às mecânicas de gamificação, os Pontos são divididos entre \gls{xp} Geral e
-\gls{xp} de Atributo. As Insígnias (\textit{Badges}) funcionam como marcos de
-conquista de longo prazo, recompensando a persistência, sequências de dias
-ativos e o domínio completo de assuntos matemáticos. Por fim, os
-\textit{Leaderboards} organizam os estudantes em uma liga global.
+Em relação às mecânicas de gamificação, a plataforma adota o modelo \gls{pbl},
+que articula pontos, insígnias e quadros de líderes para estruturar recompensas,
+progressão e comparação social \cite{silpasuwanchai2016developing}. Os pontos
+registram o desempenho e alimentam a evolução do estudante; as insígnias
+(\textit{badges}) simbolizam conquistas e marcos alcançados; e os
+\textit{leaderboards} introduzem a dimensão competitiva. A esse conjunto somam-se
+mecânicas de risco e de retorno afetivo, como penalidades, vidas e o mascote, que
+dão consequência às escolhas do jogador e reforçam o feedback imediato. Em uma
+atividade gamificada de matemática, \citeonline{teodosio2023atividade} empregam
+recompensas e feedback visual imediato para sustentar o engajamento durante a
+resolução de problemas, o que dialoga com a lógica de recompensas do \gls{pbl}.
+Em uma experiência com
+as plataformas Code.org e Scratch na educação básica, \citeonline{filho2025}
+relatam que a interface gamificada, com desafios sequenciais e feedback visual
+imediato, estimulou a experimentação, o teste e a depuração de soluções, o que
+reforça o potencial dos elementos de jogos para sustentar o engajamento em
+atividades de \gls{pc}.
 
-As tabelas \ref{table:pontos_xp} e
-\ref{table:penalidades_xp} materializam o motor de engajamento do sistema
-através do \gls{pbl}. A Tabela
-\ref{table:pontos_xp} estabelece o sistema de reforço positivo por meio da
-distribuição de Pontos de Experiência (\gls{xp}). A divisão entre \gls{xp} Geral e \gls{xp} de
-Atributo funciona como um mecanismo de progressão de competências (\textit{Skill
-Tree}), no qual o comportamento do estudante é moldado para enxergar seu próprio
-avanço. Ao atribuir pesos idênticos (+2.0) às etapas de Decomposição, Abstração
-e Padrões, a plataforma nivela a importância das fases iniciais do Pensamento
-Computacional. Contudo, ao atribuir pontuação extra à etapa de Algoritmos com uma pontuação
-superior (+3.0) e oferecer um bônus de encerramento (+1.0 geral e +0.25
-distribuído), o \textit{game design} introduz a mecânica de Recompensa por
-Conclusão de Jornada, estimulando o efeito de completude e induzindo o aluno a
-finalizar o ciclo completo para maximizar seus ganhos na liga global.
+O componente de pontos é representado pelos PC Points (\gls{xp}), concedidos a
+cada etapa do pensamento computacional concluída corretamente. A Tabela
+\ref{table:pontos_xp} apresenta a distribuição adotada: 2,0 de \gls{xp} geral e
+2,0 de \gls{xp} de atributo em Decomposição, Abstração e Reconhecimento de
+Padrões, 3,0 em Criação de Algoritmos e um bônus de conclusão de 1,0 de \gls{xp}
+geral e 0,25 por atributo. Todos os valores são ajustados pelo multiplicador
+vigente, recalculado ao longo da questão conforme os erros e as dicas. A divisão
+entre \gls{xp} geral e \gls{xp} de
+Atributo funciona como mecanismo de progressão de competências, pois permite
+acompanhar o avanço em cada pilar do \gls{pc} enquanto a pontuação geral alimenta
+a liga e os níveis. Ao atribuir pesos idênticos às etapas de Decomposição,
+Abstração e Reconhecimento de Padrões, a plataforma nivela a importância das
+fases iniciais, a pontuação superior de Criação de Algoritmos e o bônus de
+conclusão introduzem uma recompensa por completar a jornada, estimulando o aluno
+a finalizar o ciclo.
 
-Além disso, a tabela \ref{table:penalidades_xp} descreve  a perspectiva da
-aversão à perda, utilizando mecânicas de custos  para forçar práticas de
-resolução reflexivas.  A dinâmica de penalidade impõe um custo estratégico ao
-estudante, pois, embora o uso de dicas facilite a superação imediata do obstáculo, o
-rendimento da questão é drasticamente reduzido, incentivando o aluno a esgotar
-seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
+A pontuação acumulada alimenta dois desdobramentos de progressão. O nível é
+calculado a cada 100 \gls{xp} acumulados e acompanha o progresso até o próximo
+marco. As sete ligas, Bronze, Prata, Ouro, Platina, Diamante, Mestre e Lendário,
+são atribuídas automaticamente conforme faixas de pontuação e sincronizadas a
+cada ganho ou perda de \gls{xp}, de modo que a liga acompanhe a pontuação atual do
+estudante.
+
+Além disso, a Tabela \ref{table:penalidades_xp} descreve a perspectiva da aversão
+à perda, com mecânicas de custo que incentivam a resolução reflexiva. A dinâmica
+de penalidade impõe um custo estratégico ao estudante, pois o uso de dicas
+facilita a superação imediata do obstáculo, mas reduz o rendimento da questão,
+incentivando o aluno a esgotar seus próprios recursos lógicos antes de recorrer à
+ajuda da plataforma.
 
 \begin{table}[htbp]
 
@@ -388,17 +408,17 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
 
   \hline
 
-  \textbf{Etapa concluída} & \textbf{\gls{xp} geral (Float)} & \textbf{\gls{xp} de atributo (Float)} \\ \hline
+  \textbf{Etapa concluída} & \textbf{\gls{xp} geral} & \textbf{\gls{xp} de atributo} \\ \hline
 
-  Decomposição & +2.0 & +2.0 \\ \hline
+  Decomposição & +2,0 & +2,0 \\ \hline
 
-  Abstração & +2.0 & +2.0 \\ \hline
+  Abstração & +2,0 & +2,0 \\ \hline
 
-  Padrões & +2.0 & +2.0 \\ \hline
+  Padrões & +2,0 & +2,0 \\ \hline
 
-  Algoritmos & +3.0 & +3.0 \\ \hline
+  Algoritmos & +3,0 & +3,0 \\ \hline
 
-  Conclusão (Bônus) & +1.0 & +0.25 (em cada atributo) \\ \hline
+  Conclusão (Bônus) & +1,0 & +0,25 (em cada atributo) \\ \hline
 
   \end{tabular}
 
@@ -419,15 +439,15 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
 
   \textbf{Ação do usuário} & \textbf{Penalidade} & \textbf{Impacto no \gls{xp}} \\ \hline
 
-  Tentativa errada & $\times 0.98$ ($-2\%$) & Mínimo \\ \hline
+  Tentativa errada & $\times 0{,}98$ ($-2\%$) & Mínimo \\ \hline
 
-  Erro persistente (3+) & $\times 0.90$ ($-10\%$) & Leve \\ \hline
+  Erro persistente (3+) & $\times 0{,}90$ ($-10\%$) & Leve \\ \hline
 
-  Dica 1 & $\times 0.80$ ($-20\%$) & Médio \\ \hline
+  Dica 1 & $\times 0{,}80$ ($-20\%$) & Médio \\ \hline
 
-  Dica 2 & $\times 0.50$ ($-50\%$) & Alto \\ \hline
+  Dica 2 & $\times 0{,}50$ ($-50\%$) & Alto \\ \hline
 
-  Dica 3 & $\times 0.40$ ($-60\%$) & Crítico \\ \hline
+  Dica 3 & $\times 0{,}40$ ($-60\%$) & Crítico \\ \hline
 
   \end{tabular}
 
@@ -435,18 +455,50 @@ seus próprios recursos lógicos antes de recorrer à ajuda da plataforma.
 
 \end{table}
 
-As insígnias (\textit{badges}) são definidas em um catálogo mantido no backend
-(\textit{badges.py}), que reúne, para cada conquista, nome, descrição, cor,
-ícone, raridade, categoria e critério de desbloqueio. O catálogo distribui as
-conquistas em quatro categorias. A primeira reúne as insígnias de \gls{pc},
-associadas aos pilares Abstração, Decomposição, Reconhecimento de Padrões e
-Algoritmo, com meta de 25 \gls{xp} por pilar e uma insígnia geral concedida aos
-100 \gls{xp}. As demais acompanham a progressão do estudante: ligas, definidas
-pela faixa alcançada, níveis organizados em marcos de 100 \gls{xp} e
-atividade, que considera sessões concluídas e a maior sequência de acertos.
+Erros reduzem o multiplicador de \gls{xp} para 0,98 e, a partir de três erros
+persistentes na mesma fase, para 0,90. O uso de dicas aplica a escada de 0,80,
+0,50 e 0,40, de modo que a penalidade cresce com o número de dicas utilizadas na
+fase. Os fatores de erro e de dica incidem de forma cumulativa sobre o valor base
+da questão. O aluno dispõe de três vidas e perde uma quando, na mesma fase,
+acumula três erros ou três dicas e responde incorretamente a uma questão. Ao zerar as
+vidas, ocorre o \textit{game over}, com encerramento da sessão como abandonada,
+embora os pontos conquistados permaneçam. A presença de vidas, dicas e progressão
+por fases encontra correspondência no \textit{Enigma Pirata}, que representa a
+vida por corações, oferece uma dica por fase e utiliza estrelas para indicar o
+avanço \cite{lais2024}. O mascote reforça o vínculo afetivo ao oferecer dicas,
+comentar acertos e erros e reagir com expressões de alegria, tristeza e choro.
+Efeitos sonoros, animações de \gls{xp} e a tela de resultados, com resumo de
+pontos, sequência de acertos, taxa de acertos, dicas utilizadas e vidas perdidas,
+consolidam o retorno imediato ao jogador.
 
-O progresso de cada insígnia é calculado pela função
-\textit{collect\_badge\_metrics()}. Para as conquistas de \gls{pc}, a função soma
+O componente de insígnias reúne 24 conquistas distribuídas em quatro
+categorias: Pensamento Computacional, Ligas, Níveis e Atividade. O catálogo de insígnias é
+reúne, para cada conquista, nome,
+descrição, cor, ícone, raridade, categoria e critério de desbloqueio. A Tabela
+\ref{table:badges} sintetiza essa composição. Cada insígnia possui indicador de
+progresso e raridade classificada como comum, raro, épico ou lendário. As
+conquistas de Pensamento Computacional estão associadas aos quatro pilares, com
+meta de 25 \gls{xp} por pilar, e incluem uma insígnia geral concedida aos 100
+\gls{xp} somados entre os quatro pilares. As de liga acompanham a ascensão nas sete faixas; as de nível cobrem
+marcos de 50 a 10.000 \gls{xp}; e as de atividade recompensam a conclusão de 1, 5
+ou 20 sessões e sequências de 5, 10 ou 20 acertos consecutivos.
+
+\begin{table}[H]
+    \centering
+    \caption{\label{table:badges}Composição do catálogo de insígnias}
+    \begin{tabular}{|l|c|p{7.7cm}|}
+        \hline
+        \textbf{Categoria} & \textbf{Quantidade} & \textbf{Critério de desbloqueio} \\ \hline
+        Pensamento Computacional & 5 & 25 \gls{xp} em cada pilar e uma insígnia geral aos 100 \gls{xp} somados entre os pilares \\ \hline
+        Ligas & 7 & Ascensão em cada uma das sete ligas \\ \hline
+        Níveis & 6 & Marcos de 50, 100, 500, 1.500, 4.000 e 10.000 \gls{xp} \\ \hline
+        Atividade & 6 & Conclusão de 1, 5 ou 20 sessões e sequências de 5, 10 ou 20 acertos \\ \hline
+        Total & 24 & \\ \hline
+    \end{tabular}
+    \fonte{Elaborada pelo autor (2026).}
+\end{table}
+
+Para as conquistas de \gls{pc}, a função soma
 o \gls{xp} ganho por atributo nos registros de \textit{Question\_XP\_Award}. Nas
 insígnias de liga, considera-se a ordem da liga atual do usuário. Nas de nível,
 toma-se o total de \gls{xp} acumulado. Na categoria de atividade, contam-se as
@@ -457,11 +509,9 @@ sessão, por meio da função \textit{sync\_user\_badges()}, que persiste apenas
 novos desbloqueios na tabela \textit{User\_Badge}, cuja chave é única por
 usuário e \textit{slug}.
 
-Uma vez conquistada, a insígnia permanece associada ao usuário ainda que
-penalidades reduzam sua pontuação, o que preserva o caráter de marco histórico
-da conquista. O front-end apresenta o catálogo completo na tela Conquistas, com
-estado bloqueado ou desbloqueado, progresso e data de desbloqueio, e utiliza os
-ícones dos pilares nas insígnias de \gls{pc}.
+O componente de \textit{leaderboards} é materializado no ranking geral, ordenado
+por PC Points, carregado de forma paginada e com a posição do usuário destacada, inserindo o aluno em uma comunidade e estimula a busca por
+melhores posições.
 
 \subsection{Banco de dados}
 \label{sec:banco-de-dados}
