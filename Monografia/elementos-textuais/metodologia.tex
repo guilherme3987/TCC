@@ -32,7 +32,7 @@ os problemas são enfrentados diretamente na realidade escolar, por meio de
 experimentos pragmáticos focando sempre na utilidade real. O \gls{dbr} é, portanto,
 uma abordagem essencialmente pragmática, orientada para a elaboração e o teste
 de soluções educacionais \cite{obrien2018practical}. Por fim, possibilita
-a criação do fluxo \ref{fig:fluxo-geral-dbr} que descreve as etapas empregadas para o
+a criação do fluxo geral do gls{dbr}, representado na Figura \ref{fig:fluxo-geral-dbr} que descreve as etapas empregadas para o
 desenvolvimento do artefato, evidenciando a aplicação da metodologia \gls{dbr}, desde
 a identificação do problema até a avaliação da solução proposta e a geração de
 conhecimento científico. O processo é estruturado em quatro etapas principais:
@@ -337,7 +337,7 @@ artefato, englobando o Motor Pedagógico e de Gamificação. Essa camada é comp
 pelos \textit{endpoints} e rotas responsáveis por processar as regras centrais
 da aplicação, tais como o cálculo e distribuição de pontos de experiência (\gls{xp}),
 a validação sequencial do progresso do estudante pelas fases do \gls{pc} e a
-persistência do estado dessas interações no banco de dados relacional MySQL. A figura \ref{fig:modelo-front-dend} apresenta a arquitetura do front-end, destacando os principais componentes e suas interações.
+persistência do estado dessas interações no banco de dados relacional \textit{MySQL}. A figura \ref{fig:modelo-front-dend} apresenta a arquitetura do front-end, destacando os principais componentes e suas interações.
 
 \begin{figure}[H]
     \centering
@@ -474,8 +474,8 @@ consolidam o retorno imediato ao jogador.
 O componente de insígnias reúne 24 conquistas distribuídas em quatro
 categorias: Pensamento Computacional, Ligas, Níveis e Atividade. O catálogo de insígnias é
 reúne, para cada conquista, nome,
-descrição, cor, ícone, raridade, categoria e critério de desbloqueio. A Tabela
-\ref{table:badges} sintetiza essa composição. Cada insígnia possui indicador de
+descrição, cor, ícone, raridade, categoria e critério de desbloqueio. O Quadro
+\ref{quadro:badges} sintetiza essa composição. Cada insígnia possui indicador de
 progresso e raridade classificada como comum, raro, épico ou lendário. As
 conquistas de Pensamento Computacional estão associadas aos quatro pilares, com
 meta de 25 \gls{xp} por pilar, e incluem uma insígnia geral concedida aos 100
@@ -483,20 +483,20 @@ meta de 25 \gls{xp} por pilar, e incluem uma insígnia geral concedida aos 100
 marcos de 50 a 10.000 \gls{xp}; e as de atividade recompensam a conclusão de 1, 5
 ou 20 sessões e sequências de 5, 10 ou 20 acertos consecutivos.
 
-\begin{table}[H]
+\begin{quadro}[H]
     \centering
-    \caption{\label{table:badges}Composição do catálogo de insígnias}
-    \begin{tabular}{|l|c|p{7.7cm}|}
+    \caption{\label{quadro:badges}Composição do catálogo de insígnias}
+    \begin{tabular}{|l|p{9cm}|}
         \hline
-        \textbf{Categoria} & \textbf{Quantidade} & \textbf{Critério de desbloqueio} \\ \hline
-        Pensamento Computacional & 5 & 25 \gls{xp} em cada pilar e uma insígnia geral aos 100 \gls{xp} somados entre os pilares \\ \hline
-        Ligas & 7 & Ascensão em cada uma das sete ligas \\ \hline
-        Níveis & 6 & Marcos de 50, 100, 500, 1.500, 4.000 e 10.000 \gls{xp} \\ \hline
-        Atividade & 6 & Conclusão de 1, 5 ou 20 sessões e sequências de 5, 10 ou 20 acertos \\ \hline
-        Total & 24 & \\ \hline
+        \textbf{Categoria} & \textbf{Critério de desbloqueio} \\ \hline
+        Pensamento Computacional & 25 \gls{xp} em cada pilar e uma insígnia geral aos 100 \gls{xp} somados entre os pilares \\ \hline
+        Ligas & Ascensão em cada uma das sete ligas \\ \hline
+        Níveis & Marcos de 50, 100, 500, 1.500, 4.000 e 10.000 \gls{xp} \\ \hline
+        Atividade & Conclusão de 1, 5 ou 20 sessões e sequências de 5, 10 ou 20 acertos \\ \hline
+        Total & \\ \hline
     \end{tabular}
     \fonte{Elaborada pelo autor (2026).}
-\end{table}
+\end{quadro}
 
 Para as conquistas de \gls{pc}, a função soma
 o \gls{xp} ganho por atributo nos registros de \textit{Question\_XP\_Award}. Nas
@@ -516,7 +516,7 @@ melhores posições.
 \subsection{Banco de dados}
 \label{sec:banco-de-dados}
 
-O Cognitivo utiliza o MySQL como sistema gerenciador de banco de dados. 
+O Cognitivo utiliza o \textit{MySQL} como sistema gerenciador de banco de dados. 
 O esquema reúne o cadastro e a progressão dos
 estudantes, o conteúdo das questões, as sessões de estudo e os registros de
 desempenho, além de uma estrutura de \textit{logs}. A separação entre esses
@@ -707,7 +707,7 @@ a acurácia e o rigor conceitual exigidos e como o sistema trata e processa essa
 cognitivas e se as mecânicas de gamificação foram projetadas de modo a induzir e estimular o
 raciocínio.
 
-O grupo focal foi realizado remotamente no dia 20 de outubro de 2026, com a participação dos docentes Diego Gervais, Maria Líva e Gerusa Pinheiro, professores que lecionam disciplinas da área de Matemática do curso de Bacharelado em Sistemas de Informação. A sessão, com duração de 45 minutos, foi estruturada para avaliar a clareza e a precisão dos conteúdos matemáticos, a eficácia das mecânicas de gamificação no engajamento dos estudantes, bem como para levantar sugestões de melhorias e ajustes.
+O grupo focal foi realizado remotamente no dia 20 de outubro de 2026, com a participação de alguns docentes da área de Matemática do curso de Bacharelado em Sistemas de Informação. A sessão, com duração de 45 minutos, foi estruturada para avaliar a clareza e a precisão dos conteúdos matemáticos, a eficácia das mecânicas de gamificação no engajamento dos estudantes, bem como para levantar sugestões de melhorias e ajustes.
 As contribuições dos participantes foram fundamentais para identificar aspectos que possibilitem o aperfeiçoamento pedagógico e funcional da solução, consolidando o grupo focal como uma etapa estratégica de coleta de percepções para o aprimoramento do sistema Cognitivo. Os resultados detalhados desta análise estão relatados no capítulo \ref{ch:analise-dados}.
 
 
@@ -805,11 +805,11 @@ o cálculo do Alfa de Cronbach e análises fatoriais para validar a consistênci
 interna das respostas obtidas. Essa estrutura organiza-se em quatro seções
 fundamentais que mapeiam as dimensões multidimensionais do engajamento.
 
-A Seção 1, referente a Atenção e Imersão (FA-S), é dedicada a mensurar o foco e
+A Seção 1, no apêndice \ref{ap:forms-ues}, referente a Atenção e Imersão (FA-S), é dedicada a mensurar o foco e
 atenção por meio do nível de absorção e da percepção temporal gerados pelas
 mecânicas lúdicas. O objetivo deste bloco é avaliar se a plataforma conseguiu
-reter o estudante. A Seção 2, que aborda a Usabilidade Percebida (PU-S), foca no
-esforço de interação. A Seção 3, focada no Apelo Visual e Estético (AE-S),
+reter o estudante. A Seção 2, no apêndice \ref{ap:forms-ues} que aborda a Usabilidade Percebida (PU-S), foca no
+esforço de interação. A Seção 3, no apêndice \ref{ap:forms-ues} focada no Apelo Visual e Estético (AE-S),
 avalia a atratividade da interface como um fator de motivação. Essa dimensão
 investiga o quanto o apelo estético e o design visual agradável do sistema atuam
 de forma favorável na experiência do usuário ao longo das sessões de estudo.

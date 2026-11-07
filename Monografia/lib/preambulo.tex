@@ -60,6 +60,28 @@
 \addbibresource{elementos-pos-textuais/referencias.bib}
 \ExecuteBibliographyOptions{giveninits=true,extradate=true,repeattitles=true,repeatfields=true}
 
+% Espaçamento das referências: espaço simples e uma linha em branco entre entradas
+\setlength{\bibitemsep}{\baselineskip}
+\AtBeginBibliography{\linespread{1.0}\selectfont}
+
+% Uniformiza a abreviação de páginas em minúsculas (p. 1--10)
+\DeclareFieldFormat*{pages}{%
+  \ifnumeral{#1}%
+    {p\adddot\addspace}%
+    {\ifnumerals{#1}%
+       {p\adddot\addspace}%
+       {}}%
+  #1}
+
+% Uniformiza [S. l.] e [s. n.] nas entradas sem local/editora
+\DefineBibliographyStrings{brazil}{%
+  sineloco = {S\adddot\addspace l\adddot},
+  sinenomine = {s\adddot\addspace n\adddot},
+}
+
+% Evita que o mês no início do bloco seja capitalizado (ex.: fev. em vez de Fev.)
+\DeclareFieldFormat{date}{\phantom{}#1}
+
 % Expressão "et al." em itálico (citações e lista de referências)
 \DefineBibliographyStrings{brazilian}{%
   andothers = {\mkbibemph{et\addabbrvspace al\adddot}}%
