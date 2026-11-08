@@ -493,7 +493,6 @@ ou 20 sessões e sequências de 5, 10 ou 20 acertos consecutivos.
         Ligas & Ascensão em cada uma das sete ligas \\ \hline
         Níveis & Marcos de 50, 100, 500, 1.500, 4.000 e 10.000 \gls{xp} \\ \hline
         Atividade & Conclusão de 1, 5 ou 20 sessões e sequências de 5, 10 ou 20 acertos \\ \hline
-        Total & \\ \hline
     \end{tabular}
     \fonte{Elaborada pelo autor (2026).}
 \end{quadro}
@@ -590,14 +589,6 @@ usuário e \textit{slug}, e o ranking usa o índice de pontos de \textit{User}. 
 banco não exige o preenchimento do \textit{slug} quando há experiência de
 atributo, nem relações entre valores base e finais. Essas verificações ficam na
 aplicação.
-
-A tabela de auditoria (\textit{Log}) permanece separada das tabelas de negócio.
-Ela registra a ação, a entidade e o identificador afetado, os detalhes em
-\gls{json}, o endereço IP, o agente do usuário e a data da ocorrência. O vínculo
-com \textit{User} é opcional e usa \textit{ON DELETE SET NULL}, e a exclusão de
-uma conta não apaga os registros de auditoria. A validação do \gls{json}
-também é feita pelo banco, o que preserva a consistência dos detalhes
-armazenados.
 
 Os vínculos entre essas estruturas acompanham o fluxo da aplicação: o usuário
 abre uma sessão, a sessão recebe tentativas e usos de dicas, e as premiações de
