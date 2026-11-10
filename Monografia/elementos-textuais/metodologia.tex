@@ -6,7 +6,7 @@
 \label{ch:metodologia}
 A metodologia adotada para a condução deste estudo é a \gls{dbr}, devido à
 intenção de gerar uma solução prática para o problema educacional, por meio da
-construção de um artefato pedagógico e a geração de conhecimento científico. É
+construção de um artefato pedagógico e da geração de conhecimento científico. É
 uma metodologia de pesquisa em soluções educacionais, envolvendo a colaboração
 entre pesquisadores e profissionais da educação, cuja participação ativa na
 pesquisa contribui para a construção de intervenções mais relevantes e
@@ -28,8 +28,8 @@ reflexões imediatas com base nas reações e nos resultados reais observados no
 alunos \cite{obrien2018practical}. 
 
 Diante disso, a metodologia assume uma postura prática e contextualizada, em que
-os problemas são enfrentados diretamente na realidade escolar, por meio de
-experimentos pragmáticos focando sempre na utilidade real. O \gls{dbr} é, portanto,
+os problemas são enfrentados na realidade escolar, por meio de
+experimentos pragmáticos focando sempre na utilidade real. A \gls{dbr} é, portanto,
 uma abordagem essencialmente pragmática, orientada para a elaboração e o teste
 de soluções educacionais \cite{obrien2018practical}. Por fim, possibilita
 a criação do fluxo geral do gls{dbr}, representado na Figura \ref{fig:fluxo-geral-dbr} que descreve as etapas empregadas para o
@@ -92,7 +92,7 @@ colaborativo e pragmático da pesquisa.
         Reflexões e melhorias &
         \begin{itemize}[leftmargin=*, topsep=2pt, itemsep=2pt]
             \item Ciclo 1: Refinamento do sistema a partir do feedback dos professores.
-            \item Ciclo 2: Uso de sistema pelos alunos e aplicação dos formulários \gls{esm} e \gls{ues}.
+            \item Ciclo 2: Uso do sistema pelos alunos e aplicação dos formulários \gls{esm} e \gls{ues}.
             \item Analisar os dados dos formulários e geração de conhecimento.
         \end{itemize} \\
         \hline
@@ -146,7 +146,7 @@ funcionam.
  
 A arquitetura do sistema, descrita na seção \ref{sec:arquitetura}, é estruturada
 sob dois ambientes que garantem a separação de responsabilidades e a
-escalabilidade da aplicação. A Plataforma Educacional Gamificada e o Módulo
+escalabilidade da aplicação: a Plataforma Educacional Gamificada e o Módulo
 \gls{etl}. O aluno interage com a interface web, cujas requisições trafegam via
 protocolo \gls{https} em formato \gls{json} para um \textit{API Gateway}. Este
 \textit{gateway} direciona o fluxo para o Motor Pedagógico e de Gamificação,
@@ -192,9 +192,9 @@ acompanhamento de métricas de gamificação (como \textit{badges} e ligas).
 
 O núcleo da plataforma foi centralizado no caso de uso \textit{Resolver Questão}
 que gera o fluxo de interações com as questões de matemática do \gls{enem}. Para
-refletir a possibilidade do usuário treinar cada nível separado ou o fluxo
+refletir a possibilidade do usuário treinar cada nível separadamente ou o fluxo
 completo, utilizou-se o mecanismo de relacionamentos de extensão
-(\textit{extend}). As etapas que operacionalizam os pilares do \gls{pc}
+(\textit{extend}). As etapas que operacionalizam os pilares do \gls{pc} são: 
 (\textit{Decompor Enunciado}, \textit{Abstrair Dados}, \textit{Reconhecer
 Padrão} e \textit{Criar Algoritmo}). Os casos de uso \textit{Solicitar Dica} e
 \textit{Aplicar Penalidade de \gls{xp}} foram modelados de maneira a materializar as
@@ -263,7 +263,7 @@ sem aguardar a resposta de cada chamada anterior.
 
 Os dados brutos são encaminhados para o container de Transformação, no qual
 scripts em \textit{Python} usando bibliotecas como \textit{Pandas} e
-\textit{Pydantic} realizam a normalização, validação e o enriquecimento das
+\textit{Pydantic} realizam a normalização, a validação e o enriquecimento das
 informações. Essas bibliotecas, respectivamente, permitem organizar as
 informações em uma estrutura de tabela, limpar textos com erros de formatação e
 tratar caracteres corrompidos. Por fim, o enriquecimento consiste em mapear e estruturar
@@ -301,7 +301,7 @@ backend controla a progressão do aluno através de fases baseadas nos pilares d
 sistema implementa um motor de cálculo de experiência (\gls{xp}) e penalidades:
 o ganho de pontos é influenciado por erros persistentes e pelo uso de dicas,
 aplicando multiplicadores redutores ao \gls{xp} final. A progressão do usuário
-é monitorada por um sistema de ligas (de Bronze a Lendário), onde a mudança de
+é monitorada por um sistema de ligas (de Bronze a Lendário), em que a mudança de
 categoria ocorre automaticamente ao atingir a pontuação mínima requerida.
 
 A \gls{api} expõe \textit{endpoints} para a listagem de questões, registro de
@@ -380,7 +380,7 @@ entre \gls{xp} geral e \gls{xp} de
 Atributo funciona como mecanismo de progressão de competências, pois permite
 acompanhar o avanço em cada pilar do \gls{pc} enquanto a pontuação geral alimenta
 a liga e os níveis. Ao atribuir pesos idênticos às etapas de Decomposição,
-Abstração e Reconhecimento de Padrões, a plataforma nivela a importância das
+Abstração e Reconhecimento de Padrões, a plataforma nivela a importância, das
 fases iniciais, a pontuação superior de Criação de Algoritmos e o bônus de
 conclusão introduzem uma recompensa por completar a jornada, estimulando o aluno
 a finalizar o ciclo.
@@ -404,7 +404,7 @@ ajuda da plataforma.
     \centering
   \caption{\label{table:pontos_xp}Distribuição de pontos de experiência (\texorpdfstring{\acrshort{xp}}{XP}) por etapa concluída}
 
-  \begin{tabular}{|l|c|c|} % O uso das barras '|' cria as linhas verticais exigidas para quadros
+  \begin{tabular}{lcc} % Tabela no estilo aberto, sem bordas verticais
 
   \hline
 
@@ -433,7 +433,7 @@ ajuda da plataforma.
 
   \caption{\label{table:penalidades_xp}Matriz de penalidades}
 
-  \begin{tabular}{|l|c|c|}
+  \begin{tabular}{lcc}
 
   \hline
 
@@ -472,7 +472,7 @@ pontos, sequência de acertos, taxa de acertos, dicas utilizadas e vidas perdida
 consolidam o retorno imediato ao jogador.
 
 O componente de insígnias reúne 24 conquistas distribuídas em quatro
-categorias: Pensamento Computacional, Ligas, Níveis e Atividade. O catálogo de insígnias é
+categorias: Pensamento Computacional, Ligas, Níveis e Atividade. O catálogo de insígnias
 reúne, para cada conquista, nome,
 descrição, cor, ícone, raridade, categoria e critério de desbloqueio. O Quadro
 \ref{quadro:badges} sintetiza essa composição. Cada insígnia possui indicador de
@@ -509,7 +509,7 @@ novos desbloqueios na tabela \textit{User\_Badge}, cuja chave é única por
 usuário e \textit{slug}.
 
 O componente de \textit{leaderboards} é materializado no ranking geral, ordenado
-por PC Points, carregado de forma paginada e com a posição do usuário destacada, inserindo o aluno em uma comunidade e estimula a busca por
+por PC Points, carregado de forma paginada e com a posição do usuário destacada, inserindo o aluno em uma comunidade e podendo estimular a busca por
 melhores posições.
 
 \subsection{Banco de dados}
@@ -662,13 +662,13 @@ funcionalidade da proposta.
 A validação não é compreendida como um momento único e final, mas como um
 processo dinâmico de refinamento, orientado pelos retornos obtidos ao longo da
 implementação e da análise das experiências dos usuários envolvidos. É destacado
-por \citeonline{obrien2018practical}, o papel dos testes e refinamentos das soluções. Esse
+por \citeonline{obrien2018practical} o papel dos testes e refinamentos das soluções. Esse
 processo, na prática, é repetido até que alcance um equilíbrio entre o que foi
 idealizado e a produção. Efetua-se uma avaliação formativa a cada ciclo, pois é o
 motor que impulsiona o avanço.
 
 No projeto em questão, a etapa de avaliação é dividida em duas etapas: Ciclos de validação por
-professores e aplicação com alunos. A primeira, consiste em validar e refinar o
+professores e aplicação com alunos. A primeira consiste em validar e refinar o
 sistema a partir das percepções dos professores, enquanto a segunda visa aferir
 o nível de experiência e engajamento dos alunos, utilizando os formulários de Método de Amostragem 
 de Experiência (\gls{esm}) e \gls{ues}.
@@ -689,7 +689,7 @@ pesquisador. Os participantes devem estar em consonância com os objetivos da pe
 A validação com professores de matemática do curso de Sistemas de Informação
 foca nas percepções para que as intervenções educacionais ultrapassem a idealização teórica, e
 para que sua aplicabilidade e sua capacidade de sobreviver e funcionar de maneira efetiva frente
-às condições, desafios e restrições reais do contexto educacional e do "chão da escola"sejam
+às condições, desafios e restrições reais do contexto educacional e do "chão da escola" sejam
 verificadas \cite{plomp2018pesquisa}. Nesta fase, para validar o artefato, utilizaremos critérios
 de avaliação específicos fundamentados em indicadores qualitativos. As métricas e dimensões
 analíticas desses indicadores visam verificar a exatidão e a eficiência da solução, com foco na
@@ -705,7 +705,7 @@ As contribuições dos participantes foram fundamentais para identificar aspecto
 \subsection{Ciclo de validação por alunos}
 O ciclo de validação pelos alunos tem como objetivo aferir se o produto
 resultou nos impactos e nas consequências de engajamento dos alunos na disciplina
-de matemática.Inicialmente, a previsão era realizar as validações com alunos da UPT. No entanto, devido a atrasos no cronograma do projeto e à coincidência do período de aplicação do ENEM, a amostra original tornou-se inviável. Como plano de contingência, definiu-se a aplicação do jogo com alunos do segundo semestre do curso de Sistemas de Informação, utilizando-os como amostra representativa de estudantes que realizaram o ENEM em 2025.
+de matemática. Inicialmente, a previsão era realizar as validações com alunos da UPT. No entanto, devido a atrasos no cronograma do projeto e à coincidência do período de aplicação do ENEM, a amostra original tornou-se inviável. Como plano de contingência, definiu-se a aplicação do jogo com alunos do segundo semestre do curso de Sistemas de Informação, utilizando-os como amostra representativa de estudantes que realizaram o ENEM em 2025.
 
 Nessa etapa serão aplicados os formulários de Método de Amostragem de
 Experiência (\gls{esm}) \ref{sec:esm_form} e \gls{ues}
@@ -717,8 +717,8 @@ da intervenção proposta.
 \subsubsection{Método de Amostragem de Experiência (\texorpdfstring{\acrshort{esm}}{ESM})}
 \label{sec:esm_form}
 O método de amostragem de experiência é utilizado para medir a experiência do
-usuário ao utilizar um sistema, coletando informações durante o uso. É descrito
-por \citeonline{francisco2020esm}, como investigações que necessitam coletar dados de
+usuário ao utilizar um sistema, coletando informações durante o uso. O método é descrito
+por \citeonline{francisco2020esm} como investigações que necessitam coletar dados de
 uma experiência que ocorreu com base em um evento específico para entender como
 os participantes interagem com o sistema.
 
@@ -747,7 +747,7 @@ sua ocorrência.
 O questionário, disponível no apêndice \ref{ap:forms-esm}, foi projetado para
 capturar dados subjetivos dos estudantes após a utilização do artefato, sendo
 segmentado em três macrodimensões teóricas. As dimensões avaliadas compreenderam
-imersão e foco, destinada a mensurar a concentração durante o ciclo de resolução
+imersão e foco, destinadas a mensurar a concentração durante o ciclo de resolução
 de problemas e verificar se o equilíbrio entre os desafios matemáticos e o
 sistema de dicas foi capaz de promover o engajamento, e uso do sistema
 (usabilidade e interface), voltada à análise da clareza das regras da
@@ -757,23 +757,20 @@ fornecidas pelo motor do sistema em resposta às ações do usuário.
 Por fim, a terceira dimensão aborda o \gls{pc} e a utilidade percebida. Esta seção
 estabelece um paralelo entre a experiência na plataforma e a resolução
 convencional de exercícios em caderno. Os itens avaliam se o fluxo principal
-guiou o estudante a exercitar os quatro pilares do \gls{pc}. Logo, aferindo a retenção
+guiou o estudante a exercitar os quatro pilares do \gls{pc}. Assim, avalia-se a retenção
 percebida pelo aluno.
 
 
 \subsubsection{Escala de Engajamento do Usuário (\texorpdfstring{\acrshort{ues}}{UES})}
 \label{sec:ues_form}
-A escala de engajamento do usuário é o critério para medição do engajamento e é
-dividida em dimensões, descrita por \citeonline{obrien2018practical}, que estabelece o
-instrumento de medição composto por doze questões e quatro dimensões
-estruturais: Atenção Focada, Usabilidade Percebida, Apelo Estético e Recompensa.
+A Escala de Engajamento do Usuário é utilizada como instrumento de mensuração do engajamento, sendo estruturada em quatro dimensões, conforme descrito por \citeonline{obrien2018practical}: Atenção Focada, Usabilidade Percebida, Apelo Estético e Recompensa. O instrumento é composto por doze questões distribuídas entre essas dimensões.
 
 Segundo \citeonline{obrien2018practical}, a atenção focada reflete estado em que o
 indivíduo se sente pela experiência interativa. A usabilidade percebida envolve
 a relação entre o nível de controle percebido e o esforço necessário para o
 usuário realizar sua tarefa. O apelo estético avalia o nível de atratividade e
-o apelo visual proporcionados pela interface. A dimensão referente a recompensa,
-caracteriza-se pelos aspectos do resultado experiencial, consolidando sucesso
+o apelo visual proporcionados pela interface. A dimensão referente à recompensa,
+caracteriza-se pelos aspectos do resultado experiencial, consolidando o sucesso
 geral da interação e a disposição do usuário em recomendar o sistema
 (durabilidade), o interesse e a curiosidade despertados durante o uso
 (novidade), além da sensação lúdica de ter se divertido e sido atraído pela
@@ -796,16 +793,16 @@ o cálculo do Alfa de Cronbach e análises fatoriais para validar a consistênci
 interna das respostas obtidas. Essa estrutura organiza-se em quatro seções
 fundamentais que mapeiam as dimensões multidimensionais do engajamento.
 
-A Seção 1, no apêndice \ref{ap:forms-ues}, referente a Atenção e Imersão (FA-S), é dedicada a mensurar o foco e
+A Seção 1, no apêndice \ref{ap:forms-ues}, referente à Atenção e Imersão (FA-S), é dedicada a mensurar o foco e a
 atenção por meio do nível de absorção e da percepção temporal gerados pelas
 mecânicas lúdicas. O objetivo deste bloco é avaliar se a plataforma conseguiu
-reter o estudante. A Seção 2, no apêndice \ref{ap:forms-ues} que aborda a Usabilidade Percebida (PU-S), foca no
-esforço de interação. A Seção 3, no apêndice \ref{ap:forms-ues} focada no Apelo Visual e Estético (AE-S),
+reter o estudante. A Seção 2, no apêndice \ref{ap:forms-ues}, que aborda a Usabilidade Percebida (PU-S), foca no
+esforço de interação. A Seção 3, no apêndice \ref{ap:forms-ues}, focada no Apelo Visual e Estético (AE-S),
 avalia a atratividade da interface como um fator de motivação. Essa dimensão
 investiga o quanto o apelo estético e o design visual agradável do sistema atuam
 de forma favorável na experiência do usuário ao longo das sessões de estudo.
 
-Por fim, o instrumento é encerrado pela Seção 4, destinada a Recompensa e Valor
+Por fim, o instrumento é encerrado pela Seção 4, destinada à Recompensa e Valor
 da Experiência (RW-S), que investiga o benefício percebido e a satisfação do
 estudante com os elementos de gamificação.
 
