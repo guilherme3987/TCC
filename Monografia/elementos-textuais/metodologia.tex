@@ -148,7 +148,7 @@ A arquitetura do sistema, descrita na seção \ref{sec:arquitetura}, é estrutur
 sob dois ambientes que garantem a separação de responsabilidades e a
 escalabilidade da aplicação: a Plataforma Educacional Gamificada e o Módulo
 \gls{etl}. O aluno interage com a interface web, cujas requisições trafegam via
-protocolo \gls{https} em formato \gls{json} para um \textit{API Gateway}. Este
+protocolo \gls{https} em formato \gls{json} para uma \textit{API Gateway}. Este
 \textit{gateway} direciona o fluxo para o Motor Pedagógico e de Gamificação,
 encarregado de processar as validações, persistindo as interações em um banco de
 dados relacional. Paralelamente, o conteúdo das questões é processado no Módulo
@@ -219,10 +219,10 @@ esquemas de banco de dados, aplicativos móveis, aplicações de console e
 aplicações web executadas tanto no lado do servidor quanto no cliente. 
 
 Na organização dos fluxos de dados da arquitetura proposta, estabelece-se uma
-distinção operacional clara entre o papel de uma \gls{api} convencional e o de um
+distinção operacional clara entre o papel de uma \gls{api} convencional e o de uma
 \textit{API Gateway}. Enquanto a \gls{api} \textit{self-hosted} do \gls{enem} atua como um
 provedor de dados, cujo propósito exclusivo é fornecer o catálogo de questões
-estruturadas sob demanda para o módulo \gls{etl}, o \textit{API Gateway} funciona como
+estruturadas sob demanda para o módulo \gls{etl}, a \textit{API Gateway} funciona como
 um ponto único de entrada e gerenciamento de tráfego para a aplicação
 \textit{Web}. Sob a perspectiva de engenharia de \textit{software}, o
 \textit{gateway} desacopla a interface do usuário dos serviços de
