@@ -1,5 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                    CONSIDERAÇÕES FINAIS                             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \chapter{Considerações finais}
 \label{ch:conc}
+
+Este trabalho apresentou o contexto da aprendizagem de Matemática no Brasil, com base nos resultados do \gls{saeb}, do \gls{pisa} e do \gls{enem}, que apontam desempenho insatisfatório e dificuldade dos estudantes em interpretar enunciados contextualizados e resolver problemas. Em seguida, estabeleceu-se a fundamentação que relaciona o \gls{pc} e a gamificação ao desenvolvimento de competências analíticas e ao engajamento, com respaldo na \gls{bncc} Computação. Examinaram-se as mecânicas de jogos e os trabalhos correlatos, que subsidiaram as decisões de projeto. 
+
+Como resposta a esse contexto, foi proposto o Cognitivo, uma plataforma gamificada que organiza a resolução de questões reais de Matemática do \gls{enem} em etapas sequenciais associadas aos pilares do \gls{pc}. O objetivo era transformar a estrutura cognitiva exigida pela questão em interações no sistema, conduzindo o estudante a usar cada pilar como suporte para a resolução. O aspecto iterativo da \gls{dbr} combinou fundamentação teórica, análise de trabalhos correlatos, construção do artefato e ciclos de avaliação com professores e com estudantes. A partir disso, a plataforma e a pesquisa foram construídas de forma iterativa segundo a \gls{dbr} e submetidas à validação com professores e estudantes, permitindo observar a aceitação da interface e as percepções de engajamento.
+
+A validação pelos docentes permitiu responder em parte à preocupação com a adequação matemática e pedagógica. Os registros organizados por eixos temáticos indicaram reconhecimento do erro como elemento de reflexão, das dicas como apoio que não entrega a solução e da fragmentação da questão como estímulo à autoanálise. Ao mesmo tempo, os professores apontaram a necessidade de tornar a abstração mais objetiva e a decomposição mais analítica, de inserir passos sequenciais nas fases de decomposição e algoritmos e de oferecer orientação direcionada às etapas com maior índice de erro. O artefato mostrou-se, portanto, aplicável e ajustável.
+
+No ciclo com estudantes, os formulários aplicados após o uso trouxeram indícios de aceitação e de percepção positiva da experiência. Na escala de engajamento, a leitura favorável apoia-se sobretudo nos itens de usabilidade e apelo visual, uma vez que o total de respostas nas faixas altas inclui itens formulados negativamente e não pode ser tratado como índice de aceitação. No método de amostragem de experiência, a maior parte das respostas concentrou-se nas faixas altas, com reconhecimento da presença dos pilares do \gls{pc} no fluxo do sistema. Os participantes avaliaram favoravelmente a interação, mas não foi possível verificar se o desempenho em Matemática melhorou. 
+
+A aceitação da interface e das regras aparece de forma consistente nos itens de apelo visual e de clareza. A percepção de engajamento não foi homogênea entre os participantes: a absorção e a passagem acelerada do tempo predominaram, mas a orientação dentro da plataforma e o esforço atencional não foram experimentados de modo uniforme, e parte dos participantes relatou frustração e ressalvas quanto às dicas sugeridas pelo sistema. Como o sistema é determinístico e fornece as mesmas respostas independentemente do histórico do estudante, é razoável interpretar que essas ressalvas estejam associadas à falta de personalização da orientação.
+
+As recomendações que seguem decorrem das ressalvas identificadas e das sugestões registradas. A avaliação do Cognitivo deve ser estendida a um contingente maior de participantes e a contextos educacionais relacionados à preparação para o \gls{enem}, com medidas antes e depois da intervenção e a comparação entre estratégias de uso. A contribuição específica de cada pilar do \gls{pc}, engajamento e usabilidade precisam ser examinadas com instrumentos e registros de uso quantitativos, e não apenas com percepção relatada.
 
 A implementação do fluxo automatizado de integração entre o Módulo \gls{etl} e o
 Sistema Gamificado por meio da sincronização via \gls{api} interna está prevista no
@@ -11,8 +27,10 @@ garantirá a atualização contínua do acervo de questões disponível para os
 estudantes na plataforma.
 
 Outro aspecto relevante para investigações futuras é avaliar o impacto direto do
-sistema no desempenho acadêmico e na melhoria da aprendizagem em matemática dos
+sistema no desempenho acadêmico e na melhoria da aprendizagem em Matemática dos
 estudantes, utilizando o monitoramento dos dados armazenados para análises
 baseadas em mineração de dados educacionais. Ao cruzar os históricos de cliques,
 os tempos de resposta em cada pilar lúdico e a curva de consumo de pistas com o
 desempenho acadêmico real, será possível rastrear a evolução do aluno.
+
+Esta investigação contribui para a área de Informática na Educação ao propor uma forma concreta de relacionar o \gls{pc} à resolução de problemas matemáticos do \gls{enem}. Em vez de tratar os pilares como conceitos abstratos, o Cognitivo os converte em etapas de interação sobre questões reais, e o módulo \gls{etl} demonstra que é possível organizar um acervo expressivo de questões segundo essa perspectiva. A integração entre essa estrutura cognitiva e mecânicas de gamificação resulta em uma solução tecnológica completa, avaliada por ciclos que combinaram olhar docente e percepção discente. As evidências produzidas são relevantes também por mostrarem o que a avaliação permite e o que ainda não permite concluir. Os dados apontam aceitação da interface, reconhecimento das regras e percepção positiva da experiência, ao mesmo tempo em que revelam divergências em atenção, frustração e impacto das dicas retornadas pelo sistema que dialogam com as ressalvas dos professores. O trabalho não comprova a melhora de aprendizagem nem atribui causalidade à gamificação, mas oferece diagnóstico fundamentado para o aperfeiçoamento da plataforma. Nesse sentido, a contribuição está menos na validação definitiva do artefato e mais na construção de um caminho metodológico e técnico que torna possível continuar investigando, com mais participantes, mais tempo e registros de uso, sobre como o \gls{pc} e a gamificação podem apoiar a preparação para o \gls{enem}.
